@@ -1,0 +1,331 @@
+body, html {
+	margin: 0px;
+	height: 100%;
+	cursor: url(../pictures/Cursor1.cur),auto;
+}
+
+@font-face {
+	font-family: Font;
+	src: url(../fonts/sdf.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font1;
+	src: url(../fonts/name1.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font2;
+	src: url(../fonts/name.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font5;
+	src: url(../fonts/name5.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font01;
+	src: url(../fonts/name01.ttf) format('truetype');
+}
+
+p, h4, h5, h6 {
+	font-family: Courier;
+}
+
+h1, h2, h3	 {
+	font-family: Font01;
+	text-decoration: underline;
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	transition: 0.24s;
+	cursor: url(../pictures/Cursor1.cur),auto;
+}
+
+a:hover {
+	color: rgb(204, 123, 234);
+}
+
+a:active {
+	color: rgb(4, 204, 234);
+}
+
+#nav {
+	padding: 20px;
+	height: 17px;
+	background-color: rgb(231, 231, 231);
+	position: fixed;
+	width: 100%;
+	z-index: 1020;
+	border-bottom-right-radius: 70%;
+	border-bottom-left-radius: 20%;
+	transition: 0.5s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav:hover {
+	padding: 20px;
+	height: 17px;
+	background-color: rgb(231, 231, 231);
+	position: fixed;
+	width: 100%;
+	z-index: 1020;
+	border-bottom: 5px solid rgb(134, 234, 234);
+	border-bottom-right-radius: 70%;
+	border-bottom-left-radius: 20%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav a {
+	text-decoration: none;
+	padding: 10px;
+	background-color: rgb(241, 241, 241);
+	border: 3px solid rgb(234, 234, 234);
+	border-radius: 40px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	margin-left: 10px;
+	color: rgb(134, 134, 134);
+	transition: 0.4s;
+	top: 20px;
+	font-family: Font;
+}
+
+#nav a:hover {
+	text-decoration: none;
+	padding: 10px;
+	background-color: rgb(254, 254, 254);
+	border: 3px solid rgb(34, 234, 234);
+	border-radius: 40px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	color: rgb(172, 172, 172);
+	margin-left: 10px;
+	transition: 0.4s;
+	top: 20px;
+	font-family: Font;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav a:active {
+	text-decoration: none;
+	padding: 10px;
+	background-color: rgb(254, 254, 254);
+	border: 3px solid rgb(204, 100, 234);
+	border-radius: 40px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	margin-left: 10px;
+	transition: 0.4s;
+	color: rgb(72, 72, 72);
+	top: 20px;
+	font-family: Font;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.crd {
+	width: 100%;
+	background-color: rgb(254, 254, 254);
+	border-top: 10px solid rgb(205, 205, 205);
+	height: 510px;
+	padding: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tle {
+	font-size: 70px;
+	background-color: rgb(234, 234, 234);
+	padding: 10px 40px 10px 40px;
+	margin-top: 140px;
+	margin-bottom: 20px;
+	color: black;
+	border: 3px solid rgb(234, 234, 234);
+	border-radius: 20px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	display: inline-block;
+	transition: 0.4s;
+    vertical-align: middle;
+	font-family: Font1;
+}
+
+.tle:hover {
+	font-size: 70px;
+	background-color: rgb(234, 234, 234);
+	padding: 10px 74px 10px 74px;
+	margin-top: 140px;
+	border: 3px solid rgb(34, 234, 234);
+	border-radius: 20px;
+	border-bottom-right-radius: 170px;
+	border-top-left-radius: 170px;
+	display: inline-block;
+    vertical-align: middle;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: 0.4s;
+	font-family: Font1;
+}
+
+.tle:active {
+	font-size: 70px;
+	background-color: rgb(234, 234, 234);
+	padding: 10px 40px 10px 40px;
+	margin-top: 140px;
+	border: 3px solid rgb(204, 100, 234);
+	border-radius: 20px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	transition: 0.4s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	display: inline-block;
+    vertical-align: middle;
+	font-family: Font1;
+}
+
+.tag {
+	background-color: rgb(234, 234, 234);
+	padding: 1px;
+	display: inline-block;
+	font-size: 17px;
+    width: 150px;
+    margin: 0px;
+    transition: 0.4s;
+	border-radius: 10px;
+	font-family: Font1;
+	cursor: url(../pictures/Cursor1.cur),auto;
+}
+
+.tag:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.tag:active {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.tag a {
+	text-decoration: none;
+}
+
+.sign {
+	font-family: Font2;
+	margin-top: 90px;
+	margin-left: 179px;
+	background-color: rgb(234, 234, 234);
+	font-size: 40px;
+	display: inline-block;
+	width: 200px;
+	float: right;
+	border: 10px solid black;
+	border-radius: 20px;
+	transition: 0.4s;
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Safari */
+    transform: rotate(-20deg); /* Standard syntax */
+}
+
+.sign:hover {
+	width: 240px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+.fter {
+	height: 120px;
+}
+
+.parallax { 
+    /* The image used */
+    background-image: url(../pictures/Staton_1.jpg);
+
+    /* Set a specific height */
+    height: 500px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s;
+    margin: 0px;
+}
+
+.parallax:hover { 
+    background-image: url(../pictures/Staton_5.jpg);
+}
+
+.parallax1 { 
+    /* The image used */
+    background-image: url(../pictures/Staton_7.jpg);
+
+    /* Set a specific height */
+    height: 400px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.4s;
+    margin: 0px;
+}
+
+.parallax1:hover { 
+    background-image: url(../pictures/Staton1_11.jpg);
+}
+.btn {
+	text-decoration: none;
+	padding: 17px;
+	background-color: rgb(241, 241, 241);
+	border: 5px solid rgb(234, 234, 234);
+	border-radius: 40px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	margin-left: 10px;
+	display: inline-block;
+    vertical-align: middle;
+	color: rgb(134, 134, 134);
+	transition: 0.4s;
+	top: 20px;
+	font-family: Font;
+	font-size: 40px;
+}
+
+.btn:hover {
+	text-decoration: none;
+	padding: 17px;
+	background-color: rgb(254, 254, 254);
+	border: 5px solid rgb(234, 134, 134);
+	border-radius: 40px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	color: rgb(172, 172, 172);
+	margin-left: 10px;
+	transition: 0.4s;
+	top: 20px;
+	font-family: Font;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.btn:active {
+	text-decoration: none;
+	padding: 17px;
+	background-color: rgb(254, 254, 254);
+	border: 5px solid rgb(204, 100, 234);
+	border-radius: 40px;
+	border-bottom-right-radius: 130px;
+	border-top-left-radius: 130px;
+	margin-left: 10px;
+	transition: 0.4s;
+	color: rgb(72, 72, 72);
+	top: 20px;
+	font-family: Font;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
