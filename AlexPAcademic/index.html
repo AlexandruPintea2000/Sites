@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Add a gray background color with some padding */
+body {
+    font-family: Arial;
+    padding: 0px;
+    background: rgb(110, 110, 110);
+    background-image: linear-gradient(rgb(10, 10, 10) , violet, pink, rgb(255, 255, 255));
+	  margin:0px
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 4px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+    margin:20px;
+    border-radius: 10px;
+		border: 10px solid black;
+}
+
+.navitem{
+     border-radius: 5px;
+   /*background-color: rgb(200, 200, 200);
+     padding: 10px 10px 10px 10px;*/
+     margin: 5px;
+     text-decoration: none;
+     font-size: 24px;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+    float: left;
+    width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+    float: left;
+    width: 25%;
+}
+
+/* Fake image */
+.fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Add a card effect for articles */
+.card {
+     background-color: white;
+     padding: 20px;
+	   margin: 20px;
+		 border: 10px solid black;
+     border-radius: 10px;
+}
+
+.nav {
+   	 background-color: white;
+	 	 width: 100%;
+	 	 height: 4em;
+   	 border-radius: 0px 0px 30px 30px;
+	 	 position: 0px;
+ 	 	 top: 0px;
+	 	 position: fixed;
+	 	 z-index: 1020;
+	 	 padding: 0px;
+	 	 margin: 0px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* fter */
+.fter {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.picture{
+  height:200px; 
+  text-align: center; 
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 25%; 
+  width: 50%
+}
+
+.rightpicture{
+  height:200px; 
+  text-align: center; 
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-left: 5%; 
+  width: 90%
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+        width: 100%;
+        padding: 0;
+    }
+    .header {
+			 	padding: 4px;
+  	  	font-size: 20px;
+ 		    text-align: center;
+  		 	background: white;
+				margin:20px;
+				margin-bottom: 0px;
+		    border-radius: 10px;
+    }
+	  .navitem {
+	    	font-size: 14px;
+	 	}
+}
+
+@media screen and (max-width: 600px) {
+      .picture{
+        text-align: center; 
+        margin-left: 10%; 
+        width: 80%;
+      }
+}
+
+/* pages links */
+
+.pages a {
+    color: black;
+    float: center;
+    padding: 8px 16px;
+    text-decoration: none;
+		background-color: #ffffff;
+    transition: background-color .3s;
+		border-radius: 10px;	
+		border: 5px solid black;
+}
+
+/* Style the active/current link */
+.pages a.active {
+    background-color: grey;
+    color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pages a:hover:not(.active) {background-color: #ddd;}
+
+</style>
+</head>
+<body>
+
+<!--
+<div class="nav">
+<span> Nav </span>
+</div>-->
+
+<div class="header">
+  <h2 style="margin: 4px;">Alex P. Academic</h2>
+  <h5 style="margin: 0px;">- Univ. of -</h5>
+	<span><a class="navitem" href="#papers"> Paprs </a></span>
+	<span><a class="navitem" href="#external"> Contact </a></span>
+	<span><a class="navitem" href="#collaborators"> Team </a></span>
+	<span><a class="navitem" href="">  </a></span>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+
+    <div class="card">
+      <div class="picture"><img src="" /></div>
+    </div>
+
+    <div id="papers" class="card">
+      <h2>A Papers:</h2>
+      <h5>A Ranked papers.</h5>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+    </div>
+
+    <div class="card">
+      <h2>B Papers:</h2>
+      <h5>B Ranked papers.</h5>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+    </div>
+
+    <div class="card">
+      <h2>C Papers:</h2>
+      <h5>C Ranked papers.</h5>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+    </div>
+
+    <div class="card">
+      <h2>D Papers:</h2>
+      <h5>D Ranked papers.</h5>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+      &rarr;<a style="font-size: 20px" href="/">Papr</a></br>
+    </div>
+
+    <div id="collaborators" class="card">
+        <h2>Collaborators:</h2>
+        <a style="font-size: 20px">1</a></br>
+        <a style="font-size: 20px">2</a></br>
+        <a style="font-size: 20px">3</a></br>
+        <a style="font-size: 20px">4</a></br>
+        <a style="font-size: 20px">5</a></br>
+    </div>
+
+   <!-- <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+
+<div class="pages">
+  <a href="#" style="float: left; margin-left: 20px;">&laquo;</a>
+  <a href="#" style="float: right; margin-right: 20px;">&raquo;</a>
+</div>-->
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2 style="text-align: center;">Alex P.</h2>
+      <div class="rightpicture" style="height:100px;"></div>
+      <p>C++, Html, Css, Latx, 3D Graphics in Blender</p>
+    </div>
+    <div id="external" class="card">
+      <h1>Contact</h1>
+      <p>Email: <b></b></p>
+      <h2>External</h2>
+      <a style="font-size: 20px;" href="/">Scop</a></br>
+      <a style="font-size: 20px;" href="/">Scop</a></br>
+      <a style="font-size: 20px;" href="/">Scop</a></br>
+      <a style="font-size: 20px;" href="/">Scop</a></br>
+    </div>
+  </div>
+</div>
+
+<div class="fter">
+  <h2>Alex P. Email: </h2>
+</div>
+
+</body>
+</html>
+

@@ -1,3 +1,4 @@
+
 body, html {
 	margin: 0px;
 	height: 100%;
@@ -31,12 +32,15 @@ body, html {
 
 p, h4, h5, h6 {
 	font-family: Courier;
+	padding: 5px;
+	font-size: 1em;
 }
 
 h1, h2, h3	 {
 	font-family: Font01;
 	text-decoration: underline;
 	display: inline;
+	padding: 10px;
 }
 
 a {
@@ -55,6 +59,8 @@ a:active {
 
 #nav {
 	padding: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
 	height: 17px;
 	background-color: rgb(231, 231, 231);
 	position: fixed;
@@ -69,6 +75,8 @@ a:active {
 #nav:hover {
 	padding: 20px;
 	height: 17px;
+	padding-left: 0px;
+	padding-right: 0px;
 	background-color: rgb(231, 231, 231);
 	position: fixed;
 	width: 100%;
@@ -131,8 +139,18 @@ a:active {
 	background-color: rgb(254, 254, 254);
 	border-top: 10px solid rgb(205, 205, 205);
 	height: 510px;
-	padding: 20px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#githb {
+	height: 80%;
+	width: 90%;
+	display: inline-block;
+    vertical-align: middle;
+    border: 6px solid black;
+    border-radius: 40px;
 }
 
 .tle {
@@ -214,6 +232,7 @@ a:active {
 	font-family: Font2;
 	margin-top: 90px;
 	margin-left: 179px;
+	margin-right: 17px;
 	background-color: rgb(234, 234, 234);
 	font-size: 40px;
 	display: inline-block;
@@ -231,14 +250,142 @@ a:active {
 	width: 240px;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-        background-color: lightblue;
-    }
+#hire {
+	font-size: 40px; 
+	width: 450px;
+}
+
+@media only screen and (max-width: 471px) {
+    .tle {
+    	font-size: 25px;
+   	}
+
+   	.tle:hover {
+    	font-size: 25px;
+   	}
+
+	.tle:active {
+    	font-size: 25px;
+   	}
+
+   	#nav a {
+   		font-size: 10px;
+   	}
+
+   	#hire {
+   		font-size: 20px;
+   		width: 100px;
+   	}
+
+   	#wd2 {
+   		display: ;
+   	}
+
+   	#wd1 {
+   		display: none;
+   	}
+
+   	.sign {
+   		font-size: 30px;
+   		border: 7px solid black;
+   		width: 130px;
+   	}
+
+   	.sign:hover {
+   		width: 150px;
+   	}
+
+
+
+}
+
+@media only screen and (max-width: 500px) {
+	#ed {
+		height: 199%;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#ed {
+		height: 141%;
+	}
+}
+
+   	
+@media only screen and (min-width: 700px) {
+	#ed {
+		height: 124%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#ed {
+		height: 95%;
+	}
+}
+
+   	
+
+.pza1 {
+	width: 100px;
+	height: 200px;
+	border-radius: 20px;
+	position: absolute;
+	background-color: rgb(234, 234, 234);
+	border-bottom-right-radius: 70px;
+	border-top-left-radius: 70px;
+	background-image: url(../pictures/Io_Crop_21_4.svg);
+	background-size: 110% 110%;
+	border: 7px solid rgb(234, 234, 234);
+	box-shadow: 0 21px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pza {
+	height: 90%;
+	width: 100%;
+	background-image: url(../pictures/Bg_4.png);
+	background-size: 100% 100%;  
+}
+
+@media only screen and (max-width: 380px) {
+   	#nav {
+   		height: 25px;
+   	}
+   	#ed {
+		height: 179%;
+	}
+	#pza {
+		height: 90%;
+	}
+
+}
+
+@media only screen and (max-width: 900px) {
+	#pza02 {
+		display: none;
+	}
+	#pza {
+		height: 124%;
+	}
+
+}
+
+@media only screen and (max-width: 1080px) {
+   	#pza01 {
+   		display: none;
+   	}
+
+   	#pza03 {
+   		display: none;
+   	}
+
+
 }
 
 .fter {
-	height: 120px;
+	height: 20px;
+	padding-right: 0px;
+	padding-left: 0px;
 }
 
 .parallax { 
@@ -329,3 +476,4 @@ a:active {
 	font-family: Font;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
