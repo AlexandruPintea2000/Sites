@@ -1,0 +1,188 @@
+html 
+{
+	scroll-behavior: smooth;
+}
+
+p 
+{
+	word-break: keep-all;
+}
+
+.parallax 
+{
+	background-image: url(../pictures/34.jpg);
+
+	height: 25rem;
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.4s;
+	margin: 0px;
+}
+
+.parallax1
+{
+	background-image: url(../pictures/61.jpg);
+
+	height: 28rem;
+
+	padding: 5rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.4s;
+	margin: 0px;
+}
+
+.parallax0
+{
+	background-image: url(../pictures/a1.jpg);
+
+	height: 20rem;
+
+	padding: 5rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.4s;
+	margin: 0px;
+}
+
+.parallax4
+{
+	background-image: url(../pictures/a1.jpg);
+
+	height: 10rem;
+
+	padding: 1.7rem;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.4s;
+	margin: 0px;
+}
+
+.page-title 
+{
+	margin: 5px; 
+	margin-top: 10rem; 
+	display: inline-block; 
+	vertical-align: middle; 
+	background-color: lightblue; 
+	padding: 20px; 
+	border-radius: 30px;
+	border-top-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 3px solid rgb(17, 170, 212);
+	text-shadow: -2px 2px rgb(123, 123, 123);
+	box-shadow: 1px 10px  4px rgb(123, 32, 255);
+}
+
+.page-subtitle
+{
+	margin: 5px; 
+	margin-top: -0.1rem; 
+	display: inline-block; 
+	vertical-align: middle; 
+	background-color: lightblue; 
+	padding: 20px; 
+	border-radius: 30px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border: 3px solid rgb(17, 170, 252);
+	text-shadow: -2px 2px 3px rgb(123, 123, 123);
+	padding: 7px 10px 7px 10px;
+	border-top: 4px solid rgb(32, 123, 255);
+}
+
+.ok 
+{
+	color: rgb(124, 31, 255); 
+	text-shadow: 1px 2px rgb(253, 172, 255);
+}
+
+.ok1
+{
+	color: rgb(155, 255, 255); 
+	text-shadow: 1px 2px rgb(124, 31, 255);
+}
+
+.price-a:hover
+{
+	color: rgb(201, 201, 201);
+	text-decoration: none;
+	background-color: rgb(1, 123, 215);
+	transition: 0.4s;
+}
+
+.separator 
+{
+	width: 90%; 
+	height: 4px; 
+	border-radius: 30px; 
+	border: 1px solid rgb(1, 0, 1);
+	background-color: rgb(13, 123, 255);
+	box-shadow: 0px 1px 7px rgb(13, 132, 255);
+}
+
+.text-padding 
+{
+	background-color: rgb(123, 32, 255); 
+	box-shadow: 0px 1px 7px rgb(1, 1, 1);
+	padding: 10px; 
+	border-radius: 20px; 
+	margin-top: 20px;
+	color: rgb(255, 255, 255);
+}
+
+.card-picture 
+{
+	max-width: 120px;
+}
+
+@media only screen and (min-width: 800px)
+{
+	#index-col 
+	{
+		width: 800px;
+	}
+	.parallax1 
+	{
+		padding: 4rem;
+	}
+}
+
+
+
+@media only screen and (max-width: 800px)
+{
+	.parallax1 
+	{
+		padding: 1rem;
+		height: 35rem;
+	}
+	.parallax0
+	{
+		padding: 1rem;
+		height: 17rem;
+	}
+}
+
+@media only screen and (max-width: 590px)
+{
+	.parallax1 
+	{
+		padding: 1rem;
+		height: 54rem;
+	}
+	.parallax0
+	{
+		padding: 1rem;
+		height: 17rem;
+	}
+}
