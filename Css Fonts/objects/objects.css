@@ -1,0 +1,1214 @@
+
+#FONTS.CSS {
+
+	font: THIS FILE WILL ONLY GIVE YOU CSS OBJECTS (this is only the css sounrce, without the font files).;
+	font: ------------------------------------------------------------------------------------------------;
+
+	font: IF YOU WANT TO DOWNLOAD, CLICK ON "DOWNLOAD" TO GET THE COMPLETE FONTS.CSS CLASS.;
+	font: -----------------------------------------------------------------;
+
+}
+
+.bold 
+{
+	font-weight: bold;
+}
+
+.underline
+{
+	text-decoration: underline;
+}
+
+.underline-ferm
+{
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}
+
+.underline-dashed
+{
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
+.extra-tiny 
+{
+	font-size: 5px;
+}
+
+.tiny 
+{
+	font-size: 10px;
+}
+
+.small 
+{
+	font-size: 17px;
+}
+
+.regular 
+{
+	font-size: 27px;
+}
+
+.large 
+{
+	font-size: 34px;
+}
+
+.huge 
+{
+	font-size: 47px;
+}
+
+.extra-huge 
+{
+	font-size: 70px;
+}
+
+@font-face {
+	font-family: Font1;
+	src: url(fonts/1.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font2;
+	src: url(fonts/2.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font3;
+	src: url(fonts/3.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font4;
+	src: url(fonts/4.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font5;
+	src: url(fonts/5.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font7;
+	src: url(fonts/7.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font8;
+	src: url(fonts/8.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font9;
+	src: url(fonts/9.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font10;
+	src: url(fonts/10.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font11;
+	src: url(fonts/11.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font12;
+	src: url(fonts/12.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font13;
+	src: url(fonts/13.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font14;
+	src: url(fonts/14.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font15;
+	src: url(fonts/15.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font16;
+	src: url(fonts/16.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font17;
+	src: url(fonts/17.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font171;
+	src: url(fonts/171.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font19;
+	src: url(fonts/19.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font20;
+	src: url(fonts/20.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font21;
+	src: url(fonts/21.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font23;
+	src: url(fonts/23.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font231;
+	src: url(fonts/231.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font24;
+	src: url(fonts/24.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font25;
+	src: url(fonts/25.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font26;
+	src: url(fonts/26.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font27;
+	src: url(fonts/27.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font28;
+	src: url(fonts/28.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font29;
+	src: url(fonts/29.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font30;
+	src: url(fonts/30.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font31;
+	src: url(fonts/31.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font32;
+	src: url(fonts/32.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font34;
+	src: url(fonts/34.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font341;
+	src: url(fonts/341.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font35;
+	src: url(fonts/35.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font36;
+	src: url(fonts/36.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font37;
+	src: url(fonts/37.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font38;
+	src: url(fonts/38.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font39;
+	src: url(fonts/39.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font40;
+	src: url(fonts/40.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font41;
+	src: url(fonts/41.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font42;
+	src: url(fonts/42.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font43;
+	src: url(fonts/43.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font44;
+	src: url(fonts/44.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font45;
+	src: url(fonts/45.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font46;
+	src: url(fonts/46.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font47;
+	src: url(fonts/47.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font48;
+	src: url(fonts/48.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font49;
+	src: url(fonts/49.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font50;
+	src: url(fonts/50.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font51;
+	src: url(fonts/51.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font52;
+	src: url(fonts/52.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font53;
+	src: url(fonts/53.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font54;
+	src: url(fonts/54.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font55;
+	src: url(fonts/55.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font56;
+	src: url(fonts/56.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font57;
+	src: url(fonts/57.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font58;
+	src: url(fonts/58.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font59;
+	src: url(fonts/59.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font60;
+	src: url(fonts/60.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font61;
+	src: url(fonts/61.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font62;
+	src: url(fonts/62.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font63;
+	src: url(fonts/63.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font64;
+	src: url(fonts/64.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font65;
+	src: url(fonts/65.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font66;
+	src: url(fonts/66.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font67;
+	src: url(fonts/67.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font68;
+	src: url(fonts/68.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font69;
+	src: url(fonts/69.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font70;
+	src: url(fonts/70.ttf) format('truetype');
+}
+
+@font-face {
+	font-family: Font71;
+	src: url(fonts/71.ttf) format('truetype');
+}
+
+.font-default 
+{
+	font-family: Arial;
+	margin: 0px;
+}
+
+.font-future1
+{
+	font-family: Font1;
+	margin: 0px;
+}
+
+.font-square4
+{
+	font-family: Font2;
+	margin: 0px;
+}
+
+.font-soft
+{
+	font-family: Font3;
+	margin: 0px;
+}
+
+.font-future
+{
+	font-family: Font4;
+	margin: 0px;
+}
+
+.font-complex
+{
+	font-family: Font5;
+	margin: 0px;
+}
+
+.font-default1
+{
+	font-family: Sans;
+	margin: 0px;
+}
+
+.font-default3
+{
+	font-family: Georgia;
+	margin: 0px;
+}
+
+.font-default4
+{
+	font-family: Font35;
+	margin: 0px;
+}
+
+.font-default5
+{
+	font-family: Font54;
+	margin: 0px;
+}
+
+.font-default7
+{
+	font-family: Font43;
+	margin: 0px;
+}
+
+.font-square3
+{
+	font-family: Font7;
+	margin: 0px;
+}
+
+.font-square13
+{
+	font-family: Font8;
+	margin: 0px;
+}
+
+.font-default2
+{
+	font-family: Font9;
+	letter-spacing: 3px;
+	margin: 0px;
+}
+
+.font-default8
+{
+	font-family: Font11;
+	margin: 0px;
+}
+
+.font-announce 
+{
+	font-family: Font12;
+	margin: 0px;
+}
+
+.font-future7
+{
+	font-family: Font13;
+	margin: 0px;
+}
+
+.font-soft2
+{
+	font-family: Font14;
+	margin: 0px;
+}
+
+.font-soft3
+{
+	font-family: Font15;
+	margin: 0px;
+}
+
+.font-future2
+{
+	font-family: Font16;
+	margin: 0px;
+}
+
+.font-soft4
+{
+	font-family: Font17;
+	margin: 0px;
+}
+
+.font-music
+{
+	font-family: Font171;
+	margin: 0px;
+}
+
+.font-soft5
+{
+	font-family: Font19;
+	margin: 0px;
+}
+
+.font-square
+{
+	font-family: Font20;
+	margin: 0px;
+}
+
+.font-square1
+{
+	font-family: Font21;
+	margin: 0px;
+}
+
+.font-square2
+{
+	font-family: Font23;
+	margin: 0px;
+}
+
+.font-scary3
+{
+	font-family: Font231;
+	margin: 0px;
+}
+
+.font-default6
+{
+	font-family: Font24;
+	margin: 0px;
+}
+
+.font-future3
+{
+	font-family: Font25;
+	margin: 0px;
+}
+
+.font-future4
+{
+	font-family: Font26;
+	margin: 0px;
+}
+
+.font-square8
+{
+	font-family: Font27;
+	margin: 0px;
+}
+
+.font-default9
+{
+	font-family: Font28;
+	margin: 0px;
+}
+
+.font-default10
+{
+	font-family: Font29;
+	margin: 0px;
+}
+
+.font-soft6
+{
+	font-family: Font31;
+	margin: 0px;
+}
+
+.font-soft7
+{
+	font-family: Font32;
+	margin: 0px;
+}
+
+.font-soft8
+{
+	font-family: Font34;
+	margin: 0px;
+}
+
+.font-soft1
+{
+	font-family: Font341;
+	margin: 0px;
+}
+
+.font-soft9
+{
+	font-family: Font36;
+	margin: 0px;
+}
+
+.font-square9
+{
+	font-family: Font37;
+	margin: 0px;
+}
+
+.font-soft10
+{
+	font-family: Font38;
+	margin: 0px;
+}
+
+.font-square10
+{
+	font-family: Font39;
+	margin: 0px;
+}
+
+.font-music1
+{
+	font-family: Font42;
+	margin: 0px;
+}
+
+.font-soft15
+{
+	font-family: Font43;
+	margin: 0px;
+}
+
+.font-3d
+{
+	font-family: Font44;
+	margin: 0px;
+}
+
+.font-soft11
+{
+	font-family: Font45;
+	margin: 0px;
+}
+
+.font-soft12
+{
+	font-family: Font47;
+	margin: 0px;
+}
+
+.font-soft13
+{
+	font-family: Font49;
+	margin: 0px;
+}
+
+.font-square11
+{
+	font-family: Font50;
+	margin: 0px;
+}
+
+.font-scary
+{
+	font-family: Font51;
+	margin: 0px;
+}
+
+.font-future5
+{
+	font-family: Font52;
+	margin: 0px;
+}
+
+.font-default11
+{
+	font-family: Font54;
+	margin: 0px;
+}
+
+.font-future6
+{
+	font-family: Font55;
+	margin: 0px;
+}
+
+.font-scary1
+{
+	font-family: Font56;
+	margin: 0px;
+}
+
+.font-scary2
+{
+	font-family: Font57;
+	font-weight: bold;
+	margin: 0px;
+}
+
+.font-square5
+{
+	font-family: Font58;
+	margin: 0px;
+}
+
+.font-future8
+{
+	font-family: Font63;
+	margin: 0px;
+}
+
+.font-square12
+{
+	font-family: Font64;
+	margin: 0px;
+}
+
+.font-music2
+{
+	font-family: Font65;
+	margin: 0px;
+}
+
+.font-music3
+{
+	font-family: Font60;
+	margin: 0px;
+}
+
+.font-square6
+{
+	font-family: Font66;
+	margin: 0px;
+}
+
+
+.font-soft14
+{
+	font-family: Font70;
+	margin: 0px;
+}
+
+.font-square7
+{
+	font-family: Font71;
+	margin: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.loader-default
+{
+	background-image: url('loaders/21.gif');
+	height: 100px;
+	width: 100px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default1
+{
+	background-image: url('loaders/9.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default2
+{
+	background-image: url('loaders/23.gif');
+	height: 25px;
+	width: 25px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default3
+{
+	background-image: url('loaders/26.gif');
+	height: 55px;
+	width: 54px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default4
+{
+	background-image: url('loaders/29.gif');
+	height: 49px;
+	width: 49px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default5
+{
+	background-image: url('loaders/41.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default6
+{
+	background-image: url('loaders/44.gif');
+	height: 120px;
+	width: 120px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default7
+{
+	background-image: url('loaders/49.gif');
+	height: 32px;
+	width: 32px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default8
+{
+	background-image: url('loaders/53.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default9
+{
+	background-image: url('loaders/55.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default10
+{
+	background-image: url('loaders/80.gif');
+	height: 64px;
+	width: 64px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default11
+{
+	background-image: url('loaders/82.gif');
+	height: 64px;
+	width: 64px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default12
+{
+	background-image: url('loaders/15.gif');
+	height: 15px;
+	width: 15px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default13
+{
+	background-image: url('loaders/36.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default14
+{
+	background-image: url('loaders/35.gif');
+	height: 14px;
+	width: 14px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-default15
+{
+	background-image: url('loaders/65.gif');
+	height: 6px;
+	width: 129px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.loader-complex
+{
+	background-image: url('loaders/1.gif');
+	height: 150px;
+	width: 200px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-complex1
+{
+	background-image: url('loaders/3.gif');
+	height: 150px;
+	width: 200px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-complex2
+{
+	background-image: url('loaders/6.gif');
+	height: 140px;
+	width: 159px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-complex3
+{
+	background-image: url('loaders/8.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-complex4
+{
+	background-image: url('loaders/101.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-complex5
+{
+	background-image: url('loaders/4.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-complex6
+{
+	background-image: url('loaders/39.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-complex7
+{
+	background-image: url('loaders/51.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	border: 3px solid rgb(205, 205, 205);
+	border-radius: 20px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+.loader-square
+{
+	background-image: url('loaders/17.gif');
+	height: 23px;
+	width: 127px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-square1
+{
+	background-image: url('loaders/16.gif');
+	height: 14px;
+	width: 127px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-square2
+{
+	background-image: url('loaders/104.gif');
+	height: 93px;
+	width: 130px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-square3
+{
+	background-image: url('loaders/94.gif');
+	height: 4px;
+	width: 28px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+.loader-soft
+{
+	background-image: url('loaders/24.gif');
+	height: 29px;
+	width: 29px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft1
+{
+	background-image: url('loaders/49.gif');
+	height: 29px;
+	width: 29px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft2
+{
+	background-image: url('loaders/72.gif');
+	height: 15px;
+	width: 15px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft3
+{
+	background-image: url('loaders/57.gif');
+	height: 140px;
+	width: 140px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft4
+{
+	background-image: url('loaders/75.gif');
+	height: 23px;
+	width: 23px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft5
+{
+	background-image: url('loaders/76.gif');
+	height: 23px;
+	width: 23px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft6
+{
+	background-image: url('loaders/77.gif');
+	height: 64px;
+	width: 64px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft7
+{
+	background-image: url('loaders/87.gif');
+	height: 64px;
+	width: 64px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft8
+{
+	background-image: url('loaders/97.gif');
+	height: 64px;
+	width: 64px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft9
+{
+	background-image: url('loaders/92.gif');
+	height: 64px;
+	width: 64px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft10
+{
+	background-image: url('loaders/106.gif');
+	height: 104px;
+	width: 104px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.loader-soft11
+{
+	background-image: url('loaders/231.gif');
+	height: 29px;
+	width: 29px;
+	margin: 0px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+
+

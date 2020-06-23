@@ -1,0 +1,91 @@
+To Do Css:
+
+- Complete connections.css
+- Find scrollers
+- Find / Make Cursors
+- Make Css Objects (find and mod)
+- Select Names
+- Facut mmfie
+- Facut numai cu ce trebuie (fisiere si css-uri (fara index etc.) )
+- Sa fie Icns?
+- Facut fisiere txt separate pentru element code. Apoi, se face emb html. Facut fixed emb. = Se face o pg cu snppts si se da targt="blank" cu #id-ul obiectului
+- 
+- //// Facut Pza cu Cursorurile, in fldr cu numele clasei ca si filename. Facut Poza, pus in dcmtation.
+- 
+- /////// Ramane Loader-default15? Facut Azi. 
+- 
+- Refacut cursors: complex, default: 13, 12, 10, 9, 8, 1 si pza de la default4. 
+- 
+- La Objects: ( x la fiecre )
+- 
+- p (zis ca merge si pentru span)
+- a
+- hr
+- code
+- textarea
+- pre
+- input
+- h1-6
+- nav 
+- span (an altntve to p, you don't always put <span> in <p>)
+- 
+- 
+- 9 10 11 12 13 14 15 16 17
+- 
+- 
+- Default - Are css fara fnts
+- Restul au fnts
+- 
+- 
+- //////////////////////////////////////////////// Clasele trebuie sa fie in ac. fisier, altfel nu se vad fonturile
+- 
+- /////////////////////////////////////////////////// Facut Cpp Wb maker! si in Q si Wb. 
+- 
+- 
+- table
+- btn
+- 
+- ////////////////// Facut clase de colours, sa le zica regular etc. 
+- 
+- 
+- 
+- 
+- 
+- 
+- Facut la top cde alta cloare
+- 
+- (Facut mai multe fisiere css, fiecre cu specificul ei. =  fisiere)
+- 
+-/ font-scary3 - nu se vede cfra
+- 
+- Facut la objects sa nu treaca pe urmatoarea linie. 
+- 
+- Facut in dcmentation sa nu se poata scre la input si textarea
+- 
+-/ Pentru Objects cre la cre <code> sunt prea mari pentru phne, ascunde ex.: <p class="p-default1">
+- 
+- Facut active la nav-s. 
+- 
+- Facut objects cum ar fi: large-shadow, text-shadow, small-shadw etc.
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- 

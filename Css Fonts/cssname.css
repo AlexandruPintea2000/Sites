@@ -1,0 +1,115 @@
+html 
+{
+	margin: 0px;
+	box-sizing: border-box;
+	z-index: -1px;
+}
+
+p
+{
+	margin: 0px;
+}
+
+a 
+{
+	text-decoration: none;
+}
+
+hr 
+{
+	border: none;
+}
+
+textarea 
+{
+	font-family: Sans;
+	min-height: 15px;
+	min-width: 210px;
+	max-height: 100%;
+	max-width: 99%;
+	padding: 4px;
+}
+
+input 
+{
+	padding: 10px;
+}
+
+
+
+
+
+.b
+{
+	font-weight: bold;
+}
+
+.extra-b
+{
+	font-weight: 1000;
+}
+
+.s
+{
+	font-weight: 350;
+}
+
+.extra-s
+{
+	font-weight: 100;
+}
+
+.u
+{
+	text-decoration: underline;
+}
+
+.u-ferm
+{
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+}
+
+.u-dashed
+{
+	text-decoration: underline;
+	text-decoration-style: dashed;
+}
+
+
+
+
+.extra-tiny 
+{
+	font-size: 5px;
+}
+
+.tiny 
+{
+	font-size: 10px;
+}
+
+.small 
+{
+	font-size: 17px;
+}
+
+.regular 
+{
+	font-size: 27px;
+}
+
+.large 
+{
+	font-size: 34px;
+}
+
+.huge 
+{
+	font-size: 47px;
+}
+
+.extra-huge 
+{
+	font-size: 70px;
+}

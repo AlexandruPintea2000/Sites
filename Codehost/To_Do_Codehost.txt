@@ -1,0 +1,18 @@
+To Do Codehost:
+
+- Make ctgories: Navs, Parllax (with tle, text etc.), Team row, Form-s, 
+- Make Favourites
+- Connect to jQuery etc. 
+- Connect to my class (also, put the class on the internt)
+- 
+- 
+- 
+- 
+- 
+- 
+- 
+- ----
+- 
+- Also,
+- 
+- Make Btstrap, Foundtion Layouts

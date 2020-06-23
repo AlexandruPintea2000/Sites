@@ -1,0 +1,3875 @@
+<!DOCTYPE html>
+
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Welcome to fonts.css! </title>
+	<link rel="icon" href="pictures/Cur5.png" type="image/png" sizes="16x16">	
+	<link rel="icon" type="image/png" sizes="17x17" href="Fonts_Css.png">
+
+	
+	<link rel="stylesheet" href="default.css">
+	<link rel="stylesheet" href="merge.css">
+	<link rel="stylesheet" href="cssname.css">
+
+	<style>
+
+		body, html 
+		{
+			margin: 0px;
+			background-color: rgb(104, 104, 104);
+			box-sizing: border-box;
+			scroll-behavior: smooth;
+			cursor: url(cursors/24.cur),auto !important;
+		}
+
+		a 
+		{
+			cursor: url(cursors/24.cur),auto !important;			
+		}
+
+		.cursor-image 
+		{
+			border: 3px solid black;
+			border-radius: 10px;
+		}
+
+		.code1 
+		{
+			font-family: Arial;
+			color: rgb(23, 23, 234);
+			background-color: rgb(234, 234, 234);
+			padding: 5px 10px 5px 13px;
+			font-size: 15px;
+		}
+
+		.code1:hover
+		{
+			background-color: rgb(210, 210, 210);
+			transition: 0.1s;
+		}
+
+		.font-object 
+		{
+			padding: 20px;
+			background-color: rgb(234, 234, 234);
+			border: 3px solid rgb(210, 210, 210);
+			border-top: 3px solid black;
+			border-radius: 10px;
+			border-width: 7px 3px;
+			border-radius: 1rem 1.5rem;
+			transition: 0.23s;
+			margin: 23px 0px 0px 10px;
+			font-size: 23px;
+			width: 90%;
+		}
+
+		.font-object:hover 
+		{
+			background-color: rgb(231, 231, 231);
+			background-image: url(1_1.jpg);
+			background-size: cover;
+			border-width: 10px 3px;
+			border-radius: 23px;
+			font-size: 70px;
+		}
+
+		.fonts:hover 
+		{
+			transition: 0.4s;
+			font-size: 70px;
+			line-height: 80px;
+			padding: 20px;
+		}
+
+		.fonts1:hover 
+		{
+			font-size: 50px;
+		}
+
+		#documentation 
+		{
+			font-size: 70px; 
+			z-index: -1; 
+			margin: 40px 0px 0px 0px; 
+			font-family: Font14;
+		}
+
+		.code 
+		{
+			color: rgb(234, 32, 43);
+			background-color: rgb(234, 234, 234);
+			padding: 10px;
+			border-radius: 30px;
+			border: 2px solid rgb(231, 231, 231);
+			font-weight: bold;
+			transition: 0.1s;
+		}
+
+		.code:hover 
+		{
+			background-color: rgb(210, 210, 210);
+		}
+
+		code b 
+		{
+			color: rgb(123, 123, 123);
+		}
+
+		#fonts4 
+		{
+			font-size: 40px;  
+			margin: 50px 0px 0px 0px; 
+			font-family: Font12; 
+			line-height: 40px; 
+			background-color: #FB0019; 
+			padding: 10px; 
+			border: 3px solid black; 
+			border-radius: 10px;
+		}
+
+		#scroll-div 
+		{
+			margin: 7px; 
+			border: 4px dashed black; 
+			border-radius: 0px; 
+			padding: 20px 10px; 
+			background-color: rgb(140, 140, 140);
+			background-image: url(1_1.jpg);
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			margin: 0px;
+		}
+
+
+		.navitem 
+		{
+			padding: 10px; 
+			line-height: 43px;
+			font-size: 27px;
+		}
+
+
+		#low-nav 
+		{
+			position: fixed;
+			z-index: 1020; 
+			width: 100%; 
+			box-shadow: 14px 4px 8px 14px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+			background-color: rgb(255, 255, 255);
+			bottom: 0px; 
+		}
+
+		.vert-sep 
+		{
+			display: none;
+		}
+
+		ul li p
+		{
+			display: inline;
+		}
+
+
+		a 
+		{
+			text-decoration: none;
+		}
+
+		ul li p a 
+		{
+			padding: 7px; 
+			border: 0.1rem dashed black; 
+			border-radius: 20px;
+			line-height: 43px;
+		}
+
+		ul li p 
+		{
+			margin-left: 40px;
+			display: inline;
+			font-weight: bold;
+			margin: 5px;
+		}
+
+		ul li
+		{
+			font-weight: bold;			
+		}
+
+		.large-separator 
+		{
+			height: 17px;
+		}
+
+		#installation 
+		{
+			padding: 10px;
+		}
+
+		.top 
+		{
+			border: 0.1rem solid rgb(50, 50, 50); 
+			padding: 5px 10px; 
+			border-radius: 10px;
+			font-size: 35px; 
+			transition: 0.4s;
+			position: fixed;
+			background-color: rgb(250, 250, 250); 
+			text-decoration: none;
+			box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
+			margin-left: 87%;
+			bottom: 0;
+			position: fixed;
+			z-index: 1020;
+			margin-bottom: 50px;
+		}
+
+		.largenav 
+		{
+			font-size: 23px; 
+			position: inherit;
+			width: 97%;
+		}
+
+
+
+		@media screen and (max-width: 600px) 
+		{
+			#documentation 
+			{
+				font-size: 43px;
+			}	
+			code 
+			{
+				font-size: 13px;
+			}
+
+			#fonts4 
+			{
+				font-size: 39px;
+			}
+
+			.fonts:hover 
+			{
+				font-size: 40px;
+				line-height: 50px;
+				padding: 0px;
+				font-size: 43px;
+			}
+
+
+			.largenav 
+			{
+				width: 81%;
+			}
+
+
+			.fonts1:hover 
+			{
+				font-size: 40px;
+			}
+
+			.navitem 
+			{
+				font-size: 19px;
+				padding: 1px; 
+				line-height: 43px;
+			}
+
+			#low-nav 
+			{
+				text-align: center;
+			}
+
+			.font-object
+			{
+				margin-left: 0px;
+				width: 82.7%;
+				text-align: center;
+			}
+
+			.font-object div 
+			{
+				text-align: center;
+				display: inline-block;
+				vertical-align: middle;
+			}
+
+			.font-object:hover 
+			{
+				background-color: rgb(231, 231, 231);
+				background-image: url(1_1.jpg);
+				background-size: cover;
+				border-radius: 23px;
+				font-size: 23px;
+			}
+
+			.largecode 
+			{
+				display: none;
+			}
+
+			ul li p
+			{
+				display: inline-block;
+				margin-left: 40px;
+			}
+
+			.separator1 
+			{
+				display: none;
+			}
+
+			.vert-sep 
+			{
+				display: inherit;
+			}
+
+			.large-separator 
+			{
+				height: 50px;				
+			}
+
+			.cursor-hover 
+			{
+				display: none;
+			}
+
+			.top 
+			{
+				margin-left: 81%;
+			}
+
+		}
+
+
+
+	</style>
+
+	<!-- THESE ST THE END OF YOUR CSS FILES -->
+
+	<!---->
+
+</head>
+
+<body>
+
+	<a class="fixed top" href="#documentation_top"> &#x21E1; </a>
+
+	<nav style="position: fixed; z-index: 1020; width: 100%; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); background-color: rgb(255, 255, 255); top: 0px;">
+		<p style="font-family:Font14; font-size: 35px; padding: 10px; margin: 0px;"><b> Welcome to fonts.css! </b></p>
+	</nav>
+
+
+	<div id="scroll-div">
+
+
+		<p id="fonts4" style=""><u> What is <span class="fonts">fonts.css</span>?</u>
+
+			<a style="text-decoration: none; color: rgb(55, 0, 255); background-color: rgb(255, 255, 255); font-size: 20px; padding: 7px 8px 7px 16.5px; margin-left: 5px; border-radius: 20px; border: 3px solid black;" href="fonts.css" download> SOURCE </a> 
+
+			<a style="text-decoration: none; color: rgb(55, 0, 255); background-color: rgb(255, 255, 255); font-size: 20px; padding: 7px 10px 7px 10px; margin-left: 5px; border-radius: 20px; border: 3px solid black;" href="Fonts_Css_Complete.zip" download> DOWNLOAD </a> 
+
+		</p>
+
+		<hr style="border-width: 0px; border-top: 2px solid black; " />
+
+		<p style="font-size: 40px; z-index: -1; margin: 0px 0px 0px 0px; font-family: Font14; background-color: #FB0019; padding: 10px; border: 3px solid black; border-radius: 10px;"><u><b> <span class="fonts fonts1">fonts.css</span> is a css class for css objects that have preapplied fonts. </b></u></p>
+
+		<hr style="border-width: 0px; border-top: 2px solid black; " />
+
+		<div style="height: 13px;"></div>
+
+		<!--<p id="documentation"><u style=" text-decoration-style: dashed;"><b style="background-color: rgb(255, 255, 255); padding: 20px; margin: 0px 0px 40px 0px; border-radius: 20px;"> Documentation </b></u></p>-->
+		
+
+		<div id="documentation_top" style="height: 32px;"></div>
+
+		<p id="documentation"><u style="text-decoration-style: dashed; text-decoration-skip-ink: none; text-decoration-color: rgb(174, 168, 174);"><b style="background-color: rgb(255, 255, 255); padding: 20px; margin: 0px 0px 40px 0px; border-radius: 20px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;"> Documentation </b></u></p>
+
+
+		<div id="documentation_1" style="background-color: rgb(255, 255, 255); padding: 10px; border-radius: 7px;">
+
+
+
+
+			
+			<p class="font-default bold" style="font-size: 34px;">There are:</p>
+
+			<ul class="font-future bold" style="font-size: 23px; line-height: 34px;">
+				<li> <a href="#documentation_fonts_1">58 fonts</a> in this class.
+
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					
+					<br>
+
+					<p>12 x <a href="#fonts-default">default</a></p>
+					<br class="vert-sep">
+					<p>14 x <a href="#fonts-square">square</a></p>
+					<br class="vert-sep">
+					<p>15 x <a href="#fonts-soft">soft</a></p>
+					<br class="vert-sep">
+					<p>4 x <a href="#fonts-scary">scary</a></p>
+					<br class="vert-sep">
+					<p>8 x <a href="#fonts-future">future</a></p> 
+					<br class="vert-sep">
+					<p>4 x <a href="#fonts-sign">sign</a></p> 
+					<br class="vert-sep">
+					<p>1 x <a href="#fonts-complex">complex</a></p> 
+
+				</li>
+
+				<li> <a href="#documentation_loaders_1">41 loaders</a> in this class. 
+
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					
+					<br>
+
+					<p>17 x <a href="#loaders-default">default</a></p>
+					<br class="vert-sep">
+					<p>4 x <a href="#loaders-square">square</a></p>
+					<br class="vert-sep">
+					<p>12 x <a href="#loaders-soft">soft</a></p>
+					<br class="vert-sep">
+					<p>8 x <a href="#loaders-complex">complex</a></p> 
+
+
+				</li>
+				<li> <a href="#documentation_scrollers_1">13 scrollers</a> in this class. 
+
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					
+					<br>
+
+					<p>5 x <a href="#scrollers-default">default</a></p>
+					<br class="vert-sep">
+					<p>8 x <a href="#scrollers-soft">soft</a></p>
+
+				</li>
+
+				<li> <a href="#documentation_cursors_1">35 cursors</a> in this class. 
+
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					
+					<br>
+
+					<p>17 x <a href="#cursors-default">default</a></p>
+					<br class="vert-sep">
+					<p>2 x <a href="#cursors-soft">soft</a></p>
+					<br class="vert-sep">
+					<p>11 x <a href="#cursors-complex">future</a></p> 
+					<br class="vert-sep">
+					<p>5 x <a href="#cursors-complex">complex</a></p> 
+
+				</li>
+
+
+				<li> <a href="#documentation_objects_1">50 objects</a> in this class. 
+
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					<p class="separator1"> </p>
+					
+					<br>
+
+					<!-- <p>4 x <a href="#a" class="code1"> < a > </a></p>
+					<br class="vert-sep">
+					<p>3 x <a href="#hr" class="code1"> < hr > </a></p>
+					<br class="vert-sep">
+					<p>1 x <a href="#p" class="code1"> < p > </a></p> 
+					<br class="vert-sep">
+					<p>2 x <a href="#h1" class="code1"> < h1 > </a></p> 
+					<br class="vert-sep">
+					<p>1 x <a href="#table" class="code1"> < table > </a></p> 
+					<br class="vert-sep">
+					<p>2 x <a href="#code" class="code1"> < code > </a></p> 
+					<br class="vert-sep">
+					<p>3 x <a href="#nav" class="code1"> < nav > </a></p> 
+					<p>2 x <a href="#input" class="code1"> < input > </a></p> 
+					<br class="vert-sep">
+					<p>4 x <a href="#ul" class="code1"> < ul > </a></p> 
+					<br class="vert-sep">
+					<p>2 x <a href="#div" class="code1"> < div > </a></p> 
+					<br class="vert-sep">
+					<p>2 x <a href="#textarea" class="code1"> < textarea > </a></p> 
+					<br class="vert-sep">
+					<p>2 x <a href="#textarea" class="code1"> < textarea > </a></p> 
+					<br class="vert-sep"> -->
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<p>50 x <a href="#fonts-default">default</a></p>
+					<!-- <br class="vert-sep">
+					<p>15 x <a href="#fonts-soft">soft</a></p>
+					<br class="vert-sep">
+					<p>4 x <a href="#fonts-scary">scary</a></p>
+					<br class="vert-sep">
+					<p>8 x <a href="#fonts-future">future</a></p> 
+					<br class="vert-sep">
+					<p>1 x <a href="#fonts-complex">complex</a></p> 
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				</li>
+
+			</ul>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--<div id="installation">
+				<p class="font-straight bold" style="font-size: 27px;">How do I include this in my project?</p>
+
+				<p class="font-straight bold" style="font-size: 23px; margin: 14px 0px 5px 0px;">Well, make sure you download the <a href="/">CSSNAME.zip</a> and extract it at the base of your project (next to index.html)</p>
+
+				<p class="font-straight bold" style="font-size: 23px; margin: 14px 0px 5px 0px;">Then copy this to the end of your head tag:</p>
+
+				<div style="height: 17px;"></div>				
+
+				<code class="code-default3"  > 	< link rel="stylesheet" href="connections.css" > </code>
+
+			</div>
+
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />-->
+
+			<div id="documentation_fonts_1" class="large-separator"></div>				
+			<p class="font-default" style="color: rgb(150, 150, 150);"> ( separator ) </p>
+			<div style="height: 17px;"></div>				
+
+
+			<p id="documentation_fonts" class="font-default" style="line-height: 40px; margin: 0px 0px 20px 0px;"><b style="font-size: 30px;">  Fonts: </b>  </p>
+
+			<code class="code-default3"   style="font-size: 12px;"> <b> // 1 font = 1 class</b></code>
+
+
+			<div style="height: 13px;"></div>
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="fonts-default" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;">  Default </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default"> This is font-default. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+			
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default1"> This is font-default1. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default2"> This is font-default2. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default3"> This is font-default3. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default4"> This is font-default4. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default5"> This is font-default5. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default6"> This is font-default6. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default7"> This is font-default7. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default8"> This is font-default8. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default8" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default9"> This is font-default9. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default9" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default10"> This is font-default10. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default10" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-default11"> This is font-default11. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-default11" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="fonts-square" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Square </b>  </p>
+
+
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square"> This is font-square. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square1"> This is font-square1. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square2"> This is font-square2. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square3"> This is font-square3. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square4"> This is font-square4. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square5"> This is font-square5. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square6"> This is font-square6. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+			
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square7"> This is font-square7. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square8"> This is font-square8. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square8" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square9"> This is font-square9. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square9" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square10"> This is font-square10. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square10" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square11"> This is font-square11. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square11" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square12"> This is font-square12. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square12" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-square13"> This is font-square13. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square13" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!-- 
+			
+			<div class="font-object">
+				<p class="font-square14"> This is font-square14. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-square14" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		-->
+
+		<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+		<p id="fonts-soft" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Soft </b>  </p>
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft"> This is font-soft. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft1"> This is font-soft1. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft1" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft2"> This is font-soft2. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft2" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft3"> This is font-soft3. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft3" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft4"> This is font-soft4. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft4" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft5"> This is font-soft5. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft5" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft6"> This is font-soft6. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft6" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft7"> This is font-soft7. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft7" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft8"> This is font-soft8. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft8" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft9"> This is font-soft9. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft9" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft10"> This is font-soft10. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft10" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft11"> This is font-soft11. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft11" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft12"> This is font-soft12. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft12" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft13"> This is font-soft13. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft13" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-soft14"> This is font-soft14. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-soft14" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+		<p id="fonts-scary" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Scary </b>  </p>
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-scary"> This is font-scary. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-scary" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-scary1"> This is font-scary1. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-scary1" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-scary2"> This is font-scary2. </p>
+		</div>
+
+		<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+			<code class="code-default3"  > < p class="font-scary2" > </code>
+		</div>
+
+		<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+		<!--  -->
+
+
+		<!--  -->
+
+		<div class="font-object">
+			<p class="font-scary3"> This is font-scary<span style="font-family: Sans;">3<span>. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-scary3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="fonts-future" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;">  Future </b>  </p>
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future"> This is font-future. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future1"> This is font-future1. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future2"> This is font-future2. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future3"> This is font-future3. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future4"> This is font-future4. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future5"> This is font-future5. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future6"> This is font-future6. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-future7"> This is font-future7. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-future7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="fonts-sign" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Sign </b>  </p>
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-music"> This is font-music. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-music" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-music1"> This is font-music1. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-music1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-music2"> This is font-music2. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-music2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-music3"> This is font-music3. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-music3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="complex" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Complex </b>  </p>
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="font-complex"> This is font-complex. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="font-complex" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<div id="documentation_loaders_1" class="large-separator"></div>				
+			<p class="font-default" style="color: rgb(150, 150, 150);"> ( separator ) </p>
+			<div style="height: 17px;"></div>				
+
+
+			<p id="documentation_loaders" class="font-default" style="line-height: 40px; margin: 0px 0px 20px 0px;"><b style="font-size: 30px;">  Loaders: </b>  </p>
+
+			<code class="code-default3"   style="font-size: 12px;"> <b> // 1 loader = 1 class</b></code>
+
+
+			<div style="height: 13px;"></div>
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="loaders-default" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;">  Default </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default1">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default2">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default3">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default4">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default5">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default6">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default7">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default8">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default8" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default9">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default9" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default10">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default10" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default11">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default11" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default12">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default12" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default13">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default13" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default14">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default14" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-default15">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-default15" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="loaders-square" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Square </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-square">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class=loader-square" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-square1">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class=loader-square1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-square2">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class=loader-square2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-square3">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class=loader-square3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="loaders-soft" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Soft </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft1">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft2">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft3">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft4">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft5">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft6">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft7">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft8">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft8" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft9">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft9" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft10">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft10" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-soft11">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-soft11" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="loaders-complex" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Complex </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex1">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex2">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex3">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex4">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex5">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex6">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="loader-complex7">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="loader-complex7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<!--  -->
+
+
+			<div id="documentation_scrollers_1" class="large-separator"></div>				
+			<p class="font-default" style="color: rgb(150, 150, 150);"> ( separator ) </p>
+			<div style="height: 17px;"></div>				
+
+
+			<p id="documentation_scrollers" class="font-default" style="line-height: 40px; margin: 0px 0px 20px 0px;"><b style="font-size: 30px;">  Scrollers: </b>  </p>
+
+			<code class="code-default3"   style="font-size: 12px;"> <b> // 1 scroller = 1 class</b></code>
+
+
+			<div style="height: 13px;"></div>
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="scrollers-default" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;">  Default </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-default">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-default" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-default1">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-default1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-default2">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-default2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-default3">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-default3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-default4">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-default4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+
+
+
+			<!--  -->
+
+			<p id="scrollers-soft" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Soft </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft1">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft2">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft3">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft4">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft5">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft6">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<div class="scroller-soft7">  </div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="scroller-soft7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div id="documentation_cursors_1" class="large-separator"></div>				
+			<p class="font-default" style="color: rgb(150, 150, 150);"> ( separator ) </p>
+			<div style="height: 17px;"></div>				
+
+
+			<p id="documentation_cursors" class="font-default" style="line-height: 40px; margin: 0px 0px 20px 0px;"><b style="font-size: 30px;">  Cursors: </b>  </p>
+
+			<code class="code-default3"   style="font-size: 12px;"> <b> // 1 cursor = 1 class</b></code>
+
+
+			<div style="height: 13px;"></div>
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="cursors-default" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;">  Default </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default1">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default1.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default2">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default2.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default3">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default3.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default4">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default4.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default5">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default5.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default6">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default6.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default7">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default7.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default8">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default8.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default8" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default9">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default9.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default9" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default10">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default10.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default10" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default11">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default11.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default11" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default12">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default12.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default12" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default13">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default13.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default13" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default14">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default14.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default14" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default15">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default15.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default15" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-default16">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-default16.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-default16" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="cursors-soft" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Soft </b>  </p>
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-soft">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-soft.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-soft" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-soft1">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-soft1.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-soft1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="cursors-future" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Future </b>  </p>
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future1">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future1.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future2">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future2.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future3">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future3.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future4">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future4.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future5">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future5.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future5" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future6">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future6.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future6" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future7">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future7.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future7" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future8">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future8.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future8" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future9">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future9.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future9" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-future10">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-future10.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-future10" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="cursors-complex" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;"> Complex </b>  </p>
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-complex">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-complex.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-complex" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-complex1">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-complex1.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-complex1" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-complex2">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-complex2.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-complex2" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-complex3">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-complex3.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-complex3" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object cursor-object cursor-complex4">
+				<div class="font-future" style="font-size: 17px;"> 
+					<img class="cursor-image" src="cursors/images/cursor-complex4.png" height="37px" width="37px" />
+					<span class="cursor-hover">Hover to visualize.</span>
+				</div>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < div class="cursor-complex4" > </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+
+			<div id="documentation_objects_1" class="large-separator"></div>				
+			<p class="font-default" style="color: rgb(150, 150, 150);"> ( separator ) </p>
+			<div style="height: 17px;"></div>				
+
+
+			<p id="documentation_objects" class="font-default" style="line-height: 40px; margin: 0px 0px 20px 0px;"><b style="font-size: 30px;">  Objects: </b>  </p>
+
+			<code class="code-default3"   style="font-size: 12px;"> <b> // 1 object = 1 class</b></code>
+
+
+			<div style="height: 13px;"></div>
+
+			<hr style="border-width: 0px; border-top: 14px solid rgb(230, 230, 230); border-radius: 10px 10px; margin: 17px 0px 17px 0px;" />
+
+			<p id="objects-default" class="font-default" style="line-height: 40px; margin: 0px 0px 14px 0px;"><b style="font-size: 30px;">  Default </b>  </p>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="p-default"> This is p-default. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="p-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="p-default1"> This is p-default1. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="p-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="p-default2"> This is p-default2. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="p-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="p-default3" style="line-height: 27px;" > This is p-default3. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="p-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="p-default4"> This is p-default4. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < p class="p-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<a class="a-default" href="#a1"> This is a-default. </a>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < a class="a-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<a class="a-default1" href="#a1" style="line-height: 37px;"> This is a-default1. </a>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < a class="a-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<a class="a-default2" href="#a1"> This is a-default2. </a>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < a class="a-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<a class="a-default3" href="#a1"> This is a-default3. </a>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < a class="a-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<a class="a-default4" href="#a1" style="line-height: 58px;"> This is a-default4. </a>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < a class="a-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<hr class="hr-default">
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < hr class="hr-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<hr class="hr-default1">
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < hr class="hr-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<hr class="hr-default2">
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < hr class="hr-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<hr class="hr-default3">
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < hr class="hr-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<hr class="hr-default4">
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < hr class="hr-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<code class="code-default"> This is code-default. </code>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < code class="code-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<code class="code-default1"> This is code-default1. </code>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < code class="code-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<code class="code-default2"> This is code-default2. </code>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < code class="code-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<code class="code-default3"> This is code-default3. </code>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < code class="code-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<code class="code-default4" style="line-height: 40px;"> This is code-default4. </code>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < code class="code-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<textarea class="textarea-default" rows=4 cols=40> This is textarea-default. </textarea>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3 largecode"  > < textarea class="textarea-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<textarea class="textarea-default1" rows=4 cols=40> This is textarea-default1. </textarea>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3 largecode"  > < textarea class="textarea-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<textarea class="textarea-default2" rows=4 cols=40> This is textarea-default2. </textarea>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3 largecode"  > < textarea class="textarea-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<textarea class="textarea-default3" rows=4 cols=40> This is textarea-default3. </textarea>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3 largecode"  > < textarea class="textarea-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<textarea class="textarea-default4" rows=4 cols=20> This is textarea-default4. </textarea>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3 largecode"  > < textarea class="textarea-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<pre class="pre-default" style="font-size: 17px;"> This  is pre-default. </pre>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < pre class="pre-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<pre class="pre-default1" style="font-size: 17px;"> This  is pre-default1. </pre>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < pre class="pre-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<pre class="pre-default2" style="font-size: 17px;"> This  is pre-default2. </pre>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < pre class="pre-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<pre class="pre-default3" style="font-size: 17px;"><span id="span3">This  is </span>pre-default3. </pre>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < pre class="pre-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<pre class="pre-default4" style="font-size: 0.7rem;"><span id="span4">This  is </span>pre-default4.</pre>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < pre class="pre-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<style>
+				@media only screen and (max-width: 600px)
+				{
+					#span4 
+					{
+						display: none;
+					}
+					#span3 
+					{
+						display: none;
+					}
+				}
+			</style>
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<input class="input-default" style="font-size: 17px;" placeholder="This is input-default.">  </input>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < input class="input-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<input class="input-default1" style="font-size: 17px;" placeholder="This is input-default1."> </input>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < input class="input-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<input class="input-default2" style="font-size: 17px;" placeholder="This is input-default2."> </input>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < input class="input-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<input class="input-default3" style="font-size: 17px;" placeholder="This is input-default3."> </input>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < input class="input-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<input class="input-default4" style="font-size: 17px;" placeholder="This is input-default4."> </input>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < input class="input-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="h1-default"> This is h1-6-default. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < h1-6 class="h1-6-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="h1-default1"> This is h1-6-default1. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < h1-6 class="h1-6-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="h1-default2"> This is h1-6-default2. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < h1-6 class="h1-6-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="h1-default3" style="line-height: 27px;" > This is h1-6-default3. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < h1-6 class="h1-6-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<p class="h1-default4"> This is h1-6-default4. </p>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < h1-6 class="h1-6-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<nav class="nav-default largenav"> This is nav-default. </nav>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < nav class="nav-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<nav class="nav-default1 largenav"> This is nav-default1. </nav>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < nav class="nav-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<nav class="nav-default2 largenav"> This is nav-default2. </nav>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < nav class="nav-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+			<!--  -->
+
+			<div class="font-object">
+				<nav class="nav-default3 largenav"> This is nav-default3. </nav>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < nav class="nav-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<nav class="nav-default4 largenav"> This is nav-default4. </nav>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < nav class="nav-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<span class="span-default"> This is span-default. </span>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < span class="span-default" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<span class="span-default1"> This is span-default1. </span>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < span class="span-default1" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<span class="span-default2"> This is span-default2. </span>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < span class="span-default2" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<span class="span-default3"> This is span-default3. </span>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < span class="span-default3" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<!--  -->
+
+			<div class="font-object">
+				<span class="span-default4"> This is span-default4. </span>
+			</div>
+
+			<div style="margin: 20px 0px 20px 0px; font-size: 17px;">
+				<code class="code-default3"  > < span class="span-default4" >  </code>
+			</div>
+
+			<hr style="border-width: 0px; border-top: 2px dashed rgb(231, 231, 231);" />
+
+			<!--  -->
+
+
+			<h4 style="font-family: Arial; font-size: 23px; margin-left: 20px;"> In order to make more <b>css</b> objects, add appropriate fonts and elements, by using the classes mentioned above.</h4>
+
+
+		</div>
+
+
+		<p style="font-size: 40px; z-index: -1; margin: 70px 0px 0px 0px; font-family: Font1; line-height: 40px; background-color: #FB0019; padding: 10px; border: 3px solid black; border-radius: 10px;"><b> <span class="fonts fonts1">fonts.css</span> &copy Single Coil 2019 </b></p>
+
+		<div style="height: 37px;"></div>				
+
+
+
+	</div>
+
+	<div id="low-nav">
+
+		<span class="font-soft2 navitem" style="padding-left: 10px;"><b><a href="#documentation_fonts_1"> fonts </a></b></span> |
+		<span class="font-soft2 navitem"><b><a href="#documentation_loaders_1"> loaders </a></b></span> |
+		<span class="font-soft2 navitem"><b><a href="#documentation_scrollers_1"> scrollers </a></b></span> |
+		<span class="font-soft2 navitem"><b><a href="#documentation_cursors_1"> cursors </a></b></span> |
+		<span class="font-soft2 navitem"><b><a href="#documentation_objects_1"> objects </a></b></span>
+
+	</div>
+
+
+</body>
+
