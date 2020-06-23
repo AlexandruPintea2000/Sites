@@ -1,0 +1,670 @@
+
+
+
+
+#NAV{}
+
+
+
+
+nav 
+{
+	all: default !important;
+
+	position: fixed;
+	font-family: Arial;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgb( 243, 243, 243 );
+	padding: 10px;
+	z-index: 4900;
+	overflow-x: auto;
+}
+
+nav a
+{
+	all: default !important;
+
+	font-size: 21px;
+	text-decoration: none;
+	color: rgb( 123, 123, 123 ) !important;
+	margin-left: 10px;
+}
+
+nav a:hover { color: rgb( 90, 90, 90 ) !important; }
+
+
+
+
+[ nav-r ]{ background-color: rgb( 234, 90, 90 ) !important; }
+[ nav-r ] .d_nav { background-color: rgb( 234, 90, 90 ) !important; border-color: rgb( 204, 123, 123 ) !important; }
+[ nav-r ] .d_nav a:hover { background-color: rgb( 243, 123, 123 ) !important; }
+[ nav-r ] .nav_title { color: rgb( 243, 243, 243 ) !important; border-color: rgb( 243, 150, 150 ) !important; background-color: rgb( 243, 123, 123 ) !important; }
+[ nav-r ] a { color: rgb( 234, 234, 234 ) !important; }
+[ nav-r ] a:hover { color: rgb( 243, 243, 243 ) !important; }
+
+[ nav-g ]{ background-color: rgb( 90, 204, 90 ) !important; }
+[ nav-g ] .d_nav { background-color: rgb( 90, 204, 90 ) !important; border-color: rgb( 123, 204, 123 ) !important; }
+[ nav-g ] .d_nav a:hover { background-color: rgb( 123, 243, 123 ) !important; }
+[ nav-g ] .nav_title { color: rgb( 243, 243, 243 ) !important; border-color: rgb( 150, 243, 150 ) !important; background-color: rgb( 123, 243, 123 ) !important; }
+[ nav-g ] a { color: rgb( 234, 234, 234 ) !important; }
+[ nav-g ] a:hover { color: rgb( 243, 243, 243 ) !important; }
+
+[ nav-b ]{ background-color: rgb( 90, 90, 150 ) !important; }
+[ nav-b ] .d_nav { background-color: rgb( 90, 90, 150 ) !important; border-color: rgb( 123, 123, 204 ) !important; }
+[ nav-b ] .d_nav a:hover { background-color: rgb( 123, 123, 243 ) !important; }
+[ nav-b ] .nav_title { color: rgb( 243, 243, 243 ) !important; border-color: rgb( 150, 150, 243 ) !important; background-color: rgb( 123, 123, 243 ) !important; }
+[ nav-b ] a { color: rgb( 234, 234, 234 ) !important; }
+[ nav-b ] a:hover { color: rgb( 243, 243, 243 ) !important; }
+
+[ nav-v ]{ background-color: rgb( 150, 90, 204 ) !important; }
+[ nav-v ] .d_nav { background-color: rgb( 150, 90, 204 ) !important; border-color: rgb( 204, 123, 234 ) !important; }
+[ nav-v ] .d_nav a:hover { background-color: rgb( 243, 123, 243 ) !important; }
+[ nav-v ] .nav_title { color: rgb( 243, 243, 243 ) !important; border-color: rgb( 243, 150, 243 ) !important; background-color: rgb( 204, 123, 253 ) !important; }
+[ nav-v ] a { color: rgb( 234, 234, 234 ) !important; }
+[ nav-v ] a:hover { color: rgb( 243, 243, 243 ) !important; }
+
+[ nav-p ]{ background-color: rgb( 204, 90, 204 ) !important; }
+[ nav-p ] .d_nav { background-color: rgb( 204, 90, 204 ) !important; border-color: rgb( 234, 123, 234 ) !important; }
+[ nav-p ] .d_nav a:hover { background-color: rgb( 243, 123, 243 ) !important; }
+[ nav-p ] .nav_title { color: rgb( 243, 243, 243 ) !important; border-color: rgb( 243, 150, 243 ) !important; background-color: rgb( 243, 123, 243 ) !important; }
+[ nav-p ] a { color: rgb( 234, 234, 234 ) !important; }
+[ nav-p ] a:hover { color: rgb( 243, 243, 243 ) !important; }
+
+[ nav-gr ]{ background-color: rgb( 123, 123, 123 ) !important; }
+[ nav-gr ] .d_nav { background-color: rgb( 123, 123, 123 ) !important; border-color: rgb( 150, 150, 150 ) !important; }
+[ nav-gr ] .d_nav a:hover { background-color: rgb( 150, 150, 150 ) !important; }
+[ nav-gr ] .nav_title { color: rgb( 243, 243, 243 ) !important; border-color: rgb( 150, 150, 150 ) !important; background-color: rgb( 123, 123, 123 ) !important; }
+[ nav-gr ] a { color: rgb( 234, 234, 234 ) !important; }
+[ nav-gr ] a:hover { color: rgb( 243, 243, 243 ) !important; }
+
+[ nav-blk ]{ background-color: rgb( 50, 50, 50 ) !important; }
+[ nav-blk ] .d_nav { background-color: rgb( 50, 50, 50 ) !important; border-color: rgb( 90, 90, 90 ) !important; }
+[ nav-blk ] .d_nav a:hover { color: rgb( 10, 10, 10 ) !important; background-color: rgb( 123, 123, 123 ) !important; }
+[ nav-blk ] .nav_title { color: rgb( 50, 50, 50 ) !important; border-color: rgb( 150, 150, 150 ) !important; background-color: rgb( 123, 123, 123 ) !important; }
+
+[ nav-w ]{ background-color: rgb( 243, 243, 243 ) !important; }
+[ nav-w ] .d_nav { background-color: rgb( 243, 243, 243 ) !important; border-color: rgb( 150, 150, 150 ) !important; }
+[ nav-w ] .d_nav a:hover { color: rgb( 123, 123, 123 ) !important; background-color: rgb( 234, 234, 234 ) !important; }
+[ nav-w ] .nav_title { color: rgb( 123, 123, 123 ) !important; border-color: rgb( 204, 204, 204 ) !important; background-color: rgb( 243, 243, 243 ) !important; }
+[ nav-w ] a { color: rgb( 150, 150, 150 ) !important; }
+[ nav-w ] a:hover { color: rgb( 204, 204, 204 ) !important; }
+
+[ nav-bwn ]{ background-color: rgb( 150, 123, 90 ) !important; }
+[ nav-bwn ] .d_nav { background-color: rgb( 150, 123, 90 ) !important; border-color: rgb( 204, 150, 123 ) !important; }
+[ nav-bwn ] .d_nav a:hover { background-color: rgb( 204, 150, 90 ) !important; }
+[ nav-bwn ] .nav_title { color: rgb( 243, 243, 243 ) !important; border-color: rgb( 204, 150, 123 ) !important; background-color: rgb( 150, 123, 90 ) !important; }
+[ nav-bwn ] a { color: rgb( 234, 234, 234 ) !important; }
+[ nav-bwn ] a:hover { color: rgb( 243, 243, 243 ) !important; }
+
+[ nav-o ]{ background-color: rgb( 234, 123, 90 ) !important; }
+[ nav-o ] .d_nav { background-color: rgb( 234, 123, 90 ) !important; border-color: rgb( 204, 150, 123 ) !important; }
+[ nav-o ] .d_nav a:hover { background-color: rgb( 243, 150, 90 ) !important; }
+[ nav-o ] .nav_title { color: rgb( 50, 50, 50 ) !important; border-color: rgb( 204, 150, 123 ) !important; background-color: rgb( 234, 123, 90 ) !important; }
+[ nav-o ] a { color: rgb( 50, 50, 50 ) !important; }
+[ nav-o ] a:hover { color: rgb( 10, 10, 10 ) !important; }
+
+
+
+.d_nav 
+{
+	border: 2px solid rgb( 123, 123, 123 );
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	padding: 5px 5px 10px 5px !important;
+	background-color: rgb( 250, 250, 250 );
+	transition: top 0.3s;
+	border-radius: 0px 0px 5px 5px;
+}
+
+.nav_d a { display: block; line-height: 29px; }
+.d_nav { top: -340px; }
+
+
+
+.nav_title 
+{
+	display: none; 
+	position: fixed;
+	right: 10px !important;
+	top: 10px !important;
+	height: 25px;
+	width: 25px;
+
+	padding: 5px 2px 2px 15px;
+	border: 2px solid rgb( 123, 123, 123 );
+	border-radius: 5px;
+	vertical-align: middle;
+	font-weight: bold;
+	color: rgb( 123, 123, 123 ) !important;
+	z-index: 4000;
+	background-color: rgb( 243, 243, 243 );
+	font-size: 21px !important;
+}
+
+.nav_d { max-height: 250px !important; overflow: auto; }
+.d_nav:hover { top: 0px; }
+
+.nav_d a 
+{
+	padding: 0px 0px 0px 15px;
+	border-radius: 5px;
+}
+
+.nav_padding { height: 39px; }
+
+.nav_d a:hover { background-color: rgb( 243, 243, 243 ); }
+.nav_d a:active { background-color: rgb( 243, 243, 243 ); }
+
+
+@media screen and ( max-width: 750px )
+{
+	nav { padding: 0px; height: 0px; }
+	nav a { display: none; }
+	.d_nav, .nav_title { display: initial !important; }
+	.nav_padding { display: none; }
+}
+
+@media screen and ( max-width: 1040px )
+{
+	nav a { font-size: 17px; }
+}
+
+
+
+
+#PARALLAX{}
+
+
+
+
+.parallax 
+{ 
+	background-image: linear-gradient( rgb( 90, 90, 90 ), rgb( 234, 234, 234 ) );
+
+	min-height: 45px; 
+
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	transition: 0.4s;
+	margin: 0px;
+
+	display: flex;
+	justify-content: center;
+
+	width: initial !important;
+	padding: 21px 10px;
+}
+
+
+
+
+
+#CONTENT{}
+
+
+
+
+
+.content
+{
+	background-color: rgb( 250, 250, 250 );
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6
+{
+	text-align: center;
+}
+
+.parallax .content
+{
+	border: 3px solid rgb( 234, 234, 234 );
+	max-width: 70%;
+	min-width: 40%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	overflow: auto;
+}
+
+#contact { width: 90% !important; }
+
+#about p { font-size: 17px; }
+
+
+
+
+#UL-BORDER{}
+
+
+
+
+.ul-border { list-style: none; margin: 2px; padding-left: 21px; }
+.ul-border li::before { content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border: 1px solid rgb( 234, 234, 234 ); border-width: 0px 5.9px; border-radius: 10px; }
+.ul-border li { margin: 2px; color: rgb( 90, 90, 90 ); }
+
+.ul-border
+{
+	border: 3px solid rgb( 204, 204, 204 );
+	border-radius: 5px;
+	border-bottom-width: 1px !important;
+	margin: 5px;
+	padding: 0px;
+}
+
+.ul-border li
+{
+	border-bottom: 2px solid rgb( 204, 204, 204 );
+	margin: 0px;
+	padding: 10px ;
+	color: rgb( 90, 90, 90 );
+	background-color: rgb( 243, 243, 243 );
+}
+
+.ul-border li:first-child {	border-radius: 3px 3px 0px 0px !important; }
+.ul-border li:last-child {	border-radius: 0px 0px 3px 3px !important; }
+
+.ul-border li:hover { background-color: rgb( 249, 249, 249 ); }
+
+.ul-border li::before { border-width: 0px !important; }
+
+
+#AND_AS_ATR{}
+
+
+[ ul-border ] { list-style: none; margin: 2px; padding-left: 21px; }
+[ ul-border ] li::before { content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border: 1px solid rgb( 234, 234, 234 ); border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-border ] li { margin: 2px; color: rgb( 90, 90, 90 ); }
+
+[ ul-border ]
+{
+	border: 3px solid rgb( 204, 204, 204 );
+	border-radius: 5px;
+	border-bottom-width: 1px !important;
+	margin: 5px;
+	padding: 0px;
+}
+
+[ ul-border ] li
+{
+	border-bottom: 2px solid rgb( 204, 204, 204 );
+	margin: 0px;
+	padding: 10px ;
+	color: rgb( 90, 90, 90 );
+	background-color: rgb( 243, 243, 243 );
+}
+
+[ ul-border ] li:first-child {	border-radius: 3px 3px 0px 0px !important; }
+[ ul-border ] li:last-child {	border-radius: 0px 0px 3px 3px !important; }
+
+[ ul-border ] li:hover { background-color: rgb( 249, 249, 249 ); }
+
+[ ul-border ] li::before { border-width: 0px !important; }
+
+
+#UL-BORDER_COLORS{}
+
+
+[ ul-border-r ] { border: 3px solid rgb( 253, 123, 123 ); }
+[ ul-border-r ] li { color: rgb( 123, 50, 50 ); border-bottom: 2px solid rgb( 253, 123, 123 ); background-color: rgb( 253, 214, 214 ); }
+[ ul-border-r ] li:hover { background-color: rgb( 253, 204, 204 ); }
+
+[ ul-border-g ] { border: 3px solid rgb( 123, 253, 123 ); }
+[ ul-border-g ] li { color: rgb( 50, 123, 50 ); border-bottom: 2px solid rgb( 123, 253, 123 ); background-color: rgb( 214, 253, 214 ); }
+[ ul-border-g ] li:hover { background-color: rgb( 204, 253, 204 ); }
+
+[ ul-border-b ] { border: 3px solid rgb( 123, 123, 253 ); }
+[ ul-border-b ] li { color: rgb( 50, 50, 123 ); border-bottom: 2px solid rgb( 123, 123, 253 ); background-color: rgb( 214, 214, 253 ); }
+[ ul-border-b ] li:hover { background-color: rgb( 204, 204, 253 ); }
+
+[ ul-border-p ] { border: 3px solid rgb( 253, 123, 253 ); }
+[ ul-border-p ] li { color: rgb( 123, 50, 123 ); border-bottom: 2px solid rgb( 253, 123, 253 ); background-color: rgb( 253, 214, 253 ); }
+[ ul-border-p ] li:hover { background-color: rgb( 253, 204, 253 ); }
+
+[ ul-border-v ] { border: 3px solid rgb( 123, 90, 253 ); }
+[ ul-border-v ] li { color: rgb( 90, 50, 123 ); border-bottom: 2px solid rgb( 123, 90, 253 ); background-color: rgb( 214, 204, 253 ); }
+[ ul-border-v ] li:hover { background-color: rgb( 219, 214, 253 ); }
+
+[ ul-border-w ] { border: 3px solid rgb( 234, 234, 234 ); }
+[ ul-border-w ] li { color: rgb( 123, 123, 123 ); border-bottom: 2px solid rgb( 234, 234, 234 ); background-color: rgb( 253, 253, 253 ); }
+[ ul-border-w ] li:hover { background-color: rgb( 243, 243, 243 ); }
+
+[ ul-border-bwn ] { border: 3px solid rgb( 123, 90, 50 ); }
+[ ul-border-bwn ] li { color: rgb( 90, 50, 10 ); border-bottom: 2px solid rgb( 123, 90, 50 ); background-color: rgb( 243, 234, 204 ); }
+[ ul-border-bwn ] li:hover { background-color: rgb( 234, 204, 150 ); }
+
+[ ul-border-o ] { border: 3px solid rgb( 253, 150, 90 ); }
+[ ul-border-o ] li { color: rgb( 10, 10, 10 ); border-bottom: 2px solid rgb( 253, 150, 90 ); background-color: rgb( 150, 150, 150 ); }
+[ ul-border-o ] li:hover { color: rgb( 50, 50, 50 ); background-color: rgb( 253, 204, 150 ); }
+
+[ ul-border-blk ] { border: 3px solid rgb( 90, 90, 90 ); }
+[ ul-border-blk ] li { color: rgb( 90, 90, 90 ); border-bottom: 2px solid rgb( 90, 90, 90 ); background-color: rgb( 204, 204, 204 ); }
+[ ul-border-blk ] li:hover { background-color: rgb( 214, 214, 214 ); }
+
+[ ul-border-gr ] { border: 3px solid rgb( 123, 123, 123 ); }
+[ ul-border-gr ] li { color: rgb( 90, 90, 90 ); border-bottom: 2px solid rgb( 123, 123, 123 ); background-color: rgb( 204, 204, 204 ); }
+[ ul-border-gr ] li:hover { background-color: rgb( 214, 214, 214 ); }
+
+
+#UL_COLORS{}
+
+
+[ ul-r ] { list-style: none; }
+[ ul-r ] li::before { border: 1px solid rgb( 253, 123, 123 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-g ] { list-style: none; }
+[ ul-g ] li::before { border: 1px solid rgb( 123, 253, 123 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-b ] { list-style: none; }
+[ ul-b ] li::before { border: 1px solid rgb( 123, 123, 253 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-p ] { list-style: none; }
+[ ul-p ] li::before { border: 1px solid rgb( 253, 123, 253 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-v ] { list-style: none; }
+[ ul-v ] li::before { border: 1px solid rgb( 123, 90, 253 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-w ] { list-style: none; }
+[ ul-w ] li::before { border: 1px solid rgb( 243, 243, 243 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-bwn ] { list-style: none; }
+[ ul-bwn ] li::before { border: 1px solid rgb( 123, 90, 50 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-o ] { list-style: none; }
+[ ul-o ] li::before { border: 1px solid rgb( 253, 150, 90 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-blk ] { list-style: none; }
+[ ul-blk ] li::before { border: 1px solid rgb( 90, 90, 90 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-gr ] { list-style: none; }
+[ ul-gr ] li::before { border: 1px solid rgb( 150, 150, 150 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+
+
+
+
+#TITLE{}
+
+
+
+
+.title 
+{
+	text-align: center;
+	margin: 34px 0px;
+	font-size: 43px;
+}
+
+
+
+#PREF{}
+
+
+
+.pref
+{
+	position: fixed;
+	right: 43px;
+	bottom: 0px;
+	border: 3px solid rgb( 123, 123, 123 );
+	z-index: 1900;
+	padding: 5px 10px;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: none;
+	background-color: rgb( 234, 234, 234 );
+}
+
+.pref:hover { background-color: rgb( 243, 243, 243 ); }
+
+.pref a
+{
+	font-weight: bold;
+	color: rgb( 123, 123, 123 );
+	cursor: default;
+}
+
+.pref a:hover { color: rgb( 90, 90, 90 ); }
+
+
+[ pref-r ] { background-color: rgb( 234, 123, 123 ); border-color: rgb( 243, 150, 150 ); }
+[ pref-r ]:hover { background-color: rgb( 204, 90, 90 ); }
+[ pref-r ] a { color: rgb( 234, 234, 234 ); }
+[ pref-r ] a:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-g ] { background-color: rgb( 123, 234, 123 ); border-color: rgb( 150, 243, 150 ); }
+[ pref-g ]:hover { background-color: rgb( 90, 204, 90 ); }
+[ pref-g ] a { color: rgb( 234, 234, 234 ); }
+[ pref-g ] a:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-b ] { background-color: rgb( 123, 123, 234 ); border-color: rgb( 150, 150, 243 ); }
+[ pref-b ]:hover { background-color: rgb( 90, 90, 204 ); }
+[ pref-b ] a { color: rgb( 234, 234, 234 ); }
+[ pref-b ] a:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-p ] { background-color: rgb( 234, 123, 234 ); border-color: rgb( 243, 150, 243 ); }
+[ pref-p ]:hover { background-color: rgb( 204, 90, 204 ); }
+[ pref-p ] a { color: rgb( 234, 234, 234 ); }
+[ pref-p ] a:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-v ] { background-color: rgb( 150, 123, 234 ); border-color: rgb( 150, 150, 253 ); }
+[ pref-v ]:hover { background-color: rgb( 150, 90, 234 ); }
+[ pref-v ] a { color: rgb( 234, 234, 234 ); }
+[ pref-v ] a:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-w ] { background-color: rgb( 234, 234, 234 ); border-color: rgb( 253, 253, 253 ); }
+[ pref-w ]:hover { background-color: rgb( 204, 204, 204 ); }
+
+[ pref-gr ] { background-color: rgb( 150, 150, 150 ); border-color: rgb( 90, 90, 90 ); }
+[ pref-gr ]:hover { background-color: rgb( 123, 123, 123 ); }
+[ pref-gr ] a { color: rgb( 234, 234, 234 ); }
+[ pref-gr ] a:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-blk ] { background-color: rgb( 150, 150, 150 ); border-color: rgb( 50, 50, 50 ); }
+[ pref-blk ]:hover { background-color: rgb( 123, 123, 123 ); }
+[ pref-blk ] a { color: rgb( 50, 50, 50 ); }
+[ pref-blk ] a:hover { color: rgb( 10, 10, 10 ); }
+
+[ pref-bwn ] { background-color: rgb( 150, 123, 90 ); border-color: rgb( 90, 50, 10 ); }
+[ pref-bwn ]:hover { background-color: rgb( 123, 90, 50 ); }
+[ pref-bwn ] a { color: rgb( 234, 234, 234 ); }
+[ pref-bwn ] a:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-o ] { background-color: rgb( 253, 159, 123 ); border-color: rgb( 123, 123, 123 ); }
+[ pref-o ]:hover { background-color: rgb( 253, 150, 90 ); }
+
+
+
+#SUMMARY{}
+
+
+
+summary 
+{
+	background-color: rgb( 234, 234, 234 );
+	color: rgb( 90, 90, 90 );
+	cursor: pointer;
+	padding: 10px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+}
+
+
+summary:hover 
+{
+	background-color: #ccc;
+}
+
+
+details 
+{
+	overflow: hidden;
+	background-color: #f1f1f1;
+	border-radius: 0px 0px 2px 2px;
+}
+
+
+
+
+
+#DPDN{}
+
+
+
+
+
+
+nav .dpdn
+{
+	background-color: inherit !important;
+	color: inherit !important;
+	font-size: inherit !important;
+	font-weight: inherit !important;
+}
+
+
+.dpdn 
+{
+	background-color: rgb( 159, 159, 159 );
+	color: rgb( 253, 253, 253 );
+	border-radius: 5px;
+	position: relative;
+	padding: 5px 29px 5px 10px;
+	display: inline;
+
+	min-width: max-content !important;
+}
+
+.dpdn span
+{
+	background-color: rgb( 150, 150, 150 );
+	color: rgb( 253, 253, 253 );
+	border-radius: 2px;
+	position: absolute;
+	display: none;
+	padding: 5px;
+	right: 0px;
+	font-size: 15px;
+	z-index: 9000;
+
+	min-width: max-content !important;
+}
+
+.dpdn span a { border-radius: 2px; display: block; padding: 5px; color: rgb( 253, 253, 253 ); }
+.dpdn span a:hover { background-color: rgb( 123, 123, 123 ); }
+
+.dpdn b { font-weight: 100; }
+
+.dpdn b:after {
+  position: absolute;
+  content: "";
+  top: 10.9px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-top-color: rgb( 253, 253, 253 );
+}
+
+.dpdn:hover span { display: block; width: inherit !important; }
+.dpdn:hover { z-index: 1000; }
+
+
+[ dpdn-r ] { color: rgb( 243, 243, 243 ); background-color: rgb( 204, 50, 50 ); }
+[ dpdn-r ] span { background-color: rgb( 204, 50, 50 ); }
+[ dpdn-r ] span a:hover { background-color: rgb( 214, 123, 123 ); }
+[ dpdn-r ]:hover { background-color: rgb( 214, 123, 123 ); }
+[ dpdn-g ] { color: rgb( 243, 243, 243 ); background-color: rgb( 90, 204, 90 ); }
+[ dpdn-g ] span { background-color: rgb( 90, 204, 90 ); }
+[ dpdn-g ] span a:hover { background-color: rgb( 150, 214, 150 ); }
+[ dpdn-g ]:hover { background-color: rgb( 150, 214, 150 ); }
+[ dpdn-b ] { color: rgb( 243, 243, 243 ); background-color: rgb( 90, 90, 253 ); }
+[ dpdn-b ] span { background-color: rgb( 90, 90, 253 ); }
+[ dpdn-b ] span a:hover { background-color: rgb( 123, 123, 253 ); }
+[ dpdn-b ]:hover { background-color: rgb( 123, 123, 253 ); }
+
+[ dpdn-p ] { color: rgb( 243, 243, 243 ); background-color: rgb( 253, 123, 253 ); }
+[ dpdn-p ] span { background-color: rgb( 253, 123, 253 ); }
+[ dpdn-p ] span a:hover { background-color: rgb( 253, 150, 253 ); }
+[ dpdn-p ]:hover { background-color: rgb( 253, 150, 253 ); }
+
+[ dpdn-v ] { color: rgb( 243, 243, 243 ); background-color: rgb( 204, 123, 253 ); }
+[ dpdn-v ] span { background-color: rgb( 204, 123, 253 ); }
+[ dpdn-v ] span a:hover { background-color: rgb( 214, 150, 253 ); }
+[ dpdn-v ]:hover { background-color: rgb( 214, 150, 253 ); }
+
+[ dpdn-w ] { color: rgb( 50, 50, 50 ); background-color: rgb( 243, 243, 243 ); }
+[ dpdn-w ]:hover { color: rgb( 90, 90, 90 ); background-color: rgb( 253, 253, 253 ); }
+[ dpdn-w ] a { color: rgb( 10, 10, 10 ) !important; }
+[ dpdn-w ] span a:hover { background-color: rgb( 253, 253, 253 ); }
+[ dpdn-w ] span { background-color: rgb( 234, 234, 234 ); }
+[ dpdn-w ]:hover { background-color: rgb( 243, 243, 243 ); }
+[ dpdn-w ] b:after { border-top-color: rgb( 123, 123, 123 ); }
+
+[ dpdn-bwn ] { color: rgb( 243, 243, 243 ); background-color: rgb( 123, 90, 50 ); }
+[ dpdn-bwn ] span { background-color: rgb( 123, 90, 50 ); }
+[ dpdn-bwn ] span a:hover { background-color: rgb( 150, 123, 90 ); }
+[ dpdn-bwn ]:hover { background-color: rgb( 150, 123, 90 ); }
+
+[ dpdn-o ] { color: rgb( 10, 10, 10 ); background-color: rgb( 253, 150, 90 ); }
+[ dpdn-o ]:hover { color: rgb( 123, 123, 123 ); background-color: rgb( 253, 159, 123 ); }
+[ dpdn-o ] b:after { border-top-color: rgb( 243, 90, 50 ); }
+[ dpdn-o ] span { background-color: rgb( 253, 150, 90 ); }
+[ dpdn-o ] a { color: rgb( 10, 10, 10 ) !important; }
+[ dpdn-o ] span a:hover { background-color: rgb( 253, 159, 123 ); }
+
+
+[ dpdn-blk ] { color: rgb( 10, 10, 10 ); background-color: rgb( 123, 123, 123 ); }
+[ dpdn-blk ] span { background-color: rgb( 123, 123, 123 ); }
+[ dpdn-blk ] a { color: rgb( 10, 10, 10 ) !important; }
+[ dpdn-blk ] span a:hover {background-color: rgb( 129, 129, 129 ); }
+[ dpdn-blk ]:hover { background-color: rgb( 150, 150, 150 ); }
+[ dpdn-blk ] b:after { border-top-color: rgb( 50, 50, 50 ); }
+
+[ dpdn-gr ] { color: rgb( 50, 50, 50 ); background-color: rgb( 150, 150, 150 ); }
+[ dpdn-gr ] span { background-color: rgb( 123, 123, 123 ); }
+[ dpdn-gr ] span a:hover {background-color: rgb( 150, 150, 150 ); }
+[ dpdn-gr ]:hover { background-color: rgb( 204, 204, 204 ); }
+[ dpdn-gr ] b:after { border-top-color: rgb( 90, 90, 90 ); }
+
+
+@media screen and ( max-width: 750px )
+{
+	.parallax .content { max-width: 79%; width: 79%; }
+}
+
+a { display: inline-block; text-decoration: none; }
+a:hover { color: rgb( 50, 50, 150 ); cursor: default !important; }
+a:visited { color: rgb( 90, 50, 250 ); }
+
+p, h1, h2, h3, h4, h5, h6 {	margin: 5px 0px; text-overflow: ellipsis; font-weight: 100; }
+
+h1 { font-size: 39px; } h2 { font-size: 29px; } h3 { font-size: 25px; } h4 { font-size: 19px; } 
+h5 { font-size: 17px; } h6 { font-size: 15px; }
+
+span, s, i, u, b { margin: 2px; text-overflow: ellipsis; display: inline-block; }
+
+div { overflow: auto; }
+
+html { background-color: rgb( 253, 253, 253 ); color: rgb( 50, 50, 50 ); font-family: Arial; scroll-behavior: smooth; margin: 0px; transition: 0.3s; padding: 0px; }
+
+body { margin: 0px; padding: 0px; }
+
+ul { list-style: none; margin: 2px; padding-left: 21px; }
+ul li::before { content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border: 1px solid rgb( 234, 234, 234 ); border-width: 0px 5.9px; border-radius: 10px; }
+ul li { margin: 2px; color: rgb( 90, 90, 90 ); }
+::selection { background: rgb( 214, 214, 214 ); color: rgb( 10, 10, 10 ); }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb( 204, 204, 204 );
+  border-radius: 3.9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb( 190, 190, 190 );
+}

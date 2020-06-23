@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+	
+
+
+
+		<title> Formats </title>
+		<style> html { font-family: Arial; } pre { font-family: Arial; } div { border: 2px solid rgb( 123, 123, 123 ); padding: 0.9px 21px; border-radius: 10px; } </style>
+
+	
+	</head>
+
+
+	<body>
+
+		<p style="font-size: 43px; text-align: center;"> Formats </p>
+
+		<h1> Json</h1>
+
+		<h2> Datatypes </h2>
+
+		<div>
+			<p> <b>String:</b> <span>{ "name": "fname lname" } </span> </p>
+			<p> <b>Numeric:</b> <span>{ "b": 10 } </span> </p>
+			<p> <b>Date:</b> <span>{ "date": "2010-10-25" } </span> </p>
+			<p> <b>Bool:</b> <span>{ "b": false } </span> </p>
+			<p> <b>Null:</b> <span>{ "b": null } </span> </p>
+			<p> <b>Array:</b> <span>{ "b": [ 1, 2, 3, "fname", "lname" ] } </span> </p>
+		</div>
+
+
+
+
+
+
+		<h2> Row </h2>
+<div>
+		<pre>{
+	"user": 
+	{ "id":0, "fname": "fname1", "lname": "lname1" } 
+}</pre>
+</div>
+
+
+
+
+
+		<h2> Parse </h2>
+
+		<div>
+			<pre>var string_json = ' { "name": "fname lname" } ';
+var b = JSON.parse( string_json );
+document.write( b.name );</pre>
+
+			is:
+
+			<script>
+				
+				function set ( a ) { document.write( a ); }
+
+				var string_json = ' { "name": "fname lname" } ';
+				var b = JSON.parse( string_json );
+				set( b.name );
+
+			</script>
+		</div>
+
+		<div>
+			<pre>var date_json = ' { "date": "2010-10-25" } ';
+var b = JSON.parse( date_json );
+set( new Date( b.date ).getDate() );</pre>
+
+			is:
+
+			<script>
+				
+				var date_json = ' { "date": "2010-10-25" } ';
+				b = JSON.parse( date_json );
+				set( new Date( b.date ).getDate() );
+
+			</script>
+		</div>
+
+		<div>
+			<pre>var fnct_json = ' { "fnct": "function set_15 () { document.write( 15 ); } set_15 (); " } ';
+var b = JSON.parse( fnct_json );
+eval( b.fnct )</pre>
+
+			is:
+
+			<script>
+				
+				var fnct_json = ' { "fnct": "function set_15 () { document.write( 15 ); } set_15 (); " } ';
+				var b = JSON.parse( fnct_json );
+				eval( b.fnct )
+
+			</script>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+		<h2> Make </h2>
+
+		<div>
+			<pre>var user = { "id":0, "fname": "fname1", "lname": "lname1" };
+var user_json = JSON.stringify( user );
+document.write( user_json );</pre>
+
+			is:
+
+			<script>
+						
+				var user = { "id":0, "fname": "fname1", "lname": "lname1" };
+				var user_json = JSON.stringify( user );
+				document.write( user_json );
+
+			</script>
+		</div>
+
+
+		<div>
+			<pre>var l = [ 1, 2, 3, "fname", "lname" ];
+for ( i in l )
+	document.write( i );</pre>
+
+			is:
+
+			<script>
+						
+				var l = [ 1, 2, 3, "fname", "lname" ];
+				for ( i in l )
+					document.write( i );
+
+			</script>
+		</div>
+
+
+		<div>
+			<pre>user = { "id":0, "fname": "fname1", "lname": "lname1" }
+	for ( i in user )
+		document.write( i + ' 	' );</pre>
+
+			is:
+
+			<script>
+						
+				user = { "id":0, "fname": "fname1", "lname": "lname1" }
+				for ( i in user )
+					document.write( i + ' ' );
+
+			</script>
+
+		</div>
+
+
+		<div>
+			<pre>user = { 
+	"id": 0, 
+	"fname": "fname1", 
+	"lname": "lname1",
+	"contact": {
+		"address": "Street St.",
+		"website": "user.com"
+	} 
+}
+for ( i in user )
+	document.write( i + ' 	' );
+document.write( "< p> and " + user.contact.website + "< /p>" );
+delete user.contact.address;</pre>
+
+			is:
+
+			<script>
+						
+				user = { 
+					"id": 0, 
+					"fname": "fname1", 
+					"lname": "lname1",
+					"contact": {
+						"address": "Street St.",
+						"website": "user.com"
+					} 
+				}
+				for ( i in user )
+					document.write( i + ' ' );
+				document.write( "<p> and " + user.contact.website + "</p>" );
+
+			</script>
+		</div>
+
+
+		<h2> Xml </h2>
+
+		<div>
+			<pre>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;user type="client"&gt;
+	&lt;id&gt; 0 &lt;/id&gt;
+	&lt;fname&gt; fname1 &lt;/fname&gt;
+	&lt;lname&gt; lname1 &lt;/lname&gt;
+	&lt;contact&gt;
+		&lt;address&gt; Street 1 &lt;/address&gt;
+		&lt;address&gt; Street 2 &lt;/address&gt;
+		&lt;website&gt; user.com &lt;/website&gt;
+	&lt;/contact&gt;
+	&lt;partof db="users" /&gt;
+&lt;/user&gt;</pre>
+
+		<p> Xpath for &lt;fname&gt; fname1 &lt;/fname&gt; is /user/fname ( absolute ) </p>
+		<p> Xpath for &lt;address&gt; Street 1 &lt;/address&gt; is contact/address[1] ( relative if in &lt;user&gt; ) </p>
+		<p> Parsed as with Html. </p>
+		<p> Has operators for selectors. </p>
+
+		</div>
+
+
+		<h2> Xslt </h2>
+
+		<div>
+			<pre>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;html xsl:version="1.0" xmlns:xsl="above_xml_with_more_users"&gt;
+&lt;body style="font-family: Arial; font-size: 29px;"&gt;
+
+&lt;xsl:for-each select="user/"&gt;
+
+	&lt;div style="padding: 10px; color: rgb( 123, 123, 123 );"&gt;
+		&lt;b&gt;&lt;xsl:value-of select="fname"/&gt; &lt;/b&gt;
+		&lt;b&gt;&lt;xsl:value-of select="lname"/&gt; &lt;/b&gt;
+	&lt;div&gt;
+
+	&lt;div style="padding: 5px; color: rgb( 234, 234, 234 );"&gt;
+		&lt;xsl:for-each select="/user/contact/address"&gt;
+			&lt;p&gt; &lt;xsl:value-of select="address"/&gt; &lt;/p&gt;
+		&lt;xsl:for-each&gt;
+		&lt;xsl:for-each select="/user/contact/website"&gt;
+			&lt;p&gt; &lt;xsl:value-of select="website"/&gt; &lt;/p&gt;
+		&lt;xsl:for-each&gt;
+	&lt;div&gt;
+
+&lt;xsl:for-each&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+		<p> Xslt is used to show users Xml data. </p>
+
+		</div>
+
+
+
+		<h2> Others </h2>
+
+		<div>
+			
+			<h4> Xquery </h4>
+
+			<pre>for $i in doc( "users.xml" );
+where $i/id&lt;5
+order by $i/lname
+return if ( $i/@type="client" )
+then &lt;client&gt;{(data($i/fname)}. {(data($i/lname)}&lt;/client&gt;
+else &lt;owner&gt;{(data($i/fname)}. {(data($i/lname)}&lt;/owner&gt;
+
+let $l := ( 1 to 5 );
+let $fname := (substring($name,1,4))
+for $i1 in doc( "users.xml" ), $i2 in ( 1, 5 )
+return $i1. $i2;</pre>
+
+
+			<h4> Dtd </h4>
+
+			<pre>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;!DOCTYPE USER [
+
+	&lt;!ELEMNT ID&gt;
+	&lt;!ELEMNT FNAME&gt;
+	&lt;!ELEMNT LNAME&gt;
+	&lt;!ELEMNT CONTACT (ADDRESS, WEBSITE+)&gt;
+	&lt;!ELEMNT ADDRESS&gt;
+	&lt;!ELEMNT WEBSITE&gt;
+
+	&lt;!ATTLIST USER TYPE #REQUIRED&gt;
+	&lt;!ATTLIST PARTOF DB #REQUIRED&gt;
+
+]&gt;</pre>
+
+			<h4>Xsd</h4>
+
+			<pre>&lt;?xml version="1.0" encoding="utf-8" ?&gt;
+&lt;xs:schema xmlns:xs="path"&gt;
+&lt;xs:elemnt name="user"&gt;
+	&lt;xs:complexType&gt;
+		&lt;xs:squence&gt;
+			&lt;xs:elemnt name="id" type="string"&gt;
+			&lt;xs:elemnt name="fname" type="string"&gt;
+			&lt;xs:elemnt name="lname" type="string"&gt;
+		&lt;/xs:squence&gt;
+		&lt;xs:elemnt name="contact"&gt;
+		&lt;xs:complexType&gt;
+			&lt;xs:squence&gt;
+				&lt;xs:elemnt name="address" type="string"&gt;
+				&lt;xs:elemnt name="website" type="string"&gt;
+			&lt;/xs:squence&gt;
+		&lt;/xs:complexType&gt;
+	&lt;/xs:complexType&gt;
+&lt;/xs:elemnt&gt;</pre>
+
+<!-- 			<p> Last 2 are used to define Xml file tags. </p>
+ -->
+		</div>
+
+
+		<!-- Xml -->
+
+<!--
+	 	<?xml version="1.0" encoding="UTF-8" ?>
+		<user type="client">
+			<id> 0 </id>
+			<fname> fname1 </fname>
+			<lname> lname1 </lname>
+			<contact>
+				<address> Street 1 </address>
+				<address> Street 2 </address>
+				<website> user.com </website>
+			</contact>
+			<partof db="users" />
+		</user>
+-->
+
+
+
+
+	</body>
+
+</html>

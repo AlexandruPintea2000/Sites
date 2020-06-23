@@ -1,0 +1,476 @@
+a { display: inline-block; text-decoration: none; }
+a:hover { color: rgb( 50, 50, 150 ); cursor: default !important; }
+a:visited { color: rgb( 90, 50, 250 ); }
+
+p, h1, h2, h3, h4, h5, h6 {	margin: 5px 0px; text-overflow: ellipsis; font-weight: 100; }
+
+h1 { font-size: 39px; } h2 { font-size: 29px; } h3 { font-size: 25px; } h4 { font-size: 19px; } 
+h5 { font-size: 17px; } h6 { font-size: 15px; }
+
+span, s, i, u, b { margin: 2px; text-overflow: ellipsis; display: inline-block; }
+
+div { overflow: auto; }
+
+html { background-color: rgb( 253, 253, 253 ); color: rgb( 50, 50, 50 ); font-family: Arial; scroll-behavior: smooth; margin: 0px; transition: 0.3s; padding: 0px; }
+
+body { margin: 0px; padding: 0px; }
+
+ul { list-style: none; margin: 2px; padding-left: 21px; }
+ul li::before { content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border: 1px solid rgb( 234, 234, 234 ); border-width: 0px 5.9px; border-radius: 10px; }
+ul li { margin: 2px; color: rgb( 90, 90, 90 ); }
+::selection { background: rgb( 214, 214, 214 ); color: rgb( 10, 10, 10 ); }
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 2px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb( 204, 204, 204 );
+  border-radius: 3.9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb( 190, 190, 190 );
+}
+
+.resize
+{
+	padding: 20px; 
+	resize: both;
+	overflow: auto;
+	border-radius: 10px;
+	background-color: rgb( 234, 234, 234 );
+}
+
+.text-shadow { text-shadow: 0px 0px 9px rgb( 10, 10, 10 ); }
+.text-border { text-shadow: 0.9px 1px 0px rgb( 204, 204, 204 ); }
+[ depth ] { text-shadow: 10px -5px 1px rgb( 204, 204, 204 ); }
+[ eb ] { font-weight: 1000; letter-spacing: 1px; color: rgb( 50, 50, 50 ) !important; text-shadow: 1px 1px 2px rgb( 50, 50, 50 ) !important; }
+
+
+
+
+#UL-BORDER{}
+
+
+
+
+.ul-border { list-style: none; margin: 2px; padding-left: 21px; }
+.ul-border li::before { content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border: 1px solid rgb( 234, 234, 234 ); border-width: 0px 5.9px; border-radius: 10px; }
+.ul-border li { margin: 2px; color: rgb( 90, 90, 90 ); }
+
+.ul-border
+{
+	border: 3px solid rgb( 204, 204, 204 );
+	border-radius: 5px;
+	border-bottom-width: 1px !important;
+	margin: 5px;
+	padding: 0px;
+}
+
+.ul-border li
+{
+	border-bottom: 2px solid rgb( 204, 204, 204 );
+	margin: 0px;
+	padding: 10px ;
+	color: rgb( 90, 90, 90 );
+	background-color: rgb( 243, 243, 243 );
+}
+
+.ul-border li:first-child {	border-radius: 3px 3px 0px 0px !important; }
+.ul-border li:last-child {	border-radius: 0px 0px 3px 3px !important; }
+
+.ul-border li:hover { background-color: rgb( 249, 249, 249 ); }
+
+.ul-border li::before { border-width: 0px !important; }
+
+
+#AND_AS_ATR{}
+
+
+[ ul-border ] { list-style: none; margin: 2px; padding-left: 21px; }
+[ ul-border ] li::before { content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border: 1px solid rgb( 234, 234, 234 ); border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-border ] li { margin: 2px; color: rgb( 90, 90, 90 ); }
+
+[ ul-border ]
+{
+	border: 3px solid rgb( 204, 204, 204 );
+	border-radius: 5px;
+	border-bottom-width: 1px !important;
+	margin: 5px;
+	padding: 0px;
+}
+
+[ ul-border ] li
+{
+	border-bottom: 2px solid rgb( 204, 204, 204 );
+	margin: 0px;
+	padding: 10px ;
+	color: rgb( 90, 90, 90 );
+	background-color: rgb( 243, 243, 243 );
+}
+
+[ ul-border ] li:first-child {	border-radius: 3px 3px 0px 0px !important; }
+[ ul-border ] li:last-child {	border-radius: 0px 0px 3px 3px !important; }
+
+[ ul-border ] li:hover { background-color: rgb( 249, 249, 249 ); }
+
+[ ul-border ] li::before { border-width: 0px !important; }
+
+
+#UL-BORDER_COLORS{}
+
+
+[ ul-border-r ] { border: 3px solid rgb( 253, 123, 123 ); }
+[ ul-border-r ] li { color: rgb( 123, 50, 50 ); border-bottom: 2px solid rgb( 253, 123, 123 ); background-color: rgb( 253, 214, 214 ); }
+[ ul-border-r ] li:hover { background-color: rgb( 253, 204, 204 ); }
+
+[ ul-border-g ] { border: 3px solid rgb( 123, 253, 123 ); }
+[ ul-border-g ] li { color: rgb( 50, 123, 50 ); border-bottom: 2px solid rgb( 123, 253, 123 ); background-color: rgb( 214, 253, 214 ); }
+[ ul-border-g ] li:hover { background-color: rgb( 204, 253, 204 ); }
+
+[ ul-border-b ] { border: 3px solid rgb( 123, 123, 253 ); }
+[ ul-border-b ] li { color: rgb( 50, 50, 123 ); border-bottom: 2px solid rgb( 123, 123, 253 ); background-color: rgb( 214, 214, 253 ); }
+[ ul-border-b ] li:hover { background-color: rgb( 204, 204, 253 ); }
+
+[ ul-border-p ] { border: 3px solid rgb( 253, 123, 253 ); }
+[ ul-border-p ] li { color: rgb( 123, 50, 123 ); border-bottom: 2px solid rgb( 253, 123, 253 ); background-color: rgb( 253, 214, 253 ); }
+[ ul-border-p ] li:hover { background-color: rgb( 253, 204, 253 ); }
+
+[ ul-border-v ] { border: 3px solid rgb( 123, 90, 253 ); }
+[ ul-border-v ] li { color: rgb( 90, 50, 123 ); border-bottom: 2px solid rgb( 123, 90, 253 ); background-color: rgb( 214, 204, 253 ); }
+[ ul-border-v ] li:hover { background-color: rgb( 219, 214, 253 ); }
+
+[ ul-border-w ] { border: 3px solid rgb( 234, 234, 234 ); }
+[ ul-border-w ] li { color: rgb( 123, 123, 123 ); border-bottom: 2px solid rgb( 234, 234, 234 ); background-color: rgb( 253, 253, 253 ); }
+[ ul-border-w ] li:hover { background-color: rgb( 243, 243, 243 ); }
+
+[ ul-border-bwn ] { border: 3px solid rgb( 123, 90, 50 ); }
+[ ul-border-bwn ] li { color: rgb( 90, 50, 10 ); border-bottom: 2px solid rgb( 123, 90, 50 ); background-color: rgb( 243, 234, 204 ); }
+[ ul-border-bwn ] li:hover { background-color: rgb( 234, 204, 150 ); }
+
+[ ul-border-o ] { border: 3px solid rgb( 253, 150, 90 ); }
+[ ul-border-o ] li { color: rgb( 10, 10, 10 ); border-bottom: 2px solid rgb( 253, 150, 90 ); background-color: rgb( 150, 150, 150 ); }
+[ ul-border-o ] li:hover { color: rgb( 50, 50, 50 ); background-color: rgb( 253, 204, 150 ); }
+
+[ ul-border-blk ] { border: 3px solid rgb( 90, 90, 90 ); }
+[ ul-border-blk ] li { color: rgb( 90, 90, 90 ); border-bottom: 2px solid rgb( 90, 90, 90 ); background-color: rgb( 204, 204, 204 ); }
+[ ul-border-blk ] li:hover { background-color: rgb( 214, 214, 214 ); }
+
+[ ul-border-gr ] { border: 3px solid rgb( 123, 123, 123 ); }
+[ ul-border-gr ] li { color: rgb( 90, 90, 90 ); border-bottom: 2px solid rgb( 123, 123, 123 ); background-color: rgb( 204, 204, 204 ); }
+[ ul-border-gr ] li:hover { background-color: rgb( 214, 214, 214 ); }
+
+
+#UL_COLORS{}
+
+
+[ ul-r ] { list-style: none; }
+[ ul-r ] li::before { border: 1px solid rgb( 253, 123, 123 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-g ] { list-style: none; }
+[ ul-g ] li::before { border: 1px solid rgb( 123, 253, 123 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-b ] { list-style: none; }
+[ ul-b ] li::before { border: 1px solid rgb( 123, 123, 253 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-p ] { list-style: none; }
+[ ul-p ] li::before { border: 1px solid rgb( 253, 123, 253 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-v ] { list-style: none; }
+[ ul-v ] li::before { border: 1px solid rgb( 123, 90, 253 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-w ] { list-style: none; }
+[ ul-w ] li::before { border: 1px solid rgb( 243, 243, 243 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-bwn ] { list-style: none; }
+[ ul-bwn ] li::before { border: 1px solid rgb( 123, 90, 50 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-o ] { list-style: none; }
+[ ul-o ] li::before { border: 1px solid rgb( 253, 150, 90 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-blk ] { list-style: none; }
+[ ul-blk ] li::before { border: 1px solid rgb( 90, 90, 90 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+[ ul-gr ] { list-style: none; }
+[ ul-gr ] li::before { border: 1px solid rgb( 150, 150, 150 ); content: ""; font-size: 10px; vertical-align: middle; margin-right: 5px; position: relative; top: -0.9px; border-width: 0px 5.9px; border-radius: 10px; }
+
+
+
+
+
+
+
+input[ type = "submit" ]:active
+{
+	border: 3px solid rgb( 123, 123, 123 );
+}
+
+[ vertical ] { writing-mode: vertical-rl; }
+
+[ fv ] { font-variant: small-caps; }
+
+[ upr ] { text-transform: uppercase; }
+[ lwr ] { text-transform: lowercase; }
+
+
+
+
+
+
+#DISM{}
+
+
+
+
+
+
+.dism
+{
+	background-color: rgb( 234, 234, 234 );
+	z-index: 1400;
+	position: fixed;
+	right: 21px;
+	top: 90px;
+	height: 290px;
+	width: 209px;
+	border-radius: 2px;
+	box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.09), 0 10px 14px 0 rgba(0, 0, 0, 0.09);
+	transition: 0.3s;
+}
+
+.dism:hover
+{
+	background-color: rgb( 243, 243, 243 );
+	z-index: 1400;
+	height: 309px;
+	width: 219px;
+	box-shadow: 0 7px 9px 0 rgba(0, 0, 0, 0.09), 0 14px 19px 0 rgba(0, 0, 0, 0.14);
+}
+
+.dism h2
+{
+	background-color: rgb( 123, 123, 123 );
+	color: rgb( 234, 234, 234 );
+	border-radius: 2px 2px 0px 0px;
+	border-bottom: 2px solid rgb( 150, 150, 150 );
+	font-size: 21px;
+	padding: 5px 25px 5px 10px;
+	margin: 0px;
+	transition: 0.3s;
+}
+
+.dism:hover h2 { background-color: rgb( 150, 150, 150 ); }
+
+.dism h2 span
+{
+	font-size: 14px;
+	position: fixed;
+	top: 97px;
+	right: 34px;
+	font-weight: bold;
+	cursor: default;
+}
+
+.dism h2 span:hover
+{
+	color: rgb( 253, 253, 253 );
+}
+
+.dism div
+{
+	font-size: 17px;
+	padding: 10px;
+	color: rgb( 123, 123, 123 );
+	font-weight: bold;
+}
+
+
+[ dism-r ] h2 { background-color: rgb( 204, 90, 90 ); border-bottom: 2px solid rgb( 234, 90, 90 ); }
+[ dism-r ]:hover h2 { background-color: rgb( 214, 150, 150 ); border-bottom: 2px solid rgb( 204, 123, 123 ); }
+[ dism-g ] h2 { background-color: rgb( 123, 204, 123 ); border-bottom: 2px solid rgb( 90, 150, 90 ); }
+[ dism-g ]:hover h2 { background-color: rgb( 150, 214, 150 ); border-bottom: 2px solid rgb( 90, 204, 90 ); }
+[ dism-b ] h2 { background-color: rgb( 123, 123, 253 ); border-bottom: 2px solid rgb( 123, 123, 204 ); }
+[ dism-b ]:hover h2 { background-color: rgb( 150, 150, 253 ); border-bottom: 2px solid rgb( 150, 150, 204 ); }
+
+[ dism-p ] h2 { background-color: rgb( 253, 123, 253 ); border-bottom: 2px solid rgb( 204, 123, 204 ); }
+[ dism-p ]:hover h2 { background-color: rgb( 253, 150, 253 ); border-bottom: 2px solid rgb( 204, 150, 204 ); }
+
+[ dism-v ] h2 { background-color: rgb( 204, 123, 253 ); border-bottom: 2px solid rgb( 204, 150, 234  ); }
+[ dism-v ]:hover h2 { background-color: rgb( 214, 150, 253 ); border-bottom: 2px solid rgb( 204, 150, 234 ); }
+
+[ dism-w ] h2 { color: rgb( 50, 50, 50 ); background-color: rgb( 243, 243, 243 ); border-bottom: 2px solid rgb( 234, 234, 234 ); }
+[ dism-w ]:hover h2 { color: rgb( 90, 90, 90 ); background-color: rgb( 253, 253, 253 ); border-bottom: 2px solid rgb( 243, 243, 243 ); }
+
+[ dism-bwn ] h2 { background-color: rgb( 123, 90, 50 ); border-bottom: 2px solid rgb( 150, 123, 90 ); }
+[ dism-bwn ]:hover h2 { background-color: rgb( 150, 123, 90 ); border-bottom: 2px solid rgb( 204, 150, 90 ); }
+
+[ dism-o ] h2 { color: rgb( 10, 10, 10 ); background-color: rgb( 253, 150, 90 ); border-bottom: 2px solid rgb( 253, 204, 123 ); }
+[ dism-o ]:hover h2 { color: rgb( 123, 123, 123 ); background-color: rgb( 253, 159, 123 ); border-bottom: 2px solid rgb( 253, 243, 214 ); }
+
+[ dism-blk ] h2 { color: rgb( 10, 10, 10 ); background-color: rgb( 123, 123, 123 ); border-bottom: 2px solid rgb( 10, 10, 10 ); }
+[ dism-blk ]:hover h2 { color: rgb( 90, 90, 90 ); background-color: rgb( 150, 150, 150 ); border-bottom: 2px solid rgb( 123, 123, 123 ); }
+
+[ dism-gr ] h2 { background-color: rgb( 150, 150, 150 ); border-bottom: 2px solid rgb( 123, 123, 123 ); }
+[ dism-gr ]:hover h2 { background-color: rgb( 204, 204, 204 ); border-bottom: 2px solid rgb( 204, 204, 204 ); }
+
+
+
+#USES{}
+
+
+
+.uses
+{
+	position: fixed;
+	right: 0px;
+	bottom: 0px;
+	left: 0px;
+	background-color: rgb( 234, 234, 234 );
+	box-shadow: 9px 9px 9px 9px  rgba(0, 0, 0, 0.09), 9px 9px 9px 9px  rgba(0, 0, 0, 0.09);
+	height: 105px;
+	z-index: 1000;
+	padding: 5px 39px 5px 10px;
+	color: rgb( 90, 90, 90 );
+	border-radius: 5px 5px 0 0;
+	transition: 0.3s;
+}
+
+.uses:hover
+{
+	box-shadow: 9px 9px 9px 9px rgba(0, 0, 0, 0.04), 9px 9px 9px 9px  rgba(0, 0, 0, 0.04);
+	background-color: rgb( 239, 239, 239 );	
+}
+
+.uses h2 span:hover { color: rgb( 90, 90, 90 ); font-weight: bold; }
+
+.uses h2 span 
+{
+	position: fixed; 
+	right: 10px; 
+	bottom: 65px;
+	font-size: 19px;
+	cursor: default;
+	color: rgb( 123, 123, 123 );
+}
+
+
+
+
+[ uses-r ] { color: rgb( 243, 243, 243 ); background-color: rgb( 204, 90, 90 ); }
+[ uses-r ] h2 span { color: rgb( 243, 243, 243 ); }
+[ uses-r ] h2 span:hover { color: rgb( 253, 253, 253 ); }
+[ uses-r ]:hover { background-color: rgb( 214, 150, 150 ); }
+[ uses-g ] { color: rgb( 243, 243, 243 ); background-color: rgb( 123, 204, 123 ); }
+[ uses-g ] h2 span { color: rgb( 243, 243, 243 ); }
+[ uses-g ] h2 span:hover { color: rgb( 253, 253, 253 ); }
+[ uses-g ]:hover { background-color: rgb( 150, 214, 150 ); }
+[ uses-b ] { color: rgb( 243, 243, 243 ); background-color: rgb( 123, 123, 253 ); }
+[ uses-b ] h2 span { color: rgb( 243, 243, 243 ); }
+[ uses-b ] h2 span:hover { color: rgb( 253, 253, 253 ); }
+[ uses-b ]:hover { background-color: rgb( 150, 150, 253 ); }
+
+[ uses-p ] { color: rgb( 243, 243, 243 ); background-color: rgb( 253, 123, 253 ); }
+[ uses-p ] h2 span { color: rgb( 243, 243, 243 ); }
+[ uses-p ] h2 span:hover { color: rgb( 253, 253, 253 ); }
+[ uses-p ]:hover { background-color: rgb( 253, 150, 253 ); }
+
+[ uses-v ] { color: rgb( 243, 243, 243 ); background-color: rgb( 204, 123, 253 ); }
+[ uses-v ] h2 span { color: rgb( 243, 243, 243 ); }
+[ uses-v ] h2 span:hover { color: rgb( 253, 253, 253 ); }
+[ uses-v ]:hover { background-color: rgb( 214, 150, 253 ); }
+
+[ uses-w ] { color: rgb( 50, 50, 50 ); background-color: rgb( 243, 243, 243 ); }
+[ uses-w ]:hover { color: rgb( 90, 90, 90 ); background-color: rgb( 253, 253, 253 ); }
+
+[ uses-bwn ] { color: rgb( 243, 243, 243 ); background-color: rgb( 123, 90, 50 ); }
+[ uses-bwn ] h2 span { color: rgb( 243, 243, 243 ); }
+[ uses-bwn ] h2 span:hover { color: rgb( 253, 253, 253 ); }
+[ uses-bwn ]:hover { background-color: rgb( 150, 123, 90 ); }
+
+[ uses-o ] { color: rgb( 10, 10, 10 ); background-color: rgb( 253, 150, 90 ); }
+[ uses-o ]:hover { color: rgb( 123, 123, 123 ); background-color: rgb( 253, 159, 123 ); }
+
+[ uses-blk ] { color: rgb( 10, 10, 10 ); background-color: rgb( 123, 123, 123 ); }
+[ uses-blk ] h2 span { color: rgb( 50, 50, 50 ); }
+[ uses-blk ] h2 span:hover { color: rgb( 10, 10, 10 ); }
+[ uses-blk ]:hover { background-color: rgb( 150, 150, 150 ); }
+
+[ uses-gr ] { color: rgb( 50, 50, 50 ); background-color: rgb( 150, 150, 150 ); }
+[ uses-gr ] h2 span { color: rgb( 50, 50, 50 ); }
+[ uses-gr ] h2 span:hover { color: rgb( 10, 10, 10 ); }
+[ uses-gr ]:hover { background-color: rgb( 204, 204, 204 ); }
+
+
+
+#PREF{}
+
+
+
+.pref
+{
+	position: fixed;
+	right: 43px;
+	bottom: 0px;
+	border: 3px solid rgb( 123, 123, 123 );
+	z-index: 9000;
+	padding: 5px 10px;
+	border-radius: 10px 10px 0px 0px;
+	border-bottom: none;
+	background-color: rgb( 234, 234, 234 );
+}
+
+.pref:hover { background-color: rgb( 243, 243, 243 ); }
+
+.pref span
+{
+	font-weight: bold;
+	color: rgb( 123, 123, 123 );
+	cursor: default;
+}
+
+.pref span:hover { color: rgb( 90, 90, 90 ); }
+
+
+[ pref-r ] { background-color: rgb( 234, 123, 123 ); border-color: rgb( 243, 150, 150 ); }
+[ pref-r ]:hover { background-color: rgb( 204, 90, 90 ); }
+[ pref-r ] span { color: rgb( 234, 234, 234 ); }
+[ pref-r ] span:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-g ] { background-color: rgb( 123, 234, 123 ); border-color: rgb( 150, 243, 150 ); }
+[ pref-g ]:hover { background-color: rgb( 90, 204, 90 ); }
+[ pref-g ] span { color: rgb( 234, 234, 234 ); }
+[ pref-g ] span:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-b ] { background-color: rgb( 123, 123, 234 ); border-color: rgb( 150, 150, 243 ); }
+[ pref-b ]:hover { background-color: rgb( 90, 90, 204 ); }
+[ pref-b ] span { color: rgb( 234, 234, 234 ); }
+[ pref-b ] span:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-p ] { background-color: rgb( 234, 123, 234 ); border-color: rgb( 243, 150, 243 ); }
+[ pref-p ]:hover { background-color: rgb( 204, 90, 204 ); }
+[ pref-p ] span { color: rgb( 234, 234, 234 ); }
+[ pref-p ] span:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-v ] { background-color: rgb( 150, 123, 234 ); border-color: rgb( 150, 150, 253 ); }
+[ pref-v ]:hover { background-color: rgb( 150, 90, 234 ); }
+[ pref-v ] span { color: rgb( 234, 234, 234 ); }
+[ pref-v ] span:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-w ] { background-color: rgb( 234, 234, 234 ); border-color: rgb( 253, 253, 253 ); }
+[ pref-w ]:hover { background-color: rgb( 204, 204, 204 ); }
+
+[ pref-gr ] { background-color: rgb( 150, 150, 150 ); border-color: rgb( 90, 90, 90 ); }
+[ pref-gr ]:hover { background-color: rgb( 123, 123, 123 ); }
+[ pref-gr ] span { color: rgb( 234, 234, 234 ); }
+[ pref-gr ] span:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-blk ] { background-color: rgb( 150, 150, 150 ); border-color: rgb( 50, 50, 50 ); }
+[ pref-blk ]:hover { background-color: rgb( 123, 123, 123 ); }
+[ pref-blk ] span { color: rgb( 50, 50, 50 ); }
+[ pref-blk ] span:hover { color: rgb( 10, 10, 10 ); }
+
+[ pref-bwn ] { background-color: rgb( 150, 123, 90 ); border-color: rgb( 90, 50, 10 ); }
+[ pref-bwn ]:hover { background-color: rgb( 123, 90, 50 ); }
+[ pref-bwn ] span { color: rgb( 234, 234, 234 ); }
+[ pref-bwn ] span:hover { color: rgb( 253, 253, 253 ); }
+
+[ pref-o ] { background-color: rgb( 253, 159, 123 ); border-color: rgb( 123, 123, 123 ); }
+[ pref-o ]:hover { background-color: rgb( 253, 150, 90 ); }
+

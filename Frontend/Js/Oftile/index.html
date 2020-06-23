@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+		<!-- Include Oftile before </html>! -->
+
+<html>
+
+
+	<head>
+
+		<meta name="viewpoft" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+
+		<style>
+			
+			html { color: rgb( 10, 10, 10 ); font-family: Arial; }
+			span { font-family: initial; }
+
+		</style>
+
+
+		<title> Oftile </title>
+	
+	</head>
+
+
+	<body>
+
+		<h2>h2: Welcome!</h2>
+		<h5>h5: Every h5-s are prevented! </h5>
+		<h2>h2: All h2-s will have a title! </h2>
+		<h5>h5: Even so, h5-s are prevented! </h5>
+
+
+		<p id="paragraph" class="class1 class2" title="title" style="padding: 0px; padding: 0px; padding: 0px; padding: 0px; padding: 0px; padding: 0px; padding: 0px; ">p: with <span>id="paragraph"</span> </p>
+
+		<p id="style" title="Its 'title' remains the same! ( this was the title in html )">p: with <span>id="style"</span> <b>will really not make sense!</b> ( tag: "style" might already be elsewhere ) </p>
+
+		<p class="class1 class2" title="title">p: with <span>class="class1 class2"</span> </p>
+
+		<p id="attr_paragraph" attr="attr" title="title">p: with <span>attr="attr"</span> </p>
+
+		<p attr="paragraph_attr" title="title">p: with <span>attr="paragraph_attr"</span> </p>
+
+	</body>
+
+
+		<!-- Include oftile -->
+		<script src="oftile/oftile.js" ></script>
+		<script>
+
+			// For all with Tag Name: "h2"
+			oftile ( "h2" );
+
+
+			// Preventing oftile for Tag Name: "h5" ( could be Id, Attribute / Class Name )
+			oftile_prevent ( "h5" );
+			oftile ( "h5" );
+
+			
+			// For all with Class / Id: "paragraph", "class2"
+			oftile ( "paragraph" );
+			oftile ( "class2" );
+
+			// For "style": oftile ( "style" ); ( prevented! ) will cause issues with any css styling
+
+			// For all with Attribute: "attr" / Attribute value: "paragraph_attr"
+			oftile ( "attr" );
+			oftile ( "paragraph_attr" );
+
+			// Invalid Tag Names / Classes / Id-s will be alerted
+			oftile ( "invalid" );
+			oftile ( "invalid" );
+			oftile ( "invalid_tag" );
+			oftile ( "invalid_attr" );
+			oftile ( "invalid_attr" );
+			oftile ( "invalid_id" );
+			oftile ( "invalid_class" );
+
+			// For all: oftile ();
+
+		</script>
+
+
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+
+
+
+
+		<title> Scrpts </title>
+
+		<style> html { display: none; } </style>
+
+	</head>
+
+
+
+
+
+
+	<body>
+
+
+
+
+		<title> Welcome </title>
+
+
+
+
+		<content>
+
+			<p_bold s="" > Make your own tags! For example this is a: "p_bold" </p_bold>
+
+
+			<p_bold visible="set"> And this: <tag>name of tag</tag> is a "tag" in a "p_bold"! </p_bold>
+
+			<p s > Also, default tags ( "p" ) are not affected. <b>Visible Attrib:</b> </p>
+			
+			<script visible="set">
+				console.log( "set" );
+				console.log( "set" );
+			</script>
+
+			<border_img img="linear-gradient( rgb( 123, 123, 123 ), rgb( 234, 234, 234 ) )" ></border_img>
+
+			<eb> Extra-Bold </eb>
+			<du> Double Underline </du>
+			<ub> Bold Underline </ub>
+	
+			<border_a href="#"> Border href </border_a>
+
+
+		</content>
+
+		<p> Border </p>
+
+
+		<leave leave_title="Leave" leave_color="gr" on_leave > Leave Div </leave> 
+		<dism dism_title="Dism" dism_color="gr"> Dism div 1 </dism>
+		<uses uses_color="gr"> Uses Uses Uses Uses Uses Uses Uses Uses Uses Uses Uses Uses Uses  </uses>
+
+
+
+		<columns>
+			
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+			<p> Column </p>
+
+		</columns>
+
+
+		<collapse collapse_title="Collapse">
+			
+			Collapsed
+
+		</collapse>
+
+
+		<collapse collapse_title="Collapse">
+			
+			Collapsed
+
+		</collapse>
+
+
+
+		<prlx height="90px" ></prlx>
+
+
+
+		<content>
+			
+			<h2> Welcome! </h2>
+
+
+
+
+
+			<persp>
+				
+				<div> Div in persp <div> Div in persp </div></div>
+
+			</persp>
+
+
+
+
+
+			<cn style="border: 2px solid rgb( 123, 123, 123 );">
+				
+				<div> Div in cn </div>
+				<div> Div in cn </div>
+				<div> Div in cn </div>
+
+			</cn>
+
+		</content>
+
+
+
+
+
+
+
+
+
+		<dpdn dpdn_title="Dpdn" dpdn-gr>
+		
+			<a href="#"> Dpdn 1 2 3 4 5</a>
+			<a href="#"> Dpdn 2 </a>
+			<a href="#"> Dpdn 3 </a>
+			<a href="#"> Dpdn 4 </a>
+			<a href="#"> Dpdn 5 </a>
+
+		</dpdn>
+
+		<p right-num="905"> Right-Num </p>
+
+
+		<nav style="background-color: rgb( 234, 234, 234 ); padding: 10px;">
+
+			nav
+
+			<dpdn dpdn_title="Dpdn in nav">
+				
+				<a href="#"> Dpdn 1 2 3 4 5</a>
+				<a href="#"> Dpdn 2</a>
+				<a href="#"> Dpdn 3 </a>
+				<a href="#"> Dpdn 4 </a>
+				<a href="#"> Dpdn 5 </a>
+
+			</dpdn>
+
+		</nav>
+
+
+
+
+
+
+
+
+		<prlx img="linear-gradient( rgb( 123, 123, 123 ), rgb( 234, 234, 234 ) )" >
+
+			<about>
+			
+				<p> About our image. </p>
+
+			</about>
+
+			<div style="width: 10px;"></div>
+
+			<title_img img="linear-gradient( rgb( 123, 123, 123 ), rgb( 234, 234, 234 ) )" >Our Image</title_img>
+
+		</prlx>
+
+
+
+
+
+
+
+		<pref pref_color="blk" >
+			<a> Mute </a>
+			<a> Full </a>
+		</pref>
+
+
+
+
+
+
+
+		<content>
+			
+			<h2> Welcome! </h2>
+
+		</content>
+
+
+		<prlx>
+
+			<contact>
+			
+				<h2> Contact </h2>
+
+				<p> Details </p>
+				<p> Details </p>
+				<p> Details </p>
+
+			</contact>
+
+		</prlx>
+
+
+	</body>
+
+		
+
+
+		<script src="scrpts/scripts.js"></script>
+		<style> .p_bold { font-weight: bold; display: block; } </style> <!-- Your own tag!  -->
+		<script>
+			add_tag( "p_bold", "p_bold" ); // Add your own tag! ( tag_name, class_name )
+			set_tags();
+
+			// title, content ( and color if you want )
+
+			// set_leave( "Leave 1", "Leave Div", "blk" ); // Shown on load
+			// set_dism( "Dism", "Dism div", "blk" ); // Same as with tag
+			// set_uses( "Uses 1", "blk" ); // Same as with tag
+
+		</script>
+
+		<style> html { display: initial; } </style>
+
+</html>

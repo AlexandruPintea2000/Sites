@@ -1,0 +1,34 @@
+<title> Delete Contact </title>
+	
+
+<style> 
+
+	input { font-size: 21px; padding: 5px 10px; }
+
+</style>
+
+</head>	<body>
+
+
+	<h2> Delete Contact: "<script> ech( data.contact ); </script>" </h2>
+	<p> of: <script> ech( data.firstname + ' ' + data.lastname ); </script>? </p>
+
+	<form>
+
+		<script> ech( '<input type="hidden" name="id" value="' + data.id + '" ></input>' ); </script>
+
+		<input type="submit" value="Delete" ></input>
+
+	</form>
+
+
+
+
+	<script> ech( "<p> <a href=\"/index.js?path=user_controller/view/" + data.user_id + "\"> Return to " + data.firstname + ' ' + data.lastname + "</a> </p>" ); </script>
+
+
+	<p> <a href="/index.js?path=user_controller/index"> Return to Users </a> </p>
+
+	</body>
+
+</html>

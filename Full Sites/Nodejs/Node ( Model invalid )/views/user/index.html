@@ -1,0 +1,58 @@
+
+<title> Users </title>
+
+</head> <body>
+
+	<h1> All Users </h1>
+	
+	<div class="div_center">
+	<table>
+	<tr> <th> Person </th> <th> Options </th> </tr>
+	<script>
+
+	function get_contacts_through_user_id( id )
+	{
+		var user_contacts = [];
+		var l = 0;
+
+		for ( var i = 0; i < contacts.length; i = i + 1 )
+			if ( contacts[i].user_id == id )
+			{
+				user_contacts[l] = contacts[i];
+				l = l + 1;
+			}
+
+		return user_contacts;
+	}
+
+	var users = data;
+
+	for ( var i = 0; i < users.length; i = i + 1 )
+	{
+		var temp = users[i].firstname + ' ' + users[i].lastname;
+		var user_contacts = get_contacts_through_user_id( users[i].id );
+		if ( user_contacts.length != 0 )
+		{
+			temp = temp + " has contacts: \n";
+			for ( var l = 0; l < user_contacts.length; l = l + 1 )
+		
+				temp = temp + "  " + user_contacts[l].contact + "\n";
+		}
+		else
+			temp = temp + ":\n  Does not have contacts yet."
+
+		ech( "<tr> <td> <a href=\"/index.js?path=user_controller/view/" + users[i].id + "\" title=\"" + temp + "\" > " + users[i].firstname + ' ' + users[i].lastname );
+
+
+		ech( " </a> </td> <td class=\"options\"> <a href=\"/index.js?path=contact_controller/add/" + users[i].id + "\"> Add Contact </a> </td> </tr>" );
+	}
+
+
+	</script>
+	</table>
+	</div>
+
+
+
+	<div style="height: 21px;"></div>
+	<a href="/index.js?path=user_controller/add"> Add User </a>

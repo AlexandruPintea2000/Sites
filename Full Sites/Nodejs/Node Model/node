@@ -1,0 +1,6 @@
+if [ nodejs ]
+then
+	killall -9 nodejs
+fi
+
+nodejs index.js

@@ -1,0 +1,43 @@
+#div_alert
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+#alert 
+{
+	max-width: 45%;
+	min-width: 210px;
+	background-color: rgba( 243, 243, 243, 0.959 );
+	text-align: center;
+	position: fixed;
+	transition: 0.3s;
+
+	font-size: 25px;
+	color: rgb( 90, 90, 90 );
+	border-radius: 10px;
+	padding: 15px 10px;
+
+	top: -140px;
+
+	border: 1px solid rgb( 234, 234, 234 );
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.09);
+}
+
+#alert:hover
+{
+	border: 1px solid rgb( 204, 204, 204 );
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 4px 4px 0 rgba(0, 0, 0, 0.09);
+}
+
+
+@media screen and ( max-width: 900px )
+{
+	#alert
+	{
+		font-size: 17px;
+		padding: 9px 5px;
+	}
+}

@@ -1,0 +1,459 @@
+
+<head>
+	
+	<title> Parts </title>	
+	<link rel="stylesheet" href="/Procres/files/style.css">
+
+</head>
+
+<style>
+	
+	html 
+	{
+
+		padding: 10px;
+	}
+
+
+
+
+	.parts_html_title span
+	{
+		border: 3px solid rgb( 204, 204, 204 );
+		padding: 5px 10px;
+		padding-left: 25%;
+		font-size: 29px;
+		color: rgb( 90, 90, 90 );
+		border-radius: 10px;
+	}
+
+	.parts_html_div 
+	{
+		border: 3px solid rgb( 123, 123, 123 );
+		border-radius: 9px;
+		padding: 10px 10px 14px 10px;
+		border-width: 5px 9px 5px 2px;
+		margin: 34px 0px;
+		line-height: 21px;
+	}
+
+
+	p 
+	{
+		margin: 2px 2px 14px 2px;
+	}
+
+	a
+	{
+		text-decoration: none;
+	}
+
+	b
+	{
+		color: rgb( 90, 90, 90 );
+	}
+
+	ul
+	{
+		padding: 0px;
+		margin: 0px 21px;
+	}
+
+	nav a
+	{
+		font-size: 17px !important;
+	}
+
+	.add_part_href
+	{
+		background-color: rgb( 234, 234, 234 );
+		font-weight: bold;
+		color: rgb( 123, 123, 123 );
+		padding: 2px 10px;
+		border: 1px solid rgb( 204, 204, 204 );
+		line-height: 17px;
+	}
+
+	.add_part_href:hover
+	{
+		background-color: rgb( 234, 234, 234 );
+		font-weight: bold;
+		color: rgb( 123, 123, 123 );
+		padding: 2px 10px;
+		border: 1px solid rgb( 204, 204, 204 );
+	}
+
+	.parts_html_b 
+	{
+		font-size: 1.2em;
+	}
+
+	#return_href
+	{
+		font-size: 14px !important;
+		line-height: 21px;
+		position: absolute;
+		right: 34px;
+	}
+
+</style>
+
+
+<nav>
+	
+	<a href="#users"> Users</a>
+	<a href="#contracts"> Contracts</a>
+	<a href="#parts"> Parts</a>
+	<a href="#tasks"> Tasks / Part tasks</a>
+
+	<a id="return_href" href="/Procres/index.php"> Return</a>
+
+</nav>
+<div style="height: 5px;'"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Welcome!</span></h3>
+
+
+
+	<div style="height: 5px;'"></div>
+
+	<p><b class="parts_html_b">Completed Config</b> <br>
+	 If you have completed config., you were loaded with "Config Data" ( also called "Default Data" ). <br> 
+	 You will be able to view / edit / delete: <b>Users</b>, <b>Contracts</b>, <b>Parts</b> and <b>Tasks</b>. <br>
+	 When you are done with that data, delete it. <br> 
+	 If you have data of your own along "Config Data", <b>deleting "Config Data" will not affect your data.	</b> </p>
+
+	<p><b class="parts_html_b">Make Users</b> <br>
+	 You are able to either: <b>make users</b> or <b>let them make their own user</b><br> 
+	 If you want to make users yourself, you have this option if you are an admin. <br>
+	 Or, if you want them to make their own users, you should send them an <b>Initialization Email</b> with an <b>Initialization Id</b>. 
+
+	 <p><b class="parts_html_b">Contracts:</b> <br>
+
+	 <b>Make a Contract</b> <br>
+	 In order to make a contract you have to have users for your employees and your client. <br>
+	 <b>Make Parts for it</b> <br>
+	 Make parts for your contract, setting part names.<br>
+	 <b>Add Users to Parts</b> <br>
+	 Add Users to be able to give them tasks for their parts. <br>
+	 <b>Add Part tasks to those users</b> <br>
+	 Add Part tasks to users. </p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Users -->
+
+
+
+
+<p style="margin-top: -54px; left: -500px; font-size: 40px; position: absolute;" id="users" > span </p>
+
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Users</span></h3>
+
+
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b>Contracts are made with a client only.</b> If you want to make a contract with more, they will have to make a user together. </p>
+	<p> Even so, you are able to mention their names either within firstname / lastname of the user, or in contract details. </p>
+	<p> <b>Users have:</b> </p>
+	<ul>
+		<li> Username </li>
+		<li> Password </li>
+		<li> Firstname </li>
+		<li> Lastname </li>
+		<li> Email </li>
+		<li> Type ( <span style="font-size: 14px;"> <b>client</b>, <b>employee</b> or <b>admin</b> </style> ) </li>
+	</ul>
+	<p style="font-size: 14px; line-height: 14px;">( and an id )</p>
+
+	<div style="height: 5px;"></div>
+
+ 	<p>Restrictions are not made concerning how many users ( clients / employees / admins ) there might be.</p>
+
+
+</div>
+
+
+
+<!-- User Types -->
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>User types</span></h3>
+
+
+
+	<p> User types are: <b>client</b>, <b>employee</b>, <b>admin</b>. </p> 
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b class="parts_html_b">Clients: </b> are able to view <a href="#client_views">"client views"</a>, where they are shown their contracts with their part progress and details. </p>
+	<p> <b class="parts_html_b">Employees: </b> are able to view almost as much as an admin, but they are <b>only allowed to edit part progress / part tasks of contracts that were assigned to them</b> by an admin. <br> Employees are not able to make contracts, parts for them or give themselves tasks. However, they are able to <a href="#completing_parts">complete parts</a> or <a href="#finalizing_contracts">finalise contracts</a>. </p>
+	<p> <b class="parts_html_b">Admins: </b> are able to make contracts, parts for them, give tasks to themselves and employees as well as edit anything. </p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Parts -->
+
+
+
+
+<p style="margin-top: -54px; left: -500px; font-size: 40px; position: absolute;" id="parts" > span </p>
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Parts</span></h3>
+
+
+	<p> <b>Parts</b> are what a contract is made of. </p>
+
+	<p> <b>Parts have:</b> </p>
+	<ul>
+		<li> Part name</li>
+		<li> Client </li>
+		<li> Progress </li>
+	</ul>
+	<p style="font-size: 14px; line-height: 14px;">( and an id )</p>
+
+	<p> In order to make a part, you have to also add it to a contract. So, <b>you have to have a contract to make a part for it</b>. </p>
+	<p> Parts are <b>completed</b> when they have reached 100% in progress. </p>
+
+</div>
+
+<!-- Part Types -->
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Part types</span></h3>
+
+
+
+
+
+	<p> Part types are: <b>completed</b> or not completed. </p> 
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b class="parts_html_b">Completed parts: </b> are parts thath are 100% completed.</p>
+
+	<div style="height: 5px;'"></div>
+	
+	<p><b class="parts_html_b">Users are not shown tasks for Completed Parts!</b></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Contracts -->
+
+
+
+
+<p style="margin-top: -54px; left: -500px; font-size: 40px; position: absolute;" id="contracts" > span </p>
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Contracts</span></h3>
+
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b>Contracts are made with a client only.</b> If you want to make a contract with more, they will have to make a user together. </p>
+	<p> Even so, you are able to mention their names either within firstname / lastname of the user, or in contract details. </p>
+	<p> <b>Contracts have:</b> </p>
+	<ul>
+		<li> Contract name</li>
+		<li> Client </li>
+		<li> Details </li>
+		<li> Contract date </li>
+		<li> Deadline date </li>
+	</ul>
+	<p style="font-size: 14px; line-height: 14px;">( and an id )</p>
+<!--  	<p>Restrictions are not made concerning how many users ( clients / employees / admins ) there might be.</p>
+ -->
+
+</div>
+
+<!-- Contract Types -->
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Contract types</span></h3>
+
+
+
+	<p> Contract types are: <b>obsolete</b>, <b>finalised</b>, <b>finalised and obsolete</b>, <b>interesting</b>, <b>final month</b> and <b>deleted</b>. </p> 
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b class="parts_html_b">Obsolete Contracts: </b> are contracts that have passed their deadline date. <span class="add_part_href">Decide if you delete / edit deadline</span></p>
+	<p> <b class="parts_html_b">Finalised <span style="font-size: 14px;">( or Done )</span> Contracts: </b> are contracts that have all parts completed ( meaning all parts are 100% finalised ). <span class="add_part_href">Delete</span></p>
+	<p> <b class="parts_html_b">Finalised <span style="font-size: 14px;">( or Done )</span> and Obsolete Contracts: </b> are contracts that are both done and obsolete, meaning that you should delete them. <span class="add_part_href">Delete / edit deadline</span> </p>
+
+	<p> <b class="parts_html_b">Interesting Contracts: </b> are contracts that are not   obsolete or finalised ( done ).</p>
+
+	<p> <b class="parts_html_b">Final Month Contracts: </b> are contracts that have their deadline            month.</p>
+	<p> <b class="parts_html_b">Deleted Contracts: </b> are contracts that were deleted, of course. When an admin deletes a contract, all of its details ( parts, part tasks, deadline, client name ) are saved in a format that is <b>not editable</b>. Also, admins are not able to delete a deleted contract. </p>
+
+
+	<div style="height: 5px;'"></div>
+	
+	<p><b class="parts_html_b">Users are not shown tasks for Finalised Contracts!</b></p>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Tasks / Part tasks -->
+
+<p style="margin-top: -54px; left: -500px; font-size: 40px; position: absolute;" id="tasks" > span </p>
+
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Tasks / Part tasks</span></h3>
+
+
+	<div style="height: 5px;'"></div>
+
+	<p> ( <b>Tasks are given on Contract Parts.</b> So, you have to have a Contract, then Parts for it then Tasks for the parts. ) </p>
+	<p> ( <b>Part Tasks are given on Tasks.</b> So, you have to have a tasks for all contract parts, then add part tasks to those. ) </p>
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b class="parts_html_b">Even so, it is not complcated: Give tasks on Contract Parts. </b> </p>
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b>Tasks have:</b> </p>
+	<ul>
+		<li> User ( <span style="font-size: 14px;"> <b>employee</b> or <b>admin</b> </style> ) </li>
+		<li> Part ( that you have made within a contract ) </li>
+	</ul>
+	<p style="font-size: 14px; line-height: 14px;">( and an id )</p>
+
+
+	<div style="height: 5px;'"></div>
+
+
+	<p> <b>Part tasks have:</b> </p>
+	<ul>
+		<li> Details ( a line with the actual task ) </li>
+		<li> Task ( telling us what contract <b>Part</b> and <b>User</b> the task is for ) </li>
+	</ul>
+
+
+	<div style="height: 5px;'"></div>
+
+
+	<p>You cannot give the same task to the same user on the same contract part twice.</p>
+
+</div>
+
+
+
+<!-- Part task Types -->
+
+<div class="parts_html_div">
+
+	<h3 class="parts_html_title"><span>Part task types</span></h3>
+
+
+
+	<p> Part task types are: <b>given</b> and <b>completed</b>. </p> 
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b class="parts_html_b">Given part tasks: </b> are part tasks that were not yet completed </p>
+	<p> <b class="parts_html_b">Completed part tasks: </b> are part tasks that were said to be completed ( either by the task user or any admin ).</p>
+
+	<div style="height: 5px;'"></div>
+
+	<p> <b class="parts_html_b">Completing tasks does not complete Parts! </b> ( Part progress and Part tasks are separated completly ).</p>
+
+</div>
+

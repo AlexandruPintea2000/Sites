@@ -1,0 +1,46 @@
+
+<script> document.title = data.firstname + ' ' + data.lastname; </script>
+
+<style>
+
+	p { font-size: 21px; font-weight: bold; color: rgb( 90, 90, 90 ); }
+	h2 { color: rgb( 123, 123, 123 ); }
+
+</style>
+
+</head> <body>
+
+	<h1> <script> ech( data.firstname + ' ' + data.lastname ); </script> </h1>
+	
+	<script>
+
+	var user_contacts = data.contacts;
+	if ( user_contacts.length != 0 )
+	{
+		ech( "<h2> Contacts: </h2>" );
+
+		ech( "<div class=\"div_center\"> <table> <tr> <th>Contact</th> <th>Options</th>  </tr>" );
+
+		for ( var i = 0; i < user_contacts.length; i = i + 1 )
+		{
+			ech( "<tr> <td> " + user_contacts[i].contact + "</td>" );
+			ech ( "<td class=\"options\"> <a href=\"/index.js?path=contact_controller/edit/" + user_contacts[i].id + "\"> Edit </a>" );
+			ech ( " / <a href=\"/index.js?path=contact_controller/dlte/" + user_contacts[i].id + "\"> Delete </a>" );
+			ech( "</td> </tr>" );
+		}
+
+		ech( "</table> </div>" );
+	}
+	else
+		ech( "<p> Does not have contacts yet. </p>" );
+	
+
+	ech( "<p> <a href=\"index.js?path=contact_controller/add/" + data.id + "\"> Add Contact </a> </p>" );
+	ech( "<div class=\"edit\"> <span> <a href=\"index.js?path=user_controller/edit/" + data.id + "\"> Edit </a>" );
+	ech( " / <a href=\"index.js?path=user_controller/dlte/" + data.id + "\"> Delete </a>" + data.firstname + ' ' + data.lastname + "  </span> </div>" );
+
+	</script>
+
+	<div style="height: 21px;"></div>
+	<a href="/index.js?path=user_controller"> Return to Users </a>
+

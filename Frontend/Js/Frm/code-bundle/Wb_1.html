@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<script src="jquery.min.js"></script>
+	
+	<link rel="stylesheet" href="bstrap/css/bootstrap.css">
+	<script src="bstrap/js/bootstrap.js"></script>
+
+	<link rel="stylesheet" href="foundation/css/foundation.css">
+	<script src="foundation/js/foundation.js"></script>
+
+	<script src="react/react.js"></script>
+	<script src="react/react-dom.js"></script>
+
+	<!-- Pus aici -->
+
+</head>
+
+<body>
+	<div id="example"></div>
+	<script type="text/javascript">
+// create a React element rElement
+var rElement = React.createElement('h1', null, 'Hello, world!');
+// dElement is a DOM container
+var dElement = document.getElementById('example');
+// render the React element in the DOM container
+ReactDOM.render(rElement, dElement);
+</script>
+</body>
+</html>

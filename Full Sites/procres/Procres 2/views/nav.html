@@ -1,0 +1,99 @@
+
+<link rel="stylesheet" href="/Procres/files/style.css">
+
+
+
+
+<!--
+
+	<style>
+
+		#lower_nav
+		{
+			height: 20px;
+			width: 85%;
+			position: fixed;
+			background-color: rgb( 234, 234, 234 );
+			bottom: 0px;
+			left: 14%;
+			z-index: 1020;
+			border-top: 3px solid rgb( 204, 204, 204 );	
+			border-radius: 0px 10px 0px 0px;	
+		}
+
+		#lower_nav a
+		{
+			font-size: 14px;
+			text-decoration: none;
+			font-weight: 500;
+			margin-left: 20px;
+		}
+
+	</style>
+
+-->
+
+
+<nav> 
+
+	<a id="nav_a_users"    href="index.php?path=user_controller"> Users </a>
+	<a href="index.php?path=contract_controller"> Contracts </a>
+	<a href="index.php?path=part_controller"> Parts </a>
+	<a href="index.php?path=task_controller"> Tasks </a>
+
+	<a id="nav_sign_out" href="index.php?path=sign_in_controller/user_sign_out"> Sign out </a>
+
+</nav>
+
+<br> <br>
+
+<div id="left_nav">
+
+	<br>
+	<br>
+
+	<a class="left_nav_border_href" href="index.php?path=user_controller"> <p> Users </p> </a>
+	<a class="left_nav_border_href" href="index.php?path=contract_controller"> <p> Contracts </p> </a> 
+	<a class="left_nav_border_href" href="index.php?path=part_controller"> <p> Parts </p> </a> 
+	<a class="left_nav_border_href" href="index.php?path=task_controller"> <p> Tasks </p> </a> 
+
+<!--<br> -->
+
+	<span class="maker" >
+		<a class="left_nav_href" href="index.php?path=user_controller/create"> <p> Make User </p> </a> 
+		<a class="left_nav_href" href="index.php?path=contract_controller/create"> <p> Make Contract </p> </a> 
+		<a class="left_nav_href" href="index.php?path=part_controller/create"> <p> Make Part </p> </a> 
+		<a class="left_nav_href" href="index.php?path=task_controller/create"> <p> Make Task </p> </a> 
+
+		<br>
+	</span>
+
+
+<!-- 	
+	<a class="left_nav_href" style="font-size: 0.74rem;" href="index.php?path=contract_controller/view_deleted_contracts"> <p style="border-radius: 0px 10px 10px 0px; margin-right: 5px;"> View Deleted Contracts </p> </a> 
+
+	<br>
+-->
+
+
+	<a class="left_nav_href" href="index.php?path=config_controller/save_database"> <p> Save Database </p> </a> 
+	<a class="left_nav_href" href="index.php?path=contract_controller/view_contracts"> <p> View Contracts </p> </a> 
+	<a class="left_nav_href" href="index.php?path=user_controller/email/-1"> <p> Email Users </p> </a> 
+	<a class="left_nav_href" href="index.php?path=user_controller/admin_view"> <p> View Users - Details </p> </a> 
+
+
+	<a id="left_nav_sign_out" href="index.php?path=sign_in_controller/user_sign_out"> <p> Sign out </p> </a> 
+
+
+</div>
+
+
+<!--
+
+<div id="lower_nav">
+
+	<a href="index.php?path=user_controller/create"> Make User </a>
+
+</div>
+
+ -->

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+		<title>  </title>
+	
+
+		<style> html { font-family: Arial; } input { padding: 10px; border-radius: 2px; border: 1px solid rgb( 123, 123, 123 ); outline: none; } </style>
+
+	</head>
+
+
+	<body>
+
+		<h2> Welcome to Ajax! </h2>
+
+
+
+
+		<input type="text" onkeyup="showHint(this.value)"></input>
+		<p> Result: <span id="txtHint"></span> </p>
+
+
+		<script>
+
+		function showHint(str) {
+
+			if (str.length == 0) 
+			{
+				document.getElementById("txtHint").innerHTML = "";
+				return;
+			} 
+			else 
+			{
+				var xmlhttp = new XMLHttpRequest();
+
+				xmlhttp.onreadystatechange = function() 
+				{
+					if (this.readyState == 4 && this.status == 200) 
+					{
+						document.getElementById("txtHint").innerHTML = this.responseText;
+					}	
+				};
+
+				xmlhttp.open("GET", "gethint.php?q=" + str, true);
+				xmlhttp.send();
+			}
+		}
+		</script>
+
+	</body>
+
+</html>

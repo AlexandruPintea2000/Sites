@@ -1,0 +1,28 @@
+<title> Edit Contact </title>
+
+</head>	<body>
+
+
+	<h2> Edit Contact: "<script> ech( data.contact ); </script>" </h2>
+	<p> of: <script> ech( data.firstname + ' ' + data.lastname ); </script> </p>
+
+	<form>
+
+		<script> ech( '<input type="text" name="contact" placeholder="' + data.contact + '" value="' + data.contact + '" > </input> ' ); </script>
+
+
+		<input type="submit"></input>
+
+	</form>
+
+
+
+
+	<script> ech( "<p> <a href=\"/index.js?path=user_controller/view/" + data.user_id+ "\"> Return to " + data.firstname + ' ' + data.lastname + "</a> </p>" ); </script>
+
+
+	<p> <a href="/index.js?path=user_controller/index"> Return to Users </a> </p>
+
+	</body>
+
+</html>

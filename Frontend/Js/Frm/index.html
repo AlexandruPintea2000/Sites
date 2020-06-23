@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- ---------------------- Size set   -->
+
+	<meta charset="utf-8"> <!-- -------------------------------------------------------------------- Charset    -->
+
+
+	<script src="code-bundle/jquery.min.js"></script> <!-- ----------------------------------------- jQuery     -->
+
+	<script src="code-bundle/angular.min.js"></script> <!-- ---------------------------------------- Angular    -->
+
+	<script src="code-bundle/react/react.js"></script> <!-- ---------------------------------------- React      -->
+	<script src="code-bundle/react/react-dom.js"></script>
+	<!-- <script src="code-bundle/react/babel.min.js"></script>  -->
+
+
+
+	<title> Frontend </title>
+
+
+	</head>
+
+
+	<body>
+
+
+		<nav>
+			
+			<a href="#react"> React</a>
+			<a href="#jquery"> jQuery</a>
+			<a href="#angular"> Angular</a>
+
+		</nav>
+ 
+
+		<div style="height: 10px;"></div>
+
+		<h1 style="text-align: center;"> Frontend </h1>
+
+
+
+
+
+
+		<p style="position: absolute; margin-top: -43px; left: -100%;" id="react">react</p>
+		<h2> React </h2>
+
+		<div class="code">
+			<p> <b>React requires install</b> </p>
+
+			<div id="react"> Shows "React" when React is installed. </div>
+			
+			<script code="set">
+				class Paragraph {
+				    constructor( inner ) { this.inner = "<p>" + inner + "</p>"; }
+				    get_inner_text() { return this.inner; }
+				}
+
+				class Show_React extends React.Component {
+				    render() 
+				    {
+				        p = new Paragraph( "React" );
+				        return p.get_inner_text();
+				    }
+				}
+
+				// ReactDOM.render(<Show_React />, document.getElementById('react'));
+			</script>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<p style="position: absolute; margin-top: -43px; left: -100%;" id="jquery">jQuery</p>
+		<div style="height: 43px;"></div>
+		<h2> jQuery </h2>
+
+		<div class="code">
+			<p> Click paragraph id="p" to <b>hide</b> it: </p>
+
+			<p id="p"> Click to hide! </p>
+			
+			<script code="set">
+				$( "#p" ).click( function() {
+				    $( this ).hide( 1000 );
+
+				    // Also: .hide(), .show() / .hide( time ), .show( time )
+				    // And: .toggle() / .toggle( time )
+				    // And: .fadeIn(), .fadeOut(), .fadeToggle() / with time
+				    // And: .slideUp(), .slideDown(), .slideToggle() / with time
+				    // And: .dblclick() etc.
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click anywhere to <b>count how many times you clicked</b>! </p>
+
+			<p id="num_clicked"> Click to count how many times you clicked!  </p>
+			
+			<script code="set">
+				var num_clicked = 0;
+				$( document ).click(function(){
+				    num_clicked = num_clicked + 1;
+				    $( "#num_clicked" ).html( "You clicked: " + num_clicked + " times." );
+
+				    // Also: .html(), .text(), .val() - for fields
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to alert it! </p>
+
+			<p id="alerted"> Click to alert! </p>
+			
+			<script code="set">
+				var num_clicked = 0;
+				$( "#alerted" ).click(function(){
+				    alert( $( this ).html() );
+
+				    // Also: .html(), .text(), .val() - for fields
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to <b>append</b> to it! </p>
+
+			<p id="appended"> Click to append! </p>
+			
+			<script code="set">
+				var num_clicked = 0;
+				$( "#appended" ).click(function(){
+				    $( this ).append( "<b>Appended!</b>" );
+
+				    // Also: .append(), .prepend() ( children ) / .after(), .before() ( other tags )
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to <b>remove</b> it! </p>
+
+			<p id="removed"> Click to remove! </p>
+			
+			<script code="set">
+				$( "#removed" ).click(function(){
+				    $( this ).remove();
+
+				    // Also: .remove() / .empty() ( children )
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to <b>add class</b> to it! </p>
+
+			<p id="add_class" style="height: 15px;" > Click to add class! </p>
+			
+			<style> .border { border: 3px solid rgb( 123, 123, 123 ); padding: 15px; border-radius: 10px; font-weight: bold; color: rgb( 123, 123, 123 ); margin: 15px; vertical-align: middle; width: 450px; font-size: 14px; } </style>
+
+			<script code="set">
+				$( "#add_class" ).click(function(){
+					if ( ! $( this ).hasClass( "border" ) )
+					{
+					    $( this ).addClass( "border" );
+					    $( this ).html( "Class added!" );
+					    alert( "border: " + $( this ).css( "border" ) + " is to be added! " );
+					}
+
+				    // Also: .addClass(), hasClass(), .removeClass(), .toggleClass() / .css( { "border": "3px solid rgb( 123, 123, 123 )", "color": "rgb( 234, 234, 234 )" } )
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click to show <b>height / width</b>! </p>
+
+			<p id="height_width" class="border" > Click this paragraph! </p>
+			
+			<script code="set">
+				$( "#height_width" ).click( function(){
+				    var hw = "Height: " + $( this ).height() + " <br>";
+				    var hw = hw + "Width: " + $( this ).width() + " <br>";
+				    var hw = hw + "Inner Height: " + $( this ).innerHeight() + " <br>";
+				    var hw = hw + "Inner Width: " + $( this ).innerWidth() + " <br>";
+				    var hw = hw + "Outer Height: " + $( this ).outerHeight() + " <br>";
+				    var hw = hw + "Outer Width: " + $( this ).outerWidth() + " <br>";
+				    var hw = hw + "Outer Height ( true ): " + $( this ).outerHeight( true ) + " <br>";
+				    var hw = hw + "Outer Width ( true ): " + $( this ).outerWidth( true ) + " <br>";
+				    $( this ).html( hw );
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to show <b>parent</b>! </p>
+
+			<p id="parent" > Click to show parent! </p>
+			
+			<script code="set">
+				$( "#parent" ).click( function(){
+				    $( this ).parent().css( { "border": "3px solid rgb( 123, 123, 123 )" } );
+				    $( this ).html( "Parent shown!" );
+
+				    // Also: .parent(), .parents(), .parentsUntil( "div" )
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to show <b>children</b>! </p>
+
+			<p id="children" > Click to show children! 
+				<span> Span 1 </span>
+				<span> Span 2 </span>
+				<span> Span 3 </span>
+			</p>
+			
+			<script code="set">
+				$( "#children" ).click( function(){
+				    $( this ).children().css( { "border": "3px solid rgb( 123, 123, 123 )", "border-radius": "10px", "padding": "5px" } );
+				    // Also: .parent(), .parents(), .parentsUntil( "div" )
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to show <b>siblings</b>! </p>
+
+			<p id="siblings" > Click to show siblings! </p>
+			<span> Span 1 </span>
+			<span> Span 2 </span>
+			<span> Span 3 </span>
+
+			<script code="set">
+				$( "#siblings" ).click( function(){
+				    $( this ).siblings().css( { "border": "3px solid rgb( 123, 123, 123 )", "border-radius": "10px", "padding": "10px" } );
+				    $( this ).html( "Siblings shown!" );
+
+				    // Also: .next(), .nextAll(), .nextUntil( "div" ) / .prev(), .prevAll(), .prevUntil( "div" )
+				    // And: .first(), .last()
+				});
+			</script>
+		</div>
+
+
+		<div class="code">
+			<p> Click paragraph to show <b>span siblings</b>! </p>
+
+			<p id="span_siblings" > Click to show span siblings! </p>
+			<span> Span 1 </span>
+			<span> Span 2 </span>
+			<span> Span 3 </span>
+			<b> B 1 </b>
+			<b> B 2 </b>
+			<b> B 3 </b>
+
+			<script code="set">
+				$( "#span_siblings" ).click( function(){
+				    $( this ).siblings( "span" ).css( { "border": "3px solid rgb( 123, 123, 123 )", "border-radius": "10px", "padding": "10px" } );
+				    $( this ).html( "Span siblings shown!" );
+
+				    // Also: .next(), .nextAll(), .nextUntil( "div" ) / .prev(), .prevAll(), .prevUntil( "div" )
+				    // And: .first(), .last()
+				});
+			</script>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<p style="position: absolute; margin-top: -43px; left: -100%;" id="angular">angular</p>
+		<div style="height: 43px;"></div>
+		<h2> Angular </h2>
+
+
+
+
+		<div class="code">
+
+			<p> Say hello! </p>
+
+
+			<div code="set">
+				<div ng-app="" ng-init="colors='rgb( 123, 123, 123 )'" > <!-- Also: nums, strings etc. -->
+				    <p>Firstname : <input type="text" ng-model="fname" placeholder="Firstname"></p>
+				    <p>Lastname : <input type="text" ng-model="lname" placeholder="Lastname"></p>
+				    <p>City : <input type="text" ng-model="city" placeholder="City"></p>
+				    <h2>Hello {{fname}} {{lname}} {{city}}</h2>
+
+				    <p>Expression: {{ 5 + 9 }}</p>
+				    <input style="background-color:{{colors}}" ng-model="colors" />
+				</div>
+			</div>
+			
+		</div>
+
+
+
+	</body>
+
+
+
+
+
+
+
+
+
+		<script>
+			
+			function direct_children ( a )
+			{
+				var child;
+			 	child = a.children;
+			 	var children = [];
+
+				for ( var i = 0; i < child.length; i = i + 1 )
+				    children.push( child.item( i ) );
+
+				return children;
+			}
+			var codes = document.getElementsByClassName( "code" );
+
+			for ( var i = 0; i < codes.length; i = i + 1 )
+			{
+				var children = codes[ i ].children;
+
+				var script;
+				for ( var l = 0; l < children.length; l = l + 1 )
+					if ( children[ l ].getAttribute( "code" ) == "set" )
+					{
+						script = children[ l ].innerHTML;
+						break;
+					}
+
+				var p = document.createElement( "p" );
+				p.setAttribute( "class", "code_p" );
+
+				var code_text = document.createElement( "b" );
+				var textnode = document.createTextNode( "Code" );
+				code_text.appendChild( textnode );
+				p.appendChild( code_text );                              
+
+
+				var pre = document.createElement( "pre" );
+				var textnode = document.createTextNode( script );
+				pre.appendChild( textnode ); 
+
+
+
+
+				var chldrn = direct_children( pre );
+
+				for ( var l = 0; l < chldrn.length; l = l + 1 )
+					chldrn[ l ].remove();
+
+				var inner_text = pre.innerText;
+				var inner = "";
+
+				for ( var l = 0; l < inner_text.length; l = l + 1 )
+				{
+					if ( inner_text[ l ] != '	' )
+						inner = inner + inner_text[ l ];
+					// if ( inner_text[ l ] == ';' )
+					// 	inner = inner + "\n";
+				}
+
+				pre.innerText = inner;
+
+
+				var chldrn = direct_children( pre );
+				chldrn[ 0 ].remove();
+
+
+				p.appendChild( pre );
+
+				codes[ i ].appendChild( p );
+			}
+
+		</script>
+
+
+
+
+		<link rel="stylesheet" href="style/style.css" />
+		<script src="nav/nav.js"></script>
+
+
+</html>

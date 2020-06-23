@@ -1,0 +1,25 @@
+
+<script> document.title = "Edit: " + data.firstname + ' ' + data.lastname; </script>
+
+</head> <body>
+
+	<h1> <script> ech( "Edit: " + data.firstname + ' ' + data.lastname ); </script> </h1>
+	
+	<form>
+
+		<script>
+			ech( '<input type="hidden" name="id" value="' + data.id + '" ></input>' );
+			ech( '<p> <input type="text" name="firstname" value="' + data.firstname + '" placeholder="' + data.firstname + '" ></input> </p>' );
+			ech( '<p> <input type="text" name="lastname" value="' + data.lastname + '" placeholder="' + data.lastname + '" ></input> </p>' );
+		</script>
+
+		<p> <input type="submit" ></input> </p>
+	
+
+	</form>
+
+	<script>
+		ech( '<p> <a href="/index.js?path=user_controller/view/' + data.id + '" > Return to ' + data.firstname + ' ' + data.lastname + ' </a> </p>' );
+	</script>
+
+	<a href="/index.js?path=user_controller"> Return to Users </a>	

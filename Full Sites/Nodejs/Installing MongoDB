@@ -1,0 +1,36 @@
+Download .deb: mongodb-org-server_4.2.8_amd64.deb and install
+
+
+MongoDB without access control.
+mongod --port 27017 --dbpath /data/db1
+
+
+Connect to the instance.
+mongo --port 27017
+
+
+Create the user administrator.
+use admin
+db.createUser(
+  {
+    user: "mng",
+    pwd: "mng",
+    roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
+  }
+)
+
+
+- might not excte Re-strt the MongoDB instance with access control.
+                  mongod --auth --port 27017 --dbpath /data/db1
+
+
+Authenticate as the user administrator.
+mongo --port 27017 -u "mng" -p "mng" \
+  --authenticationDatabase "admin"
+
+
+
+
+db.createCollection("contacts")
+
+

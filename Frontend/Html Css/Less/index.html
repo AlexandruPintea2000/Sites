@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- ---------------------- Size set   -->
+
+	<meta charset="utf-8"> <!-- -------------------------------------------------------------------- Charset    -->
+
+
+
+
+	<link rel="stylesheet" href="style/style.css" />
+
+	<title> Less </title>
+
+
+	</head>
+
+
+	<body>
+
+
+ 
+
+		<div style="height: 10px;"></div>
+
+		<h1 style="text-align: center;"> Less </h1>
+
+
+
+
+		<h2> Less </h2>
+
+		<div class="code">
+
+			<p> Encapsulation </p>
+
+			<pre>#user 
+{
+	#username 
+	{
+		font-size: 21px;
+		text-align: center;
+	}
+
+	&:{ color: rgb( 90, 90, 90 ); } // for #user
+
+	#user_details 
+	{
+		font-size: 15px;
+		border: 1px solid rgb( 123, 123, 123 );
+		#username() // gets all properties of #username ( it is a mixin )
+	}
+
+	#user_options 
+	{
+		font-size: 15px;
+		border: 2px solid rgb( 123, 123, 123 );
+		background-color: rgb( 234, 234, 234 );
+	}
+}</pre>
+			
+		</div>
+
+		<div class="code">
+
+			<p> Variables and Subprograms </p>
+
+			<pre>#user 
+{
+	@pdng: 1;
+
+	#username { padding: unit( @pdng, px ) + 9px;}
+	#user_details { padding: unit( @pdng, em ) + 1em; }
+	#user_options {	padding: unit( @pdng, px ) + 5px; }
+}</pre>
+			
+		</div>
+
+
+
+		<div class="code">
+
+			<p style="color: initial;"> Extend </p>
+
+			<pre>#user 
+{
+	   &:extend(.panel);
+	   font-size: 15px;
+}
+
+.panel { color: rgb( 90, 90, 90 ); }
+</pre>
+			
+		</div>
+
+
+
+
+		<div class="code">
+
+			<p> Mixins </p>
+
+			<pre>#user 
+{
+	.border ( @width, @style, @color ) // parametric mixin
+	{
+		border: @width @style @color;
+	}
+
+	@detached-rules: // detached rulsets
+	{
+		.small() { font-size: 10px; }
+		.medium() { font-size: 15px; }
+	};
+
+	#user_details 
+	{
+		.border ( 1px, solid, rgb( 123, 123, 123 ) );
+		font-size: 15px;
+		@detached-rules();
+		.small();
+	}
+}</pre>
+			
+		</div>
+
+
+		<div class="code">
+
+			<p> Mixin Conditions </p>
+
+			<pre>#user 
+{
+	.small(@a) when ( @a <= 15px ) { font-size: 5px; }
+
+	.small(@a) when ( @a >= 15px ) { font-size: 15px; }
+
+	#user_details 
+	{
+		width: 21px;
+		.small(9); // makes "font-size: 5px;"
+	}
+}</pre>
+			
+		</div>
+
+
+
+
+		<div class="code">
+
+			<p> For </p>
+
+			<pre>#user 
+{
+	.for_size( @count ) when ( @count > 0 )
+	{
+		font-size: ( @count );
+		.for_size( ( @count - 1px ) );
+	}
+
+	#user_details { .for_size( 2 ); }
+	// makes "font-size: 2px;" and "font-size: 1px;" in #user_details
+}
+</pre>
+			
+		</div>
+
+		<div class="code">
+
+			<p> Also with @media </p>
+
+			<pre>#user 
+{
+	@media screen 
+	{
+		color: rgb( 90, 90, 90 );
+		@media ( max-width: 900px )
+		{
+			max-width: 90%;
+		}
+	}
+}</pre>
+			
+		</div>
+
+	</body>
+
+</html>

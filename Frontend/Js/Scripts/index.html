@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+
+
+
+
+
+
+		<title> Scripts </title>
+
+
+
+		<!-- Also add last_scripts before </html>! -->
+
+		<script src="scripts/scripts.js"></script>
+
+	
+	</head>
+
+
+	<body>
+
+
+
+		<p id="paragraph">Id = paragraph</p>
+		<script> // Length of p: "paragraph"
+
+			var p = id( "paragraph" ); // instead of document.ge...
+
+			p.innerHTML = "'" + p.innerHTML + "' has length: " + p.innerHTML.length;
+		
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+
+
+
+
+
+		<span id="paragraph_span"> 
+			
+			<span>span</span>
+			<b>bold
+
+				<span> span-in-bold </span>
+
+			</b>
+
+		</span>
+		<script> // Children of span: "p"
+
+			var p = id( "paragraph_span" ); // instead of document.ge...
+
+			var children = direct_children( p ); // all direct children of "p"
+
+			set( " has direct children: " );
+			for ( var l = 0; l < children.length; l = l + 1 )
+				set( children[ l ].tagName.toLowerCase() + ' ' );
+		
+			var all_children = all_children( p ); // all children of "p"
+
+			set( " and children: " );
+			for ( var l = 0; l < all_children.length; l = l + 1 )
+				set( all_children[ l ].tagName.toLowerCase() + ' ' );
+
+			set( " / with parent: " + parent_name( all_children[ 0 ] ) );
+			set( " / and parents: " );
+			var parnts =  parents( all_children[ 0 ] ) ;
+			for ( var l = 0; l < parnts.length; l = l + 1 )
+				set( tag_name( parnts[ l ] ) + ' ' );
+
+			set( " / siblings of " + tag_name( all_children[ 0 ] ) + ": " );
+			var sblngs =  siblings( all_children[ 0 ] ) ;
+			for ( var l = 0; l < sblngs.length; l = l + 1 )
+				set( tag_name( sblngs[ l ] ) + ' ' );
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+
+
+
+
+
+		<p class="class1 class2"> Paragraph has classes: class1 <b>class2</b> </p>
+		<p class="class1"> Paragraph has classes: class1 </p>
+		<p class="class2"> Paragraph has classes: <b>class2</b> </p>
+		<div style="height: 0.9px;"></div>
+		<script> // Paragraphs with class: class2
+
+			var p = classes( "class2" ); // instead of document.ge...
+
+			set( "<p>" + p.length + " Paragraphs have class: class2</p>" );
+		
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+
+
+
+
+		<script> // Paragraphs made until now
+
+			var p = tags( "p" ); // instead of document.ge...
+
+			set( "<p>" + p.length + " Paragraphs were made until now! ( without this paragraph ) </p>" );
+		
+		</script>
+		<div style="height: 15px;"></div>
+
+
+		<p> Border </p>
+
+
+
+		<p attr1="attr" attr2="attr"   > Paragraph has <b>attr1: attr</b> and <b>attr2: attr</b> </p>
+		<p attr1="attr"   > Paragraph has <b>attr1: attr</b> </p>
+		<p attr1="attr1" attr2="attr"   > Paragraph has <b>attr1: attr1</b> and <b>attr2: attr</b> </p>
+		<p attr2="attr1"   > Paragraph has <b>attr2: attr1</b> </p>
+		<p attr1="attr" attr2="attr1"   > Paragraph has <b>attr1: attr</b> and <b>attr2: attr1</b> </p>
+		<div style="height: 0.9px;"></div>
+		<script> // Paragraphs with attributes
+
+			var p = attr( "attr" );
+			set( "<p>" + p.length + " Paragraphs have attribute val. <b>attr</b> </p>" );
+
+		
+			var p = attr( "attr1" );
+			set( "<p>" + p.length + " Paragraphs have attribute or attribute val. <b>attr1</b> </p>" );
+		
+			var p = attr( "attr2" );
+			set( "<p>" + p.length + " Paragraphs have attribute <b>attr2</b> </p>" );
+		
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+
+
+		<p id="paragraph">Id = paragraph</p>
+		<p id="paragraph">Id = paragraph</p>
+		<div style="height: 0.9px;"></div>
+		<script> // Length of p: "paragraph"
+
+			var p = ids( "paragraph" ); // instead of document.ge...
+
+			set( "<p>" + p.length + " Paragraphs have id <b>paragraph</b> </p>" );
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+		<script> // All until now
+			
+			var p = all();
+
+			set( "<p>" + p.length + " were made until now </p>" );
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+		<p><b>Style file was added!</b></p>
+		<script> // Add files
+			
+			add_style_file( "style.css" );
+			// add_script_file( "filepath" );
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+		<p id="paragraph_trim1" > Paragraph ( id = paragraph_trim1 ) was trimmed to have <= 30 in its length. </p>
+		<p id="paragraph_trim2" > Paragraph ( id = paragraph_trim2 ) was trimmed to have <= 21 in its length. </p>
+		<script> // 
+
+			var p1 = id( "paragraph_trim1" ); // instead of document.ge...
+			add_trim( p1, 30 );
+
+			var p2 = id( "paragraph_trim2" ); // instead of document.ge...
+			add_trim( p2, 21 );
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+		<p id="paragraph_before"> Paragraph ( id = paragraph_before ) has spans:
+
+			<span> span 1 </span>
+			<span> span 2 </span>
+			<span> span 3 </span>
+			<span> span 4 </span>
+			<span> span 5 </span>
+
+		</p>
+		<p id="paragraph_after"> Paragraph ( id = paragraph_after ) has spans:
+
+			<span> span 1 </span>
+			<span> span 2 </span>
+			<span> span 3 </span>
+			<span> span 4 </span>
+			<span> span 5 </span>
+
+		</p>
+		<p id="paragraph_last"> Paragraph ( id = paragraph_last ) has spans:
+
+			<span> span 1 </span>
+			<span> span 2 </span>
+			<span> span 3 </span>
+			<span> span 4 </span>
+			<span> span 5 </span>
+
+		</p>
+		<p id="paragraph_first"> Paragraph ( id = paragraph_first ) has spans:
+
+			<span> span 1 </span>
+			<span> span 2 </span>
+			<span> span 3 </span>
+			<span> span 4 </span>
+			<span> span 5 </span>
+
+
+		</p>
+		<p id="paragraph_insert_before"> Paragraph ( id = paragraph_insert_before ) </p>
+		<p id="paragraph_insert_after"> Paragraph ( id = paragraph_insert_after ) </p>
+		<script> // 
+
+
+			var a = id( "paragraph_before" ); // instead of document.ge...
+
+			b = create( "b" );
+			set_inner_text( b, "b" );
+
+			append_before( a, b, 2 );
+
+			b = create( "b" );
+			set_inner_text( b, "b" );
+
+			var a = id( "paragraph_after" ); // instead of document.ge...
+			append_after( a, b, 2 );
+
+			b = create( "b" );
+			set_inner_text( b, "b" );
+
+			var a = id( "paragraph_last" ); // instead of document.ge...
+			append_child( a, b, 2 );
+
+			b = create( "b" );
+			set_inner_text( b, "b" );
+
+			var a = id( "paragraph_first" ); // instead of document.ge...
+			append_first_child( a, b, 2 );
+
+
+
+
+			b = create( "b" );
+			set_inner_text( b, "b" );
+
+			var a = id( "paragraph_insert_before" ); // instead of document.ge...
+			insert_before( a, b, 2 );
+
+			b = create( "b" );
+			set_inner_text( b, "b" );
+
+			var a = id( "paragraph_insert_after" ); // instead of document.ge...
+			insert_after( a, b );
+
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+		<style> a { text-decoration: underline; } </style>
+	 	<p> <a href="#"> href a           </a> </p>
+
+
+	 	<p>
+			<input type="radio" name="name_radio"></input>
+			<input type="radio" name="name_radio"></input>
+			<input type="radio" name="name_radio"></input>
+			<input type="radio" name="name_radio"></input>
+			<input type="radio" name="name_radio"></input>
+		</p>
+
+
+		<input type="range" name="name_range"></input>
+
+
+		<p>
+			<input type="checkbox" name="name_check"></input>
+			<input type="checkbox" name="name_check"></input>
+			<input type="checkbox" name="name_check"></input>
+			<input type="checkbox" name="name_check"></input>
+			<input type="checkbox" name="name_check"></input>
+		</p>
+
+		<select name="name_select">
+			<option> Option 1 </option>
+			<option> Option 2 </option>
+			<option> Option 3 </option>
+			<option> Option 4 </option>
+			<option> Option 5 </option>
+		</select>
+
+		<input type="password" value="password1"></input>
+		<input type="password" value="password2"></input>
+
+		<p id="paragraph_atr" atr="atr" >Id = paragraph_atr</p>
+		<div style="height: 0.9px;"></div>
+		<script> // Length of p: "paragraph"
+
+			var p = id( "paragraph_atr" ); // instead of document.ge...
+
+			p.title = atr( p, "atr" );
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+
+
+
+		<p id="paragraph_date_1" > ( Shows date ) </p>
+		<p id="paragraph_date_2" > ( Shows date ) </p>
+		<p id="paragraph_date_3" > ( Shows date ) </p>
+		<p id="paragraph_date_4" > ( Shows date ) </p>
+		<p id="paragraph_date_5" > ( Shows date ) </p>
+		<div style="height: 0.9px;"></div>
+		<script>
+			set_inner_html( id( 'paragraph_date_1' ), "date_month_year(): " + date_month_year() );
+			set_inner_html( id( 'paragraph_date_2' ), "minute(): " + minute() );
+			set_inner_html( id( 'paragraph_date_3' ), "hour(): " + hour() );
+			set_inner_html( id( 'paragraph_date_4' ), "day(): " + day() );
+			set_inner_html( id( 'paragraph_date_5' ), "year(): " + year() );
+		</script>
+		<div style="height: 15px;"></div>
+
+
+		<p id="paragraph_style" style="border: 3px solid rgb( 123, 123, 123 );"> Paragraph ( id="paragraph_style" ) has border:  </p>
+		<div style="height: 0.9px;"></div>
+		<script> // Style Properties
+
+			var p = id( "paragraph_style" ); // instead of document.ge...
+
+			add_inner_text( p, ' ' + style_property( p, "border" ) );
+
+		</script>
+		<div style="height: 15px;"></div>
+
+
+		<p id="paragraph_sep"> Words of Paragraph: </p>
+		<script>
+			var b = create( "b" );
+			var words = slice_sep( inner_text( id( "paragraph_sep" ) ), "()" );
+
+			for ( var i = 0; i < words.length; i = i + 1 )
+				add_inner_text( b, ' ' + "\"" + words[ i ] + "\"" );
+
+			append_child( id( "paragraph_sep" ), b );
+		</script>
+
+
+	</body>
+
+
+	<!-- Last Scripts -->
+
+	<script src="scripts/last_scripts.js"></script>
+
+
+</html>

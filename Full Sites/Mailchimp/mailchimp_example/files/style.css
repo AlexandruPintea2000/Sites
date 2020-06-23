@@ -1,0 +1,114 @@
+body 
+{
+	font-family: Arial;
+	text-align: center !important;
+}
+
+nav
+{
+	text-align: center;
+	border: 3px solid black;
+	padding: 10px;
+	border-radius: 10px 10px 15px 15px;
+	position: fixed;
+	width: 97%;
+	height: 40px;
+	top: 0;
+	margin: 10px 0px 0px 0px;
+	z-index: 1020;
+	background-color: rgb(225, 225, 225);
+	font-family: Arial;
+	font-weight: bold;
+}
+
+nav span a 
+{
+	font-size: 20px;
+	text-decoration: none;
+	border: 3px solid black;
+	padding: 10px;
+	margin: 10px 10px;
+	border-radius: 10px 10px 5px 5px;
+	background-color: rgb(200, 200, 200);
+}
+
+#show_page 
+{
+	padding: 5px 10px;
+	background-color: rgb( 234, 34, 234 );
+	color: rgb( 255, 255, 255 );
+	font-family: Arial;
+	font-weight: bold;
+	border-radius: 10px;
+}
+
+#title 
+{
+	border: 3px solid black;
+	border-radius: 20px;
+	margin: 50px 270px 50px 270px;
+}
+
+.form_text
+{
+	border:3px solid rgb( 34, 34, 234 );
+	padding: 10px 20px;
+	border-radius: 2px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+input 
+{
+	font-size: 15px;
+	padding: 10px 5px;
+	margin: 10px 2px;
+}
+
+#form_div 
+{
+	text-align: center;
+	margin-left: 39%;
+}
+
+
+
+@media only screen and (max-width: 854px)
+{
+	#title 
+	{
+		font-size: 20px;
+		margin: 0px !important;
+	}
+
+	nav span a 
+	{
+		font-size: 17px;
+		margin: 0px !important;
+	}
+	nav
+	{
+		width: 87%;
+		margin: 0px !important;
+	}
+
+	.form_text
+	{
+		font-size: 10px;
+		font-weight: bold;
+	}
+
+	input 
+	{
+		font-size: 10px;
+		padding: 10px 5px;
+		margin: 10px 2px;
+	}
+
+	#form_div 
+	{
+		text-align: center;
+		margin-left: 40px;
+	}
+
+}

@@ -1,0 +1,14 @@
+a { display: inline-block; text-decoration: none; }
+a:hover { color: rgb( 50, 50, 150 ); }
+a:visited { color: rgb( 90, 50, 250 ); }
+
+p, h1, h2, h3, h4, h5, h6 {	margin: 5px 0px; text-overflow: ellipsis; font-weight: 100; }
+
+h1 { font-size: 39px; }
+h2 { font-size: 29px; }
+
+span, s, i, u, b { margin: 2px; text-overflow: ellipsis; display: inline-block; }
+
+html { color: rgb( 50, 50, 50 ); font-family: Arial; scroll-behavior: smooth; padding: 5px; }
+
+p { font-size: 14px; }

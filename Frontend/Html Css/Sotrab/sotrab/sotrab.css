@@ -1,0 +1,145 @@
+a { display: inline-block; text-decoration: none; }
+a:hover { color: rgb( 50, 50, 150 ); }
+a:visited { color: rgb( 90, 50, 250 ); }
+
+p, h1, h2, h3, h4, h5, h6 {	margin: 5px 0px; text-overflow: ellipsis; }
+
+span, s, q, i, u, b { margin: 0px; text-overflow: ellipsis; display: inline-block; }
+
+html { color: rgb( 50, 50, 50 ); font-family: Arial; scroll-behavior: smooth; padding: 5px; }
+
+
+
+
+
+#EXTRA-BOLD{}
+
+eb { font-weight: 1000; }
+
+du { text-decoration: underline; text-decoration-style: double; text-decoration-color: rgb( 123, 123, 123 ); }
+
+upr { text-transform: uppercase; }
+lwr { text-transform: lowercase; }
+
+quote1::before { content: "'" !important; }
+quote1::after { content: "'" !important; }
+
+quote2::before { content: '"' !important; }
+quote2::after { content: '"' !important; }
+
+
+#PARAGRAPHS{}
+
+p1, p2, p3, p4, p5, p6 { display: block; } 
+
+p1 { font-size: 10px; }
+p2 { font-size: 10.9px; }
+p3 { font-size: 14px; }
+p4 { font-size: 15px; }
+p5 { font-size: 17px; }
+p6 { font-size: 19px; }
+
+
+
+#ALIGNMENTS{}
+
+rh, cn, lf { display: block; }
+
+rh { text-align: right; align-self: right; }
+cn { text-align: center; align-self: center; }
+lf { text-align: left; align-self: left; }
+
+
+
+#BORDERS{}
+
+border, border1, border2, border3, border4, border5, border6
+{
+	border: 3px solid rgb( 150, 150, 150 ); 
+	padding: 2px 10px;
+	border-radius: 10px;
+}
+
+border1 { border-width: 1px; }
+border2 { border-width: 2px; }
+border3 { border-width: 4px; }
+
+border4, border5, border6 { padding: 5px 10px; line-height: 43px; }
+
+border4 { border-width: 5px; }
+border5 { border-width: 6px; }
+border6 { border-width: 6.5px; padding: 7px 10px; }
+
+
+
+#SHADOWS{}
+
+shadow, shadow1, shadow2, shadow3, shadow4, shadow5, shadow6
+{
+	box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09), 0 5px 15px 0 rgba(0, 0, 0, 0.09);
+	padding: 2px 10px;
+}
+
+shadow1 { box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09), 0 5px 7px 0 rgba(0, 0, 0, 0.09); }
+shadow2 { box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.09), 0 5px 10px 0 rgba(0, 0, 0, 0.09); }
+shadow3 { box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09), 0 5px 7px 0 rgba(0, 0, 0, 0.09); }
+
+shadow4, shadow5, shadow6 { padding: 5px 10px; line-height: 34px; }
+
+shadow4 { box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.09), 0 7px 10px 0 rgba(0, 0, 0, 0.09); }
+shadow5 { box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.09), 0 10px 10px 0 rgba(0, 0, 0, 0.09); }
+shadow6 { box-shadow: 0 4px 9px 0 rgba(0, 0, 0, 0.09), 0 10px 15px 0 rgba(0, 0, 0, 0.09); }
+
+
+
+#SPACING-VERICAL{}
+
+sp, sp1, sp2, sp3, sp4, sp5, sp6
+{
+	display: block;
+	line-height: 21px;
+}
+
+sp1 { line-height: 15px; }
+sp2 { line-height: 19px; }
+sp3 { line-height: 29px; }
+sp4 { line-height: 34px; }
+sp5 { line-height: 43px; }
+sp6 { line-height: 49px; }
+
+
+
+#POSITIONS{}
+
+fd { position: fixed; z-index: 4000; bottom: 0; right: 0; }
+abl { position: absolute; }
+rel { position: relative; }
+df { position: initial !important; }
+
+
+
+#ALIGN{}
+
+right { align-self: right; text-align: right; }
+center { align-self: center; text-align: center; }
+left { align-self: left; text-align: left; }
+
+
+
+#RESIZE{}
+
+resize
+{
+	padding: 20px; 
+	resize: both;
+	overflow: auto;
+	border-radius: 10px;
+
+	background-color: rgb( 243, 243, 234 );
+}
+
+
+#MAGNIFY{}
+
+magnify { transition: 0.3s; }
+magnify:hover { font-size: 25px; }

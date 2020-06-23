@@ -1,0 +1,668 @@
+html 
+{
+	padding: 10px;
+
+	padding-left: 15%;
+
+	font-family: Arial;
+
+	color: rgb( 90, 90, 90 );
+	background-color: rgb( 250, 250, 250 );
+
+	margin: 0px;
+
+	scroll-behavior: smooth;
+}
+
+
+.center 
+{
+	text-align: center;
+}
+
+.submit
+{
+	border-width: 5px !important;
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.auxiliary_data 
+{
+	font-size: 15px; 
+	border-radius: 10px;
+	background-color: rgb( 205, 205, 205 );
+	padding: 5px;
+}
+
+
+.company
+{
+	font-weight: bold;
+	position: fixed;
+	top: 3px;
+	z-index: 1020;
+	font-family: Arial;
+	left: 0px;
+	color: rgb( 123, 123, 123 );
+	font-size: 16.5px;
+	padding: 4px 14px;
+	border-radius: 0px 10px 10px 0px;
+	border-right: 3px solid rgb( 240, 240, 240 );
+	background-color: rgb( 234, 234, 234 );
+}
+
+.signed_in_user
+{
+	right: 10px !important;
+	position: absolute;
+	top: 40px;
+	font-size: 17px;
+}
+
+
+
+
+p, h1, h2, h3, h4, h5, h6
+{
+	margin: 20px 0px;
+}
+
+a 
+{
+	padding: 1px;
+	font-weight: bold;
+	color: rgb( 123, 123, 123 );
+	transition: 0.3s;
+}
+
+a:hover
+{
+	padding: 1px;
+	font-weight: bold;
+	color: rgb( 90, 90, 90 );
+}
+
+textarea
+{
+	border: 5px solid rgb( 234, 234, 234 );
+	outline: none;
+	border-radius: 10px;
+	padding: 5px;
+	max-width: 500px;
+	max-height: 600px;
+	min-width: 340px;
+	min-height: 20px;
+	transition: 0.1s;
+}
+
+textarea:hover
+{
+	border: 5px solid rgb( 204, 204, 204 );	
+}
+
+
+
+
+nav 
+{
+	position: fixed;
+	z-index: 1020;
+	background-color: rgb( 255, 255, 255 );
+
+	border-bottom: 1px solid rgba( 123, 123, 123, 0.7 );
+	border-radius: 0px 0px 3px 3px;
+
+	top: 0;
+	left: 0;
+
+	padding: 5px;
+	width: 100%;
+
+}
+
+nav a 
+{
+	text-decoration: none;
+	font-size: 20px;
+	margin-left: 4px;
+}
+
+
+
+
+input
+{
+	padding: 5px 10px;
+	border: 3px solid rgb( 201, 200, 200 );
+	border-radius: 10px;
+	outline: none;
+	color: rgb( 90, 90, 90 );
+	margin: 3px 0px;
+	background-color: rgb( 240, 240, 240 );
+	transition: 0.5s;
+}
+
+input:hover
+{
+	border: 3px solid rgb( 150, 150, 150 );
+	color: rgb( 100, 100, 100 );
+	border-radius: 10px;
+	outline: none;
+}
+
+
+
+
+select
+{
+	padding: 5px 10px;
+	border: 3px solid rgb( 201, 200, 200 );
+	border-radius: 10px;
+	outline: none;	
+	color: rgb( 90, 90, 90 );
+	margin: 3px 0px;
+	background-color: rgb( 240, 240, 240 );
+	transition: 0.5s;
+}
+
+select:hover
+{
+	border: 3px solid rgb( 150, 150, 150 );
+	color: rgb( 100, 100, 100 );
+	border-radius: 10px;
+	outline: none;
+}
+
+option
+{
+	background-color: rgb( 204, 204, 204 );
+	color: rgb( 90, 90, 90 );
+}
+
+
+
+
+
+
+
+#FOR_TABLES{}
+
+
+
+
+
+
+
+.table_center 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.table_options
+{
+	background-color: rgb( 230, 230, 230 );
+	text-align: center;
+}
+
+.th
+{
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb( 230, 230, 230 );
+}
+
+.href
+{
+	font-weight: 100 !important;
+}
+
+.href:hover { font-weight: 100 !important; }
+
+.href a
+{
+	font-weight: 100 !important;
+	text-decoration: underline;
+}
+
+.th:hover { background-color: rgb( 230, 230, 230 ); }
+
+table, td
+{ border-radius: 1px; }
+
+table
+{
+	border-radius: 5px;
+	padding: 2px;
+	background-color: rgb( 150, 150, 150 );
+	min-width: 95%;
+	max-width: 100%;
+	margin-top: 5px;
+}
+
+td { padding: 5px; }
+
+td a { text-decoration: none; }
+
+tr { background-color: rgb( 250, 250, 250 ); transition: 0.3s; }
+
+tr:hover { background-color: rgb( 204, 204, 204 );	}
+
+form { margin: 0px; }
+
+
+
+
+
+
+#FOR_DELETING{}
+
+
+
+
+
+
+.delete_border_center 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.delete_border
+{
+	border: 3px solid rgb( 123, 123, 123 );
+	border-radius: 10px;
+	text-align: left;
+	width: 200px;
+	padding: 5px;
+}
+
+.delete
+{
+	padding: 5px 10px !important;
+	border: 3px solid rgb( 201, 200, 200 );
+	border-radius: 10px;
+	outline: none;
+	color: rgb( 90, 90, 90 );
+	margin: 3px 0px;
+	background-color: rgb( 240, 240, 240 );
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.delete:hover
+{
+	border: 3px solid rgb( 150, 150, 150 );
+	color: rgb( 100, 100, 100 );
+	border-radius: 10px;
+	outline: none;
+}
+
+
+
+
+
+
+
+#FOR_NAV{}
+
+
+
+
+
+
+
+#nav_sign_out
+{
+	right: 20px;
+	position: absolute;
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 20px;
+	padding-left: 10px;
+}
+
+
+
+
+
+#left_nav
+{
+	height: 100%;
+	width: 14%;
+	position: fixed;
+	background-color: rgb( 234, 234, 234 );
+	top: 0;
+	left: 0;
+	transition: 0.1s;
+	border-right: 3px solid rgb( 204, 204, 204 );
+}
+
+#left_nav:hover
+{
+	height: 100%;
+	position: fixed;
+	background-color: rgb( 234, 234, 234 );
+	top: 0;
+	left: 0;
+}
+
+.left_nav_border_href
+{
+	text-decoration: none;
+	padding: 14px;
+	padding-left: 40px;
+	margin: 0px;
+	transition: 0.3s;
+}
+
+.left_nav_border_href a:hover
+{
+	color: rgb( 90, 90, 90 );
+}
+
+
+.left_nav_border_href p
+{
+	text-decoration: none;
+	padding: 14px;
+	background-color: rgb( 204, 204, 204 );
+	margin-top: -38px;
+	margin-right: -3px;
+	border-right: 3px solid rgb( 150, 150, 150 );
+	border-bottom: 1px solid rgb( 150, 150, 150 );
+	border-radius: 0px 3px 10px 0px;
+	transition: 0.3s;
+}
+
+.left_nav_border_href p:hover
+{
+	padding: 14px;
+	background-color: rgb( 150, 150, 150 );
+	border-color: rgb( 123, 123, 123 );
+}
+
+
+
+#left_nav_sign_out 
+{
+	text-decoration: underline;
+	text-align: center;
+	bottom: 0;
+}
+
+
+
+.left_nav_href
+{
+	text-decoration: none;
+	margin: 0px;
+	transition: 0.3s;
+}
+
+.left_nav_href p
+{
+	margin: 0px;
+	background-color: rgb( 204, 204, 204 );
+	padding: 7px 15px;
+	margin-top: -20px;
+	border-right: 2px solid rgb( 150, 150, 150 );
+	border-top: 2px solid rgb( 209, 209, 209 );
+}
+
+.left_nav_href p:hover
+{
+	background-color: rgb( 150, 150, 150 );
+	border-right: 2px solid rgb( 90, 90, 90 );
+	padding: 7px 15px;
+}
+
+#nav_a_users
+{
+	margin-left: 14%;			
+}
+
+
+
+
+
+
+
+
+#FOR_PROGRESS{}
+
+
+
+
+
+
+
+
+.progress_div
+{
+	display: flex;
+	margin: 5px 0px;
+}
+
+.progress_div b
+{
+	padding-top: 5px;
+	margin-right: 10px;
+}
+
+.progress_div span
+{
+	padding-top: 5px;
+	margin: 0px 10px;
+}
+
+.progress_div a
+{
+	text-decoration: none;
+	margin-top: 0px;
+	padding: 5px 10px;
+	background-color: rgb( 204, 204, 204 );
+	border-radius: 10px;
+	margin-left: 10px;
+}
+
+.progress
+{
+	height: 20px;
+	background-color: rgb( 234, 234, 234 );
+	border-radius: 5px;
+	text-align: center;
+}
+
+.progress span
+{
+	vertical-align: middle;
+}
+
+.behind_progress
+{
+	height: 20px;
+	padding: 4px;
+	border-radius: 5px;
+	background-color: rgb( 165, 165, 165 );
+	width: 50%;
+	font-size: 17px;
+	display: flex;
+}
+
+.behind_progress span
+{
+	vertical-align: middle;
+}
+
+
+
+
+.add_part_href
+{
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: rgb( 204, 204, 204 );
+	border-radius: 10px;
+}
+
+.add_part_href:hover
+{
+	text-decoration: none;
+	padding: 5px 10px;
+	background-color: rgb( 204, 204, 204 );
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+#MEDIA_QUERIES{}
+
+
+
+
+
+
+
+
+@media only screen and ( max-width: 1000px )
+{
+	tr
+	{
+		font-size: 14px;
+	}
+}
+
+@media only screen and ( max-width: 900px )
+{
+
+	html
+	{
+		padding: 0px;
+	}
+
+	a
+	{
+		font-size: 14px;
+	}
+
+	.company
+	{
+		font-size: 10px;
+		right: 90px !important;
+		margin-top: 2px;
+		left: initial;
+		border-radius: 90px;
+	}
+
+	#nav_sign_out
+	{
+		font-size: 15px !important;
+		margin-top: 0px;
+	}
+
+
+	#left_nav
+	{
+		display: none;
+	}
+
+	nav
+	{
+		font-size: 15px !important;
+	}
+
+	tr, tr a
+	{
+		font-size: 10px;
+	}
+}
+
+
+
+@media only screen and ( max-width: 1150px )
+{
+	.company
+	{
+		font-size: 10px;
+		right: 90px;
+		margin-top: 4px;
+		left: initial;
+		border-radius: 90px;
+	}
+
+
+	#nav_a_users
+	{
+		margin-left: 10px;			
+	}
+
+
+
+	.behind_progress 
+	{
+		width: 30%;
+	}
+
+	.behind_progress span
+	{
+		display: initial !important;
+	}
+
+	.progress_div span
+	{
+		display: none;
+	}
+
+	.progress_div, .progress_div span
+	{
+		font-size: 14px !important;
+	}
+
+}
+
+@media only screen and ( max-width: 570px )
+{
+	.company
+	{
+		margin-top: 27px !important;
+		right: 34% !important;
+		border: 1px solid rgb( 204, 204, 204 );
+	}
+
+	.signed_in_user
+	{
+		left: 15px !important;
+	}
+
+	nav a
+	{
+		font-size: 23px !important;
+	}
+
+	#nav_sign_out
+	{
+		font-size: 15px !important;
+		margin-top: 3px;
+	}
+
+	html 
+	{
+		width: 200%;
+	}
+
+	tr, tr a
+	{
+		font-size: 14px;
+	}
+}

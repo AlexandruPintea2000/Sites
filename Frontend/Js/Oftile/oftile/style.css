@@ -1,0 +1,27 @@
+#alerts
+{
+	position: fixed;
+	width: 390px;
+	background-color: rgb( 234, 234, 234 );
+	top: 10px;
+	left: -410px;
+	border: 1px solid rgb( 123, 123, 123 );
+	border-radius: 5px;
+	transition: left 0.9s;
+	padding: 5px;
+	z-index: 4000;
+}
+
+#alerts p
+{
+	margin: 0px;
+	font-size: 10.9px;
+	font-family: Arial;
+}
+
+#alerts span
+{
+	margin: 0px;
+	font-size: 14px;
+	font-family: Arial;
+}

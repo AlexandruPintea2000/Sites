@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+
+
+
+
+		<script src="code-bundle/angular.min.js"></script> <!-- ---------------------------------------- Angular    -->
+
+		<title>  </title>
+	
+
+
+		<style> html { font-family: Arial; } span { display: flex; justify-content: center; } h2 { text-align: center; } table { border: 1px solid rgb( 123, 123, 123 ); border-radius: 2px; } table { background-color: rgb( 123, 123, 123 ); } td { background-color: rgb( 243, 243, 243 );  } th { background-color: rgb( 234, 234, 234 ); color: rgb( 10, 10, 10 ); } table { width: 100% !important; color: rgb( 50, 50, 50 ); } tr:hover td { background-color: rgb( 204, 204, 204 ); } </style>
+
+	</head>
+
+
+	<body>
+
+
+		<div ng-app="Ang" ng-controller="Ctl" >
+			
+			<p> Set title: <input ng-model="title" placeholder="Angular gets Sql Data" ></input> </p> <!-- Where it gets its -->
+
+			<h2>{{title}}</h2> <!-- Also Bind -->
+
+			<span>
+	 			<table>
+		 			<tr> <th> id </th> <th> Fname </th> <th> Lname </th> </tr>
+					<tr ng-repeat="i in names">
+						<td>{{ i.Id }}</td>
+						<td>{{ i.Fname }}</td>
+						<td>{{ i.Lname }}</td>
+					</tr>
+				</table>
+			</span>
+
+		</div>
+
+
+		<script>
+			
+			var application = angular.module( 'Ang', [] );
+			application.controller( 'Ctl', function ( $scope, $http ) 
+			{
+				$scope.title = "Angular gets Sql Data";
+				$http.get("users.php")
+				  .then(function ( response ) {
+
+				   $scope.names = eval( response.data );
+
+				});
+			});
+
+		</script>
+
+
+	</body>
+
+</html>

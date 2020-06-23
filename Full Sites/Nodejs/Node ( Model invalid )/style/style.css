@@ -1,0 +1,49 @@
+html { font-family: Arial; text-align: center; padding: 21px; background-color: rgb( 253, 253, 253 ); color: rgb( 50, 50, 50 ); }
+a { text-decoration: none; font-weight: bold; font-size: 21px; }
+span { padding: 5px 10px; margin-right: 10px; border-radius: 5px; border: 3px solid rgb( 123, 123, 123 ); }
+
+input 
+{
+	padding: 5px;
+	min-height: 29px;
+	background-color: rgb( 243, 243, 243 );
+	border: 2px solid rgb( 204, 204, 204 );
+	color: rgb( 90, 90, 90 );
+	outline: none;
+	
+	border-radius: 5px;
+} 
+input:hover { background-color: rgb( 234, 234, 234 ); }
+
+
+
+
+.div_center 
+{
+	display: flex;
+	justify-content: center;
+}
+
+
+table { background-color: rgb( 204, 204, 204 ); padding: 5px; border-radius: 10px; }
+td, th { background-color: rgb( 253, 253, 253 ); padding: 5px 10px; font-size: 21px; }
+th { background-color: rgb( 234, 234, 234 ); }
+td { font-weight: 700; color: rgb( 90, 90, 90 ); }
+tr:hover td { background-color: rgb( 243, 243, 243 ); }
+.options, .options a { font-size: 17px; }
+
+.edit
+{
+	padding: 10px;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb( 90, 90, 90 );	
+}
+
+.edit span { border: 2px solid rgb( 123, 123, 123 ); background-color: rgb( 234, 234, 234 ); margin: 0px; }
+
+.edit a
+{
+	font-size: 15px;	
+}
+

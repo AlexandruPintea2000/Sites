@@ -1,0 +1,90 @@
+nav 
+{
+	all: default !important;
+
+	position: fixed;
+	font-family: Arial;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: rgb( 243, 243, 243 );
+	padding: 10px;
+	overflow-x: auto;
+}
+
+nav a
+{
+	all: default !important;
+
+	font-size: 21px;
+	text-decoration: none;
+	color: rgb( 123, 123, 123 ) !important;
+	margin-left: 10px;
+}
+
+nav a:hover { color: rgb( 90, 90, 90 ) !important; }
+
+
+.d_nav 
+{
+	border: 2px solid rgb( 123, 123, 123 );
+	position: fixed;
+	left: 0px;
+	right: 0px;
+	padding: 5px 5px 10px 5px !important;
+	background-color: rgb( 250, 250, 250 );
+	transition: top 0.3s;
+	border-radius: 0px 0px 5px 5px;
+
+	display: none;
+}
+
+.nav_d a { display: block; line-height: 29px; }
+.d_nav { top: -340px; }
+
+
+
+.nav_title 
+{
+	display: block !important; 
+	position: fixed;
+	right: 10px !important;
+	top: 10px !important;
+	height: 25px;
+	width: 25px;
+
+	padding: 5px 2px 2px 15px;
+	border: 2px solid rgb( 123, 123, 123 );
+	border-radius: 5px;
+	vertical-align: middle;
+	font-weight: bold;
+	color: rgb( 123, 123, 123 ) !important;
+	z-index: 4000;
+	background-color: rgb( 243, 243, 243 );
+	font-size: 21px !important;
+}
+
+
+.nav_d { max-height: 250px !important; overflow: auto; }
+
+.nav_d a 
+{
+	padding: 0px 0px 0px 15px;
+	border-radius: 5px;
+}
+
+.nav_d a:hover { background-color: rgb( 243, 243, 243 ); }
+.nav_d a:active { background-color: rgb( 243, 243, 243 ); }
+
+
+@media screen and ( max-width: 750px )
+{
+	nav { padding: 0px; height: 0px; }
+	nav a { display: none; }
+	.d_nav { display: initial !important; }
+}
+
+@media screen and ( max-width: 1040px )
+{
+	nav a { font-size: 17px; }
+}

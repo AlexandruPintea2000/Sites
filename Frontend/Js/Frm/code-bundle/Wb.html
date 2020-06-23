@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	
+	<!--  -->
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- ---------------------- Size set   -->
+
+	<meta charset="utf-8"> <!-- -------------------------------------------------------------------- Charset    -->
+
+	<script src="code-bundle/jquery.min.js"></script> <!-- ----------------------------------------- jQuery     -->
+
+	<link rel="stylesheet" href="foundation/css/foundation.css"> <!-- ------------------------------ Foundation -->
+	<script src="foundation/js/foundation.js"></script>
+
+	<link rel="stylesheet" href="code-bundle/bstrap/css/bootstrap.css"> <!-- ----------------------- Btstrap    -->
+	<script src="code-bundle/bstrap/js/bootstrap.js"></script>
+
+	<script src="code-bundle/angular.min.js"></script> <!-- ---------------------------------------- Angular    -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+	<script src="react/react.js"></script> <!-- ---------------------------------------------------- React      -->
+	<script src="react/react-dom.js"></script>
+	<script src="babel.min.js"></script>
+
+	<!--  -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+
+	<!-- Pus aici -->
+
+</head>
+
+
+
+<body>
+
+	<div ng-app="">
+
+		<p>Input something in the input box:</p>
+		<p>Name : <input type="text" ng-model="name" placeholder="Enter name here"></p>
+		<h1>Hello {{name}}</h1>
+
+	</div>
+
+
+	<div id="example"></div>
+
+	<div id="example1"></div>
+
+	<script type="text/javascript">
+// create a React element rElement
+var rElement = React.createElement('h1', null, 'Hello, world!');
+/// dElement is a DOM container
+var dElement = document.getElementById('example');
+// render the React element in the DOM container
+ReactDOM.render(rElement, dElement);
+</script>
+
+
+<!-- inca nu merge -->
+<script type="text/babel">
+	// create a React element rElement using JSX
+	var rElement = <h1>Hello, world!</h1>;
+	// dElement is a DOM container
+	var dElement = document.getElementById('example1');
+	// render the React element in the DOM container
+	ReactDOM.render(rElement, dElement);
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,201 @@
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 0, "Part14", 7, 100 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 1, "part14", 1, 90 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 2, "Part14", 10, 100 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 3, "Part14", 1, 45 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 4, "Part10", 1, 15 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 5, "Part14", 0, 95 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 6, "Part14", 8, 0 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 7, "Part1", 0, 25 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 8, "Part10", 0, 90 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 9, "Part", 5, 95 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 10, "Parts", 5, 0 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 11, "Part", 10, 45 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 79, "Part14", 4, 100 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 90, "Part1", 4, 95 );
+INSERT INTO parts ( id, part_name, contract_id, progress ) VALUES ( 940, "part_name", 0, 15 );
+
+INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 0, "admin", "admin_pass", "admin_firstname", "admin_lastname", "admin_email", "admin" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 1, "admins14", "admin", "admin", "admin", "admin@email", "admin" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 3, "client", "client", "client", "client", "client", "client" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 5, "admin14", "admin_pass", "admin_fname", "admin_lname", "admin_email", "admin" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 6, "admins", "admin_pass", "admin_fname", "admin_lname", "admin_email@admin", "admin" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 7, "client3", "client_pass", "Firstname", "Lastname", "client@client", "client" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 8, "admin47", "admin_pass", "admin_fname", "admin_lname", "admin_email", "admin" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 9, "admin45", "admin_pass", "admin_fname", "admin_lname", "admin@admin45", "admin" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 10, "client2", "client2_pass", "client2_fname", "client2_lname", "client2@client2", "client" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 12, "clients", "clients", "Fname10", "Lname10", "client@client", "client" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 13, "employees", "employees_pass", "Employees", "Employees", "employees@employees", "employee" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 14, "employee", "employee", "employee", "employee", "employee", "employee" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 70, "username", "password", "first name", "last name", "email", "client" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 78, "client", "client_pass", "Client_firstname", "Client_lastname", "client@client", "client" );
+ INSERT INTO users ( id, username, password, firstname, lastname, email, type ) VALUES ( 90, "username", "password", "first name", "last name", "email", "client" );
+ 
+INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 0, 0, 0, "{(}completed{)}part of admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 1, 6, 0, "{(}given{)}part of admins{(}completed{)}part of admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 2, 0, 4, "{(}given{)}part{(}completed{)}part of admin{(}given{)}part admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 3, 8, 4, "{(}completed{)}part of admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 4, 8, 0, "{(}given{)}part{(}completed{)}part of admin{(}given{)}part admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 5, 9, 6, "{(}given{)}part of admin{(}given{)}part of admins" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 6, 8, 79, "{(}given{)}part of admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 7, 0, 1, "{(}given{)}part of admin{(}completed{)}part{(}given{)}part admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 8, 8, 1, "{(}given{)}part of admins{(}completed{)}part of admin{(}given{)}part" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 9, 0, 3, "{(}given{)}part of admin{(}given{)}part of admins" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 10, 5, 79, "{(}given{)}part of admin{(}completed{)}part of admins" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 11, 0, 5, "{(}given{)}part of admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 12, 0, 9, "{(}completed{)}part of admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 13, 0, 2, "{(}given{)}part{(}given{)}part of admin{(}completed{)}part of admins" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 14, 0, 8, "{(}completed{)}part of admins" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 15, 1, 8, "{(}completed{)}part of admins{(}given{)}part of admin" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 16, 5, 8, "" );
+ INSERT INTO tasks ( id, user_id, part_id ) VALUES ( 90, 1, 79, "" );
+ 
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 0, "Contract empty", "0", 3, 2020-05-10, 2020-06-20 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 1, "contract", "details for the contract of id 1are those details", 3, 2020-04-08, 2020-05-21 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 2, "Contract empties", "", 3, 2020-05-10, 2020-05-21 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 4, "Contract 1", "Details of Contract Details of contract", 78, 2020-04-08, 2010-04-10 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 5, "Contracts", "", 3, 2020-05-10, 2020-05-21 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 6, "Contracts empty", "", 10, 2020-05-05, 2020-05-10 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 7, "Contract 2", "", 3, 2020-04-29, 2020-06-19 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 8, "Contracts empties", "", 10, 2020-05-05, 2020-06-19 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 9, "Contract", "", 78, 2020-04-01, 2020-04-01 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 10, "Contract", "5", 0, 2010-09-10, 2010-09-14 );
+INSERT INTO contracts ( id, contract_name, details, client_id, contract_date, deadline_date ) VALUES ( 70, "contract_name", "details", 0, 2020-03-04, 2020-04-10 );
+
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 0, "deleted_contract_name_1", "contract
+
+
+Details:
+details for the contract of id 1
+are those details
+
+Client: admin_firstname admin_lastname
+
+Contract Date: 2020-04-08
+
+Deadline Date: 2020-04-01
+
+part1: 85% / 100% - Responsables: admin_firstname admin_lastname / admin admin / 
+part1: 45% / 100% - Responsables: employee employee / admin admin / 
+" );
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 1, ""Contract" with: Client_firstname Client_lastname", "Contract
+
+
+Details:
+ details of contract
+
+Client: Client_firstname Client_lastname
+
+Contract Date: 2010-09-10
+
+Deadline Date: 2010-09-14
+
+part1: 45% / 100% - Responsables:
+employee employee
+admin admin:
+  Given tasks for "part1":
+    part of admin
+  Completed tasks for "part1":
+    part of admins
+
+
+
+
+Part14: 90% / 100% - Responsables:
+admin_firstname admin_lastname:
+  Given tasks for "Part14":
+    part of admin
+
+
+
+
+" );
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 2, "deleted_contract_name_2", "Contract
+
+
+Client: Client_firstname Client_lastname
+
+Contract Date: 2020-04-01
+
+Deadline Date: 2020-04-01
+
+Part14: 15% / 100%
+" );
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 3, ""Contract" with: Client_firstname Client_lastname", "Contract
+
+
+Details:
+contract 
+
+details
+
+Client: Client_firstname Client_lastname
+
+Contract Date: 2020-04-08
+Deadline Date: 2010-05-21
+
+Parts of contract:
+
+Part14: 90% / 100% - Responsables:
+admin_fname admin_lname:
+  Given tasks for "Part14":
+    part of admin
+    parts
+  Completed tasks for "Part14":
+    part
+
+
+Part10: 45% / 100% - Responsables:
+admin admin:
+  Given tasks for "Part10":
+    part of admin
+
+
+" );
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 4, ""contract_name" with: admin_firstname admin_lastname", "contract_name
+
+
+Details:
+details
+
+Client: admin_firstname admin_lastname
+
+Contract Date: 2020-03-04
+Deadline Date: 2020-04-10
+
+" );
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 5, ""contract" with: admin_firstname admin_lastname", "contract
+
+
+Details:
+7
+
+Client: admin_firstname admin_lastname
+
+Contract Date: 2020-04-10
+Deadline Date: 2024-05-19
+
+" );
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 6, ""Contract 3" with: Firstname Lastname", "Contract 3
+
+
+Details:
+empty
+
+Client: Firstname Lastname
+
+Contract Date: 2020-05-21
+Deadline Date: 2020-10-02
+
+Parts of contract:
+
+Part14: 45% / 100% - Responsables:
+admin_firstname admin_lastname
+admin_fname admin_lname:
+  Given tasks for "Part14":
+    part of admin
+  Completed tasks for "Part14":
+    part
+
+
+" );
+INSERT INTO deleted_contracts ( id, deleted_contract_name, contract_details ) VALUES ( 90, "deleted_contract_name", "details" );

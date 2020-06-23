@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+		<title> Atibs </title>
+	
+
+
+		<link rel="stylesheet" href="atibs/atibs.css" />
+
+		<style>
+			
+			a { display: inline-block; text-decoration: none; }
+			a:hover { color: rgb( 50, 50, 150 ); }
+			a:visited { color: rgb( 90, 50, 250 ); }
+
+			p, h1, h2, h3, h4, h5, h6 {	margin: 5px 0px; text-overflow: ellipsis; }
+
+			span, s, i, u, b { margin: 0px; text-overflow: ellipsis; display: inline-block; }
+
+			div { padding: 5px; margin: 5px 0px; }
+
+			html { color: rgb( 50, 50, 50 ); font-family: Arial; scroll-behavior: smooth; padding: 5px; }
+
+			.sep
+			{
+				font-size: 21px;
+				background-color: rgb( 250, 250, 250 );
+				border: 3px solid rgb( 123, 123, 123 );
+				border-width: 2px 5px 2px 5px;
+				margin: 39px 2px 15px 2px;
+				font-weight: bold;
+				color: rgb( 90, 90, 90 );
+				padding: 2px 2px 2px 21px;
+				width: 540px;
+				max-width: 90%;
+			}
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+
+
+		<div style="height: 49px;"></div>
+
+		<h2 id="welcome"> Welcome </h2>
+
+
+
+		<!-- Border --> <div id="border" border="thin" class="sep"> Border </div>
+
+		<p border="thin" > Border: thin </p>
+		<p border="thin-medium" > Border: thin-medium </p>
+		<p border="medium" > Border: medium </p>
+		<p border="medium-thick" > Border: medium-thick </p>
+		<p border="thick" > Border: thick </p>
+		
+		<p hidden> Border </p>
+
+
+		<!-- Radius --> <div id="radius" border="thin" class="sep"> Radius </div>
+
+		<p radius="thin" > Radius: thin </p>
+		<p radius="thin-medium" > Radius: thin-medium <span border="thin"> Border: thin </span> </p>
+		<p radius="medium" > Radius: medium </p>
+		<p radius="medium-thick" > Radius: medium-thick <span border="medium"> Border: medium </span> </p>
+		<p radius="thick" > Radius: thick <span border="medium"> Border: medium </span> </p>
+
+
+
+
+		<!-- Shadow --> <div id="shadow" border="thin" class="sep"> Shadow </div>
+
+		<p shadow="thin" > Shadow: thin </p>
+		<p shadow="thin-medium" > Shadow: thin-medium <span radius="thin"> Radius: thin </span> </p>
+		<p shadow="medium" > Shadow: medium </p>
+		<p shadow="medium-thick" > Shadow: medium-thick </p>
+		<p shadow="thick" > Shadow: thick <span radius="medium"> Radius: medium </span> </p>
+
+
+
+
+		<!-- Decoration --> <div id="decoration" border="thin" class="sep"> Decoration </div>
+
+		<p> <a decoration="none" href="#"> Decoration: none</a> </p>
+		<p> <a decoration="line-through" href="#"> Decoration: line-through</a> </p>
+		<p> <a decoration="underline" href="#"> Decoration: underline</a> </p>
+		<p> <a decoration="border" href="#"> Decoration: border</a> </p>
+		<p> <a decoration="radius" href="#"> Decoration: radius</a> </p>
+		<p> <a decoration="quote" href="#">Decoration: quote</a> </p>
+		<p> <a decoration="quote2" href="#">Decoration: quote2</a> </p>
+		<p> <a decoration="href" href="#"> Decoration: href</a> </p>
+		<p> <a decoration="shadow" href="#"> Decoration: shadow</a> </p>
+
+
+
+
+		<!-- Font-size --> <div id="font" border="thin" class="sep"> Font-size </div>
+
+		<p font-size="thin" > Font-size: thin </p>
+		<p font-size="thin-medium" > Font-size: thin-medium <span radius="thin"> Radius: thin </span> </p>
+		<p font-size="medium" > Font-size: medium </p>
+		<p font-size="medium-thick" > Font-size: medium-thick </p>
+		<p font-size="thick" > Font-size: thick <span radius="thin"> Radius: thin </span> </p>
+
+
+
+
+		<!-- Font-family --> <div id="font-family" border="thin" class="sep"> Font-family </div>
+
+		<p font-family="arial" > Font-family: arial </p>
+		<p font-family="sans" > Font-family: sans </p>
+		<p font-family="serif" > Font-family: serif </p>
+		<p font-family="initial" > Font-family: initial </p>
+
+
+
+
+		<!-- Font-weight --> <div id="font-weight" border="thin" class="sep"> Font-weight </div>
+
+		<p font-weight="default" > Font-weight: default </p>
+		<p font-weight="bold" > Font-weight: bold </p>
+		<p font-weight="extra-bold" > Font-weight: extra-bold </p>
+
+
+
+
+		<!-- Letter-spacing --> <div id="letter-spacing" border="thin" class="sep"> Letter-spacing </div>
+
+		<p letter-spacing="thin" > Letter-spacing: thin </p>
+		<p letter-spacing="thin-medium" > Letter-spacing: thin-medium </p>
+		<p letter-spacing="medium" > Letter-spacing: medium </p>
+		<p letter-spacing="medium-thick" > Letter-spacing: medium-thick </p>
+		
+		<p letter-spacing="thick" > Letter-spacing: thick </p>
+
+
+
+
+		<!-- Word-spacing --> <div id="word-spacing" border="thin" class="sep"> Word-spacing </div>
+
+		<p word-spacing="thin" > Word-spacing: thin ( word spacing is thin )</p>
+		<p word-spacing="thin-medium" > Word-spacing: thin-medium ( word spacing is thin-medium )</p>
+		<p word-spacing="medium" > Word-spacing: medium ( word spacing is medium )</p>
+		<p word-spacing="medium-thick" > Word-spacing: medium-thick ( word spacing is medium-thick )</p>
+		
+		<p word-spacing="thick" > Word-spacing: thick ( word spacing is thick )</p>
+
+
+
+
+		<!-- Position --> <div id="position" border="thin" class="sep"> Position </div>
+
+		<p pos="default" > Pos: default / absolute / fixed / relative / nav / retutn_to_top </p>
+
+
+		<nav pos="nav" border="medium" style="border-radius: 0px 1px 2px 2px; margin: 0px;" > 
+
+				Pos: nav
+				
+				<a href="#border"> Border</a> /
+				<a href="#radius"> Radius</a> /
+				<a href="#shadow"> Shadow</a> /
+				<a href="#decoration"> Decoration</a> /
+				<a href="#font"> Font</a> /
+				<a href="#position"> Position</a> /
+				<a href="#color"> Color</a> /
+				<a href="#align"> Align</a> /
+				<a href="#columns"> Columns</a> /
+				<a href="#magnify"> Magnify </a> 
+
+
+
+				<a href="#"> </a> 
+				<a href="#"> </a> 
+				<a href="#"> </a> 
+				<a href="#"> </a> 
+				<a href="#"> </a> 
+				<a href="#"> </a> 
+
+		</nav>
+		<a pos="return_to_top" decoration="border" href="#" > Pos: return_to_top </a>
+
+
+
+
+		<!-- Align --> <div id="align" border="thin" class="sep"> Align </div>
+
+		<p align="right" border="thin" > Align: right ( Border: thin )</p>
+		<p align="center" border="thin" > Align: center ( Border: thin )</p>
+		<p align="left" border="thin" > Align: left ( Border: thin )</p>
+
+
+
+
+		<!-- Div-align --> <div border="thin" class="sep"> Div-align </div>
+
+		<p>Div-align: flex</p>
+		<div div-align="flex" border="thin" > 
+
+			<div border="thin" > Border: thin </div>
+			<div border="thin" > Border: thin </div>
+			<div border="thin" > Border: thin </div>
+			<div border="thin" > Border: thin </div>
+			<div border="thin" > Border: thin </div>
+
+		</div>
+
+
+
+
+		<!-- Columns --> <div id="columns" border="thin" class="sep"> Columns </div>
+
+		<p>Columns: dynamic</p>
+		<div columns="dynamic" > 
+
+			column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column /
+
+		</div>
+
+		<p>Columns: 2</p>
+		<div columns="2" > 
+
+			column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column /
+
+		</div>
+
+		<p>and so on... until Columns: 17</p>
+		<div columns="17" > 
+
+			column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column / column /
+			column / column / column /
+		</div>
+
+
+		<p hidden> Border </p>
+
+		<!-- Size --> <div id="size" border="thin" class="sep"> Size </div>
+
+		<div size="thin" > Size: thin </div>
+		
+		<div size="thin-medium"> Size: thin-medium </div>
+		<div size="medium"> Size: medium </div>
+		<div size="medium-thick"> Size: medium-thick </div>
+		<div size="thick"> Size: thick </div>
+		<p hidden> Border </p>
+
+
+		<!-- Color --> <div id="color" border="thin" class="sep"> Color </div>
+
+
+		<p color="b"> Color: b </p>
+		<p color="g"> Color: g </p>
+		<p color="p"> Color: p </p>
+		<p color="blk"> Color: blk </p> 
+		<p color="v"> Color: v </p>
+		<p color="bwn"> Color: bwn </p>
+		<p color="o"> Color: o </p>
+		<p color="r"> Color: r </p>
+		<p color="w"> Color: w </p>
+		<p color="gr"> Color: gr </p>
+
+		<p> Divs </p>
+
+
+		<div size="medium-thick" color="b"> Color: b </div>
+		<div size="medium-thick" color="g"> Color: g </div>
+		<div size="medium-thick" color="p"> Color: p </div>
+		<div size="medium-thick" color="blk"> Color: blk </div>
+		<div size="medium-thick" color="v"> Color: v </div>
+		<div size="medium-thick" color="bwn"> Color: bwn </div>
+		<div size="medium-thick" color="o"> Color: o </div>
+		<div size="medium-thick" color="r"> Color: r </div>
+		<div size="medium-thick" color="w"> Color: w </div>
+		<div size="medium-thick" color="gr"> Color: gr </div>
+
+		<p> Decoration: none </p>
+
+		<div size="medium-thick" color="b" decoration="none" > Color: b </div>
+		<div size="medium-thick" color="g" decoration="none" > Color: g </div>
+		<div size="medium-thick" color="p" decoration="none" > Color: p </div>
+		<div size="medium-thick" color="blk" decoration="none"> Color: blk </div>
+		<div size="medium-thick" color="v" decoration="none" > Color: v </div>
+		<div size="medium-thick" color="bwn" decoration="none" > Color: bwn </div>
+		<div size="medium-thick" color="o" decoration="none" > Color: o </div>
+		<div size="medium-thick" color="r" decoration="none"> Color: r </div>
+		<div size="medium-thick" color="w" decoration="none"> Color: w </div>
+		<div size="medium-thick" color="gr" decoration="none"> Color: gr </div>
+
+
+		<!-- Magnify --> <div id="magnify" border="thin" class="sep"> Magnify </div>
+
+		<span magnify="set" > Magnify: set </span>
+
+
+	</body>
+
+</html>

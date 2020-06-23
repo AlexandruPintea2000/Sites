@@ -1,0 +1,10 @@
+Download the latest tar.xz NodeJS file at https://nodejs.org/en/download/
+
+Untar it:
+tar -xf node-v#.#.#-linux-x64.tar.xz
+
+Or inside node-v#.#.#-linux-x64 folder:
+sudo mv node-v#.#.#-linux-x64/bin/* /usr/local/bin/
+sudo mv node-v#.#.#-linux-x64/lib/node_modules/ /usr/local/lib/
+  Where #.#.# is the version you downloaded.
+Verify installation using: node -v, npm -v
