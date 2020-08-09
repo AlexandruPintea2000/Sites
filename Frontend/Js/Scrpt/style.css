@@ -824,3 +824,37 @@ nav .dpdn
   background: rgb( 90, 90, 253 );	
   color: rgb( 253, 253, 253 );
 }
+
+
+
+
+
+#DRAG_DROP{}
+
+
+
+
+
+.drag 
+{
+	padding: 10px; 
+	border: 2px solid rgb( 123, 123, 123 );
+	height: 15px;
+	width: 170px;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.drop 
+{
+	border: 4px solid rgb( 204, 204, 204 );
+	height: 39px;
+	width: 194px;
+	border-radius: 5px;
+}
+
+
+
+
+

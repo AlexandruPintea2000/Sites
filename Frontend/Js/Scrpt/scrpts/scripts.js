@@ -123,7 +123,19 @@ function set_atribs( a, b )
 		b.setAttribute( attributes[ i ], val[ i ] );
 }
 
+function allowDrop(ev) {
+  ev.preventDefault();
+}
 
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
 
 
 
@@ -162,6 +174,8 @@ var uses_id = 0;
 var leave_id = 0;
 var collapse_id = 0;
 var leave_shown = [];
+var drag_id = 0;
+var drop_id = 0;
 
 function set_tags ()
 {
@@ -775,6 +789,58 @@ function set_tags ()
 			name_tags[ i ].appendChild( div );
 			name_tags[ i ].removeAttribute( "right-num" );
 		}
+
+
+
+		if ( name_tags[ i ].tagName.toLowerCase() == "drag" )
+		{
+			var div = create( "div" );
+			set_atribs( name_tags[ i ], div );
+
+
+			if ( name_tags[ i ].hasAttribute( "class" ) )
+				div.setAttribute( "class", name_tags[ i ].getAttribute( "class" ) + " drag" );
+			else
+				div.setAttribute( "class", "drag" );
+
+			div.setAttribute( "id", "drag_" + drag_id );
+			drag_id = drag_id +  1
+
+
+			div.setAttribute( "draggable", "true" );
+			div.setAttribute( "ondragstart", "drag(event)" );
+
+			div.innerHTML = name_tags[ i ].innerHTML;
+
+			insert_after( name_tags[ i ], div );
+			name_tags[ i ].remove();
+			i = 0;
+		}
+
+		if ( name_tags[ i ].tagName.toLowerCase() == "drop" )
+		{
+			var div = create( "div" );
+			set_atribs( name_tags[ i ], div );
+
+
+			if ( name_tags[ i ].hasAttribute( "class" ) )
+				div.setAttribute( "class", name_tags[ i ].getAttribute( "class" ) + " drop" );
+			else
+				div.setAttribute( "class", "drop" );
+
+			div.setAttribute( "id", "drop_" + drop_id );
+			drop_id = drop_id +  1
+
+			div.setAttribute( "ondrop", "drop(event)" );
+			div.setAttribute( "ondragover", "allowDrop(event)" );
+
+
+			insert_after( name_tags[ i ], div );
+			name_tags[ i ].remove();
+			i = 0;
+		}
+
+
 
 		name_tags = all();
 

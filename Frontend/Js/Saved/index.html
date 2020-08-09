@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+		<title> Saved </title>
+	
+
+		<style> html { font-family: Arial; text-align: center; } textarea { font-family: Arial; padding: 5px; border: 1px solid rgb( 123, 123, 123 ); border-radius: 5px; max-width: 430px; max-height: 150px; min-width: 430px; min-height: 150px; outline: none; } input { width: 443px; }  </style>
+
+	</head>
+
+	<body>
+
+		<h2> Save text: </h2>
+
+		<textarea id="save"></textarea>
+
+		<script>
+			
+			var area = document.getElementById( "save" );
+			if ( localStorage.area )
+				area.innerHTML = localStorage.getItem( "area" );
+
+			function save() 
+			{
+				localStorage.setItem( "area", String( area.value ) );
+			}
+
+		</script>
+
+		<span style="color: rgb( 123, 123, 123 ); position: absolute; left: 50%; top: 210px;"> ( Saved even if you close tab ) </span>
+		<p> <input type="submit" onclick="save()" value="Save"></input> </p>
+
+
+		<h2> Click Count: </h2>
+
+		<p> <input id="count" type="submit" onclick="count()" value="Click to Count!"></input> </p>
+
+		<p> Close tab to reset counter! </p>
+
+		<script>
+			
+			var counter = document.getElementById( "count" );
+			var l = 0;
+			if ( sessionStorage.count )
+			{
+				l = parseInt( sessionStorage.getItem( "count" ) );
+				counter.value = "Click Count: " + l;
+			}
+
+			function count() 
+			{
+				l = l + 1;
+				sessionStorage.setItem( "count", l );
+				counter.value = "Click Count: " + l;
+			}
+
+		</script>
+
+	</body>
+
+</html>
