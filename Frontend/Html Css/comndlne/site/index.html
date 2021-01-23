@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+	<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+	<title>  </title>
+
+
+	<style>
+
+		table { background-color: rgb( 90, 90, 90 ); width: 100%; border-radius: 5px; }
+		td, th { background-color: rgb( 150, 150, 150 ); text-align: center; }
+		html { background-color: rgb( 41, 41, 41 ); }
+		td:first-child, th { font-family: Arial; font-weight: bold; }
+		td:first-child { text-align: left; padding-left: 5%; width: 25%; color: rgb( 41, 41, 41 ); }
+		td, th { border-radius: 2px; border: 1px solid rgb( 41, 41, 41 ); }
+		th { font-size: 21px; background-color: rgb( 90, 90, 90 ); }
+		td { font-size: 19px; }
+		span { font-family: Arial; font-size: 15px; }
+		h1 { color: rgb( 123, 123, 123 ); }
+
+	</style>
+
+
+</head>
+
+
+<body>
+
+	<table>
+
+		<tr>
+			<th> Command </th> <th> Lnux </th> <th> Wdos </th> <th style="display: none;"> Mac, Android - separate for SDK ( same as Linux ) </th>
+		</tr>
+
+
+		<tr>
+			<td> Find files </td> <td> whereis </td> <td> find </td> <td style="display: none;"> awk ( text files ) </td>
+		</tr>
+
+		<tr>
+			<td> Show hostname </td> <td> hostname <span>( distro )</span> </td> <td> hostname <span>( computer name )</span> </td>
+		</tr>
+
+		<tr>
+			<td> List files </td> <td> ls </td> <td> dir </td>
+		</tr>
+
+		<tr>
+			<td> Shutdown </td> <td> shutdown </td> <td> shutdown </td>
+		</tr>
+
+		<tr>
+			<td> Kill tasks </td> <td> pkill </td> <td> taskkill </td>
+		</tr>
+
+		<tr>
+			<td> Get Mac </td> <td> ifconfig -a <span>( with <code>su</code>, find '<code>eth0</code>', num near <code>HWaddr</code> is your mac )</sapn></td> <td> getmac </td>
+		</tr>
+
+		<tr>
+			<td> Ip settings </td> <td> ifconfig </td> <td> ipconfig </td>
+		</tr>
+
+		<tr>
+			<td> Netstat </td> <td> netstat </td> <td> netstat </td>
+		</tr>
+
+		<tr>
+			<td> Copy </td> <td> cp </td> <td> copy </td>
+		</tr>
+
+		<tr>
+			<td> Delete file </td> <td> rm </td> <td> erase, del <span>( files )</span> / rmdir, rd <span>( folders )</span> </td>
+		</tr>
+
+		<tr>
+			<td> Extract </td> <td> unrar </td> <td> expand, tar </td>
+		</tr>
+
+		<tr>
+			<td> Move </td> <td> mv </td> <td> move </td>
+		</tr>
+
+		<tr>
+			<td> Make folder </td> <td> mkdir </td> <td> md </span> </td>
+		</tr>
+
+		<tr>
+			<td> Another terminal </td> <td> gnome-terminal </td> <td> cmd </span> </td>
+		</tr>
+
+		<tr>
+			<td> Clear terminal </td> <td> clear / printf '\033c' </td> <td> cls </span> </td>
+		</tr>
+
+		<tr>
+			<td> Make zip </td> <td> zip, rar </td> <td> compress </span> </td>
+		</tr>
+
+		<tr>
+			<td> File browser </td> <td> nautilus </td> <td> explorer </span> </td>
+		</tr>
+
+		<tr>
+			<td> Variables </td> <td> var="string" </td> <td> SET /A var=string </span> </td>
+		</tr>
+
+		<tr>
+			<td> Ownership </td> <td> chown </td> <td> takeown </span> </td>
+		</tr>
+
+		<tr>
+			<td> List tasks </td> <td> plist, maybe </td> <td> tasklist </span> </td>
+		</tr>
+
+		<tr>
+			<td> Set timeout </td> <td> timeout, maybe </td> <td> timeout </span> </td>
+		</tr>
+
+		<tr>
+			<td> Show ver </td> <td> , maybe </td> <td> ver </span> </td>
+		</tr>
+
+		<tr>
+			<td> Show path to installed </td> <td> which </td> <td> where </span> </td>
+		</tr>
+
+		<tr>
+			<td> Who am I? </td> <td colspan=2> whoami </td>
+		</tr>
+
+		<tr>
+			<td> Exit </td> <td colspan=2> exit </td>
+		</tr>
+
+		<tr>
+			<td> Execute command for multiple files </td> <td> for </td> <td> forfiles <span> also <code>for: FOR %%parameter IN (set) DO command / FOR /R [[:]path] %%parameter IN (set) DO command / FOR /D %%parameter IN (folder_set) DO command / FOR /L %%parameter IN (i0,step,end) DO command / FOR /F ["options"] %%parameter IN (filenameset) DO command / FOR /F ["options"] %%parameter IN ('command to process') DO command </code> </span> </span> </td>
+		</tr>
+
+		<tr>
+			<td> If </td> <td> if [] then ... fi </td> <td> IF [] EXIST filename ... else ... (file) / IF [/I] [] item1==item2 ... (string) / IF [] DEFINED variable command (error)
+ </span> </td>
+		</tr>
+
+		<tr>
+			<td> Make link </td> <td> link </td> <td> mklink </td>
+		</tr>
+
+		<tr>
+			<td> Path </td> <td colspan=2> Path </td>
+		</tr>
+
+		<tr>
+			<td> Permissions </td> <td> chmod </td> <td> perms </td>
+		</tr>
+
+		<tr>
+			<td> Print with printer </td> <td> pr, maybe </td> <td> print </td>
+		</tr>
+
+		<tr>
+			<td> Read </td> <td> read </td> <td> con </td>
+		</tr>
+
+
+
+	</table>
+
+	<div style="height: 75px;"></div>
+
+	<h1> Mac, Android, IOS = Mostly same as Linux </h1>
+
+
+	<table>
+
+		<tr>
+			<th> Android Command </th> <th> Does what </th>
+		</tr>
+
+		<tr>
+			<td> adb </td> <td> make sure your computer and Android are communicating </td>
+		</tr>
+
+		<tr>
+			<td> adb push / pull </td> <td> move / take a file between Android and computer </td>
+		</tr>
+
+		<tr>
+			<td> adb reboot ( reboot-bootloader ) / recovery </td> <td> Reboots Android / Puts Android in recovery mode </td>
+		</tr>
+
+		<tr>
+			<td> unlock </td> <td> Erase everything and reset </td>
+		</tr>
+
+		<tr>
+			<td> adb install </td> <td> Install apk </td>
+		</tr>
+
+		<tr>
+			<td> adb sideload </td> <td> Installs OS over-the-air </td>
+		</tr>
+
+		<tr>
+			<td> adb shell </td> <td> Get to a shell </td>
+		</tr>
+
+		<tr>
+			<td> adb install </td> <td> Install apk </td>
+		</tr>
+
+		<tr>
+			<th> Android SDK Command </th> <th> Does what </th>
+		</tr>
+
+		<tr>
+			<td> apkanalyzer </td> <td> insight into the composition of your APK after the build process completes.
+ </td>
+		</tr>
+
+		<tr>
+			<td> avdmanager </td> <td> Allows you to create and manage Android (AVDs) the command line. </td>
+		</tr>
+
+		<tr>
+			<td> lint </td> <td> A code scanning that can help you to identify and correct problems the quality of your code. </td>
+		</tr>
+
+		<tr>
+			<td> sdkmanager </td> <td> Allows you to, install, update, and uninstall packages for the Android SDK. </td>
+		</tr>
+
+		<tr>
+			<td> aapt2 </td> <td>  indexes, and compiles Android resources into a binary format that is optimized for the Android platform, and packages the compiled resources into a single output. </td>
+		</tr>
+
+		<tr>
+			<td> apksigner </td> <td> Signs APKs and checks whether APK signatures be verified successfully on all platform versions that a given APK. </td>
+		</tr>
+
+		<tr>
+			<td> zipalign </td> <td> Optimizes APK files by ensuring that all uncompressed data a particular alignment relative to the of the file. </td>
+		</tr>
+
+		<tr>
+			<td> adb </td> <td> Android Debug Bridge (adb) is a versatile that lets you manage the state of an Android or emulator. </td>
+		</tr>
+
+		<tr>
+			<td> logcat </td> <td> This is a invoked adb to app and system logs. </td>
+		</tr>
+
+		<tr>
+			<td> emulator </td> <td> A QEMU-based that you can use to debug and test your applications in an actual Android. </td>
+		</tr>
+
+		<tr>
+			<td> mksdcard </td> <td> Helps you create a disk image that you can use the emulator, to simulate the presence of an external storage card (such as an SD card). </td>
+		</tr>
+
+		<tr>
+			<td> Jetifier </td> <td> Jetifier reads a that uses classes, and outputs an equivalent that uses the newer AndroidX classes. </td>
+		</tr>
+
+	</table>
+
+
+</body>
+
+</html>
