@@ -1,0 +1,235 @@
+Sites are fully scalable
+
+
+
+
+Html Css
+
+
+AlexPAcademic - unaltered html website ( not much styling )
+
+AlexPSite - Parallax website with css transitions ( uses js too, should be at Js, not Html Css folder. )
+
+Atibs: - css library for:
+	- Border thinkness
+	- Border radius
+	- Shadow
+	- Decoration ( text-decoration, quotes and borders )
+	- Font size, family, weight
+	- Letter and word spacing
+	- Position ( absolute, relative ... )
+	- Align ( left, right, center ), div align
+	- Columns
+	- Size ( for divs )
+	- Color
+	- Magnify text
+- aims to provide the most used css in the form of attribute values
+- has a demo website with all features
+- remake
+
+Atr: css library for:
+	- Decoration ( upper / lower, quotes, bold, font-family, flat / tall text, long / narrow text, skew, rotate )
+	- Font-size ( 2 size systems xs - xe and s1 - e3 )
+	- Letter and Word spacing
+	- Colors
+	- Background colors
+	- Background gradients
+	- Colored text-decoration
+	- Border width, color
+	- Have partial borders
+	- Shadow
+	- Colored shadow
+	- Align left, right, center
+	- Magnify
+	- Positions ( absolute, ... - standard and custon: nav, return-to-top )
+	- Text colored shadow
+	- Columns
+	- Scrollable div
+	- Padding sizes
+	- Margn sizes
+	- Outline colors
+	- Pills ( colored, 5 variations for each color )
+- each has an attribute ( ex: hov-border-blk - for hover border black - variation of colored pill )
+
+Browr: - browser in browser
+
+Browrs: - multiple browser windows in a tab
+
+commandline: - table with system commands for Mac, Windows and Linux
+
+Css Fonts: - library for:
+	- 58 fonts
+		12 x default 14 x square 15 x soft 4 x scary 8 x future 4 x sign 1 x complex
+	- 41 loaders
+		17 x default 4 x square 12 x soft 8 x complex
+	- 13 scrollers
+		5 x default 8 x soft
+	- 35 cursors
+		17 x default 2 x soft 11 x future 5 x complex
+	- 50 objects
+		50 x default
+- has a demo website
+
+divs: meant to help you pick colors, put down stuff - trivial
+
+Fra: - css library for:
+	- Navs ( colored )
+	- Parallax
+	- Content ( styled paragraph chunks )
+	- Ul with border ( colored )
+	- Styled title
+	- Summary
+	- Back-to-top ( pref )
+	- Dropdown ( colored )
+	- styling without mentioning attributes ( for default html tags )
+
+Less: - about less
+
+Prototypes: - layout prototypes for websites
+
+Sle: - css library for:
+	- styling without mentioning attributes ( for default html tags )
+	- Ul with border ( colored )
+	- Dismissable greeting text
+	- Special dismissable for "website uses ... to give you a better experience"
+	- Back-to-top ( pref )
+	- Rows, columns of table
+	- Notifications 
+	- Collapsable
+	- Nav ( for the default html tag )
+
+Sotrab: - provides html tags for:
+	- Extra-bold text
+	- Paragraph sizes
+	- Alignment of text
+	- Borders
+	- Shadows
+	- Vertical-spacing
+	- Positions
+	- Alignment of divs
+	- Resizable div
+	- Magnify text
+
+Style_Css: - css library for default html tags:
+	- Usual text-related tags ( p, span, h1 ... )
+	- Forms ( for all usual field types )
+	- Tables
+	- Nav
+
+Website template 1 - website template
+
+
+
+
+Js
+
+
+Codehost: - keeps your frontend code, copies to clipboard on click
+
+Formats: - about xml, json, xslt and other such formate
+
+Frm: - about React, jQuery and Angulr
+
+Js Scripts: - can be applied to a page:
+               - Attr: - able to get any, even if they do not have id, class or unique attributes
+               - Cmple: - show js terminal
+               - Cnvrt: - converts html page to json, and json page to html
+               - Contrst: - should make contrast themes, not just get attributes
+               - Db: - database for frontend js ( not editable, just shown ) - could make to use loclstrge for db too
+               - Edits: - can edit any text on a page
+               - Encp: - determine how the encapsulation deg affects the page load time / ...
+               - Ids: - gives an id to all
+               - Lngth: - aims to only leave main page text, by determining the maximum text length
+               - Thme: - theme the application with a set fo colors done war finalised
+
+Ofile: - shows what you might want to see when you inspect the html object, on hover
+
+Saved: - saves text in local storage ( example for using local storage )
+
+Script: - converts "title" attributes to an elegant text that glides into the page
+        - styled alerts ( click to dismiss )
+
+Scripts: - js library for:
+	- Short versions for document.get... id, tag, class, attribute, attribute value
+	- Childrn ( all / dirct, before / after a certain child ), siblings, parnts, 
+	- Getting all tags in an array
+	- Adding a style / script file though js
+	- Trim paragraphs to only show full text on hover
+	- Append before / after, first / last, also for childrn
+	- Style form: radio, checkbox, slider ( show value ), select, pwd field ( toggle visibility ), 
+	- Date and time: date, minute, hour, day, year
+	- Get / Has / Set / Remove attribute
+	- Get calue of css property
+	- Functions for inner text, slicing text, get tag name, timer, inserting html ( before / after ), has / add / remove / toggle class, make new, getting screen height / width, search for string, uppercase / lowercase, add / has / remove / sort / reverse array, 
+	- Counts how many times you clicked / double clicked the page
+
+Scrpts: - make your own html tags by using css classes
+        - your custom html tags get converted to default html tags when they get to the browser
+        - provided custom tags:
+            - prlx - parallax that you can set a picture to 
+            - content - styled paragraph chunks
+            - contact - custom contact paragraphs
+            - about - custom about paraagraph
+            - persp - modify the css perspective
+            - cn - center vertically / horizontally
+            - dpdn - dropdown
+            - title_img - image with a title
+            - border_img - image with a border
+            - border_a - href with border
+            - script with attribute visible - shows js code
+            - dism - dismissable notification
+            - uses - dismissable "websiet uses ... to make sure you get the experience you want ..."
+            - pref - back to top
+            - leave - before you leave notification
+            - columns - show text on columns
+            - collapse - styled description / summary
+            - drg - able to drg 
+            - drop - able to drop
+       - each of the provided custom tags has specific attributes ( and attribute values ) that modify their behaviour
+fle
+
+
+
+
+Full sites:
+
+
+Nodejs:
+
+Express: example
+
+Node Model: database example
+
+Node ( Model invalid ): could not get the database data outsidde the get functions
+
+Persons Node: add / remove / edit persons
+
+React-src: example
+
+
+
+
+
+
+ablicen: multiple applications
+
+anglr: example of getting data through the frontend
+
+database_emails: emails database example
+
+database_row: easy databse example
+
+Mailchimp: using Mailchimp example
+
+_folders: makes folders
+
+procrs: complex team task allocation system:
+	- admin / user / client
+	- uses progress lines to indicate advancement
+	- the client can view the progress and who is doing what on their application / ...
+	- 
+
+sql_index: database web client for a database
+
+sql_imdex_multiple: database web client for multiple databases
+
