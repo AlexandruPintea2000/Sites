@@ -28,6 +28,7 @@ Atibs: - css library for:
 - remake
 
 - fake - fake chat
+- jquery
 
 Atr: css library for:
 	- Decoration ( upper / lower, quotes, bold, font-family, flat / tall text, long / narrow text, skew, rotate )
