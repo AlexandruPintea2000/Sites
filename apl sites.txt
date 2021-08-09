@@ -27,6 +27,8 @@ Atibs: - css library for:
 - has a demo website with all features
 - remake
 
+- fake - fake chat
+
 Atr: css library for:
 	- Decoration ( upper / lower, quotes, bold, font-family, flat / tall text, long / narrow text, skew, rotate )
 	- Font-size ( 2 size systems xs - xe and s1 - e3 )
