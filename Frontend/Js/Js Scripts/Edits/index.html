@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!------------------------- Size set   -->
+
+		<meta charset="utf-8"> <!----------------------------------------------------------------------- Charset    -->
+
+		<title>  </title>
+	
+		<style>
+
+			.fle { visibility: none; }
+
+		</style>
+
+	</head>
+
+
+	<body>
+
+		<p onclick="fle();"> Paragraph <span> Span </span> is a paragraph </p>
+		<p onclick="fle()"> Paragraph <span> Span </span> is a paragraph </p>
+
+
+		<script>
+
+			var l;
+
+			var u;
+
+			function fle(){}
+
+			function all_primary ()
+			{
+				var child;
+			 	child = document.body.children;
+			 	var children = [];
+
+				for ( var i = 0; i < child.length; i = i + 1 )
+				    children.push( child.item( i ) );
+
+				return children;
+			}
+
+			function create ( tag_name ) 
+			{
+				var a = document.createElement( tag_name );
+				var textnode = document.createTextNode( "" );
+				a.appendChild( textnode );                              
+
+				return a;
+			}
+
+			function id ( id )
+			{
+				return document.getElementById( id.toLowerCase() );
+			}
+
+			// function remove_funct ( functs, funct ) // removes a function in a string that contains functions ( when you have an atribute that executes function, usually "onclick", it can remove a function )
+			// {
+			// 	var result = "";
+
+			// 	for ( var i = 0; i < functs.length; i = i + 1 )
+			// 	{
+			// 		if ( functs.charAt( i ) == funct.charAt( 0 ) )
+			// 		{
+			// 			if ( i + funct.length > functs.length )
+			// 				continue;
+
+
+			// 			var i2 = i;
+			// 			var have_funct = 1;
+			// 			for ( var o = 1; o < funct.length; o = o + 1 )
+			// 				if ( functs.charAt( i2 + o ) != funct.charAt( o ) )
+			// 				{
+			// 					have_funct = 0;
+			// 					break;
+			// 				}
+
+			// 			if ( have_funct == 1 )
+			// 			{
+			// 				while ( functs.charAt( i2 ) != '(' )
+			// 					i2 = i2 + 1;
+			// 				while ( functs.charAt( i2 ) != ')' )
+			// 					i2 = i2 + 1;
+			// 				while ( functs.charAt( i2 ) != ';' )
+			// 				{
+			// 					i2 = i2 + 1;
+			// 					if ( functs.charAt( i2 ) != ' ' )
+			// 						break;
+			// 					if ( functs.charAt( i2 ) != '	' )
+			// 						break;
+			// 				}
+			// 			}
+
+			// 			i = i2;
+			// 		}
+
+			// 		result = result + functs[ i ];
+			// 	}
+
+			// 	return result;
+			// }
+
+			p = all_primary();
+
+			iter = 0; // iterator that numerotates the tags
+
+			// make and add the editing div to the page
+
+			dv = create( "div" );
+			dv.setAttribute( "id", "dv" );
+			dv.style.position = "absolute";
+			dv.style.top = "10px";
+			dv.style.right = "10px";
+			dv.style.border = "2px solid rgb( 204, 204, 204 )";
+			dv.style.textAlign = "center";
+			// dv.style.visibility = "none";
+			dv.style.borderRadius = "5px";
+			dv.style.backgroundColor = "rgb( 243, 243, 243 )";
+			dv.style.padding = "10px 10px 0px 10px";
+
+
+			function hide_edit_div ()
+			{
+				edit_div = id( "dv" );
+				field = id( "field" );
+
+				// hide div
+				p[ iter ].innerHTML = field.value;
+			}
+
+			function hide_div ()
+			{
+				edit_div = id( "dv" );
+
+				// hide div
+				field.value = "";
+			}
+
+			close = create( "p" );
+			close.innerText = "x";
+			close.setAttribute( "onclick", "hide_div()" );
+			close.innerText = "Close";
+			close.style.fontSize = "17px";
+			close.style.fontFamily = "Arial";
+			close.style.border = "2px solid rgb( 165, 165, 165 )";
+			close.style.borderRadius = "5px";
+			close.style.padding = "2px";
+			close.style.backgroundColor = "rgb( 234, 234, 234 )";
+			close.style.color = "rgb( 80, 80, 80 )";
+
+
+			clk = create( "p" );
+			clk.setAttribute( "onclick", "hide_edit_div()" );
+			clk.innerText = "Click to show edit";
+			clk.style.fontSize = "17px";
+			clk.style.fontFamily = "Arial";
+			clk.style.border = "2px solid rgb( 165, 165, 165 )";
+			clk.style.borderRadius = "5px";
+			clk.style.padding = "5px";
+			clk.style.backgroundColor = "rgb( 234, 234, 234 )";
+			clk.style.color = "rgb( 80, 80, 80 )";
+
+			f = create( "textarea" );
+			f.setAttribute( "type", "text" );
+			f.setAttribute( "id", "field" );
+			f.style.fontSize = "17px";
+			f.style.padding = "10px";
+			f.style.maxWidth = "450px";
+			f.style.minWidth = "450px";
+			f.style.maxHeight= "250px";
+			f.style.minHeight = "250px";
+
+			dv.appendChild( f );
+			dv.appendChild( clk );
+			dv.appendChild( close );
+			document.body.appendChild( dv );
+
+
+			function edit_inner_text ( i )
+			{
+				iter = i;
+				edit_div = id( "dv" );
+				field = id( "field" );
+
+				field.value = p[ i ].innerHTML; // when you click on child it keeps going through the page to the parnts, and the child text disapears immediatly
+			}
+
+			for ( var i = 0; i < p.length; i = i + 1 )
+			{
+				if ( p[ i ].hasAttribute( "onclick" ) )
+				{
+					attr = p[ i ].getAttribute( "onclick" );
+
+					have_semicolon = 0;
+
+					for ( var m = attr.length - 1; m >= 0; m = m - 1 )
+					{
+						if ( attr[ m ] == ' ' )
+							continue;
+						if ( attr[ m ] == '	' )
+							continue;
+						if ( attr[ m ] == ';' )
+						{
+							have_semicolon = 1;
+							break;
+						}
+					}
+
+					if ( have_semicolon == 1 )
+						p[ i ].setAttribute( "onclick", attr + " edit_inner_text( " + i + " )" )
+					else
+						p[ i ].setAttribute( "onclick", attr + "; edit_inner_text( " + i + " )" )
+				}
+				else
+					p[ i ].setAttribute( "onclick", "edit_inner_text( " + i + " )" )
+			}
+
+			function fle7 (){}
+
+		</script>
+
+	</body>
+
+</html>

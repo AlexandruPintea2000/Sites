@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id='p'>Paragraph</p>
+
+<script>
+
+function get_attributes () // get any, even if they do not have id, class or unique attributes
+{
+	var v = document.getElementById( 'p' ); // use the given 
+	var tag = v.tagName;
+	var text = v.innerText;
+	var attr = v.attributes;
+	var attr_nmes = [];
+	var attr_values = [];
+	var l = 0;
+	while ( attr.item( l ) != null )
+	{
+		attr_nmes.push( attr.item( l ).name );
+		attr_values.push( attr.item( l ).value );
+		l = l + 1;
+	}
+
+	var result = "";            
+	for ( var i = 0; i < attr_nmes.length; i = i + 1 )
+	{
+	   	if ( attr_nmes[i] == "id" )
+        	result = result + "var v = document.getElementById( '" + attr_values[i] + "' ); // get by unique id\n\n";
+    }
+    
+    result = result + "var results = [];\n";
+    result = result + "var arr = document.getElementsByTagName( '" + tag + "' );\n";
+    result = result + "for ( var i = 0; i < arr.length; i = i + 1 )\n	if ( ";
+    for ( var i = 0; i < attr_nmes.length; i = i + 1 )
+    {
+	result = result + " arr[i].getAttribute( '" + attr_nmes[i] +  "' ) == '" + attr_values[i] + "' &&";
+    }	
+    result = result + " arr[i].innerText = '" + text +"' )\n		results.push( arr[i] );\n\n// most likely placed at results[0]";
+
+    var field = document.createElement( "textarea" );
+    field.innerHtml = "";
+    document.body.appendChild( field );
+    field.value = result;
+
+    field.select();
+    field.setSelectionRange(0, 99999);
+    document.execCommand("copy");					
+    field.style.display = "none";
+}
+
+function set_click ()
+{
+	var chld = document.body.children;
+	for ( var i = 0; i < chld.length; i = i + 1 )
+	{
+		if ( chld[i].hasAttribute( "onclick" ) )
+			chld[i].setAttribute( "onclick", chld[i].getAttribute( "onclick" ) + "; " + "get_attributes()" );
+		else
+			chld[i].setAttribute( "onclick", "get_attributes()" );
+	}
+}
+
+set_click ();</script>
+
+</body>
+</html>
